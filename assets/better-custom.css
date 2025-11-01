@@ -14,21 +14,4 @@
        url("{{ 'Delvona-Bold.woff' | asset_url }}") format("woff");
 }
 
-/* ------------------------------
-   Sunset Gothic (Sans Body)
-   ------------------------------ */
-@font-face {
-  font-display: swap;
-  font-family: "Sunset Gothic";
-  font-style: normal;
-  font-weight: 400;
-  src:  url("{{ 'sunset-gothic-regular-pro.woff' | asset_url }}") format("woff");
-}
 
-@font-face {
-  font-display: swap;
-  font-family: "Sunset Gothic";
-  font-style: normal;
-  font-weight: 700;
-  src: url("{{ 'sunset-gothic-medium-pro.woff' | asset_url }}") format("woff");
-}

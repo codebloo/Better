@@ -114,7 +114,8 @@
       "type": "cb-wave-divider",
       "name": "CB: Wave divider",
       "settings": {
-        "overlap_previous": true,
+        "overlap_next": true,
+        "overlap_previous": false,
         "fill": "#f27d54",
         "height": 80,
         "flip_vertical": false,

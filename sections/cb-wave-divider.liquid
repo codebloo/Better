@@ -1,29 +1,41 @@
 {% comment %}
-  Wave Divider – drop-in section
-  Usage: Add this section before Footer (for a top-of-footer white/peach swoop),
-  or under Header (for a bottom-of-header swoop).
+  CB Wave divider
+  Usage:
+    - Place BEFORE Footer → use "Overlap next section" to cut into footer.
+    - Place AFTER Header/Hero → use "Overlap previous section" to pull up into the hero/header.
 {% endcomment %}
 
 {% assign default_fill = settings.color_background_primary | default: '#FFF8F4' %}
 
-<section class="wave-divider{% if section.settings.overlap_previous %} is-overlap-prev{% endif %}"
-  style="
-    --wave-h: {{ section.settings.height | default: 80 }}px;
-    --wave-fill: {{ section.settings.fill | default: default_fill }};
-    --wave-z: {{ section.settings.zindex | default: 0 }};
-    --wave-mt: {{ section.settings.margin_top | default: 0 }}px;
-    --wave-mb: {{ section.settings.margin_bottom | default: -1 }}px;
-  ">
-  {{ 'cb-wave-divider.css' | asset_url |stylesheet_tag}}
-  <div class="wave-divider__inner {% if section.settings.flip_vertical %}is-flip-v{% endif %} {% if section.settings.flip_horizontal %}is-flip-h{% endif %}">
-    <!-- Responsive SVG (stretches to any width) -->
-    <svg class="wave-divider__svg" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-      <!-- "Downward" gentle swoop by default (use flip_vertical to invert) -->
-      <path d="M0,40 C360,100 1080,-20 1440,40 L1440,0 L0,0 Z" fill="currentColor"></path>
-    </svg>
-  </div>
+<section
+  class="wave-divider-section section"
+  style="--full-page-grid-with-margins: 0;"
+>
+  {{ 'cb-wave-divider.css' | asset_url | stylesheet_tag }}
+  <section
+    class="wave-divider
+      {% if section.settings.overlap_next %} is-overlap-next{% endif %}
+      {% if section.settings.overlap_previous %} is-overlap-prev{% endif %}"
+    style="
+      --wave-h: {{ section.settings.height | default: 80 }}px;
+      --wave-fill: {{ section.settings.fill | default: default_fill }};
+      --wave-z: {{ section.settings.zindex | default: 0 }};
+      --wave-mt: {{ section.settings.margin_top | default: 0 }}px;
+      --wave-mb: {{ section.settings.margin_bottom | default: -1 }}px;
+    "
+  >
+    <div class="wave-divider__inner
+      {% if section.settings.flip_vertical %}is-flip-v{% endif %}
+      {% if section.settings.flip_horizontal %} is-flip-h{% endif %}"
+    >
+      <!-- Responsive SVG (stretches to any width) -->
+      <svg class="wave-divider__svg" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <!-- "Downward" gentle swoop by default (use flip_vertical to invert) -->
+        <path d="M0,40 C360,100 1080,-20 1440,40 L1440,0 L0,0 Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </section>
 </section>
-
 
 {% schema %}
 {
@@ -31,18 +43,24 @@
   "tag": "section",
   "class": "section wave-divider-section",
   "settings": [
-  {
-    "type": "checkbox",
-    "id": "overlap_previous",
-    "label": "Overlap next section (hero)",
-    "default": false
-  },
+    {
+      "type": "checkbox",
+      "id": "overlap_next",
+      "label": "Overlap next section (header/next)",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "overlap_previous",
+      "label": "Overlap previous section (footer/prev)",
+      "default": false
+    },
     {
       "type": "color",
       "id": "fill",
       "label": "Wave fill color",
       "default": "#FFF8F4",
-      "info": "For top-of-footer, set to page background (e.g., #FFF8F4). For bottom-of-header, set to the section below."
+      "info": "Top-of-footer: set to page background (e.g., #FFF8F4). Under header: set to the next section background."
     },
     {
       "type": "range",
@@ -67,17 +85,17 @@
       "default": false
     },
     {
-        "type": "number",
-        "id": "margin_top",
-        "label": "Margin top (px)",
-        "default": 0
-      },
-      {
-        "type": "number",
-        "id": "margin_bottom",
-        "label": "Margin bottom (px)",
-        "default": -1
-      },
+      "type": "number",
+      "id": "margin_top",
+      "label": "Margin top (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "margin_bottom",
+      "label": "Margin bottom (px)",
+      "default": -1
+    },
     {
       "type": "range",
       "id": "zindex",
