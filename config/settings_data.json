@@ -9,9 +9,10 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/BetterThanLogo.svg",
-    "logo_height": 51,
-    "logo_height_mobile": 28,
+    "logo": "shopify://shop_images/better-than-logo-white.svg",
+    "logo_inverse": "shopify://shop_images/BetterThanLogo.svg",
+    "logo_height": 54,
+    "logo_height_mobile": 36,
     "type_body_font": "libre_franklin_n4",
     "type_subheading_font": "libre_franklin_n6",
     "type_heading_font": "petrona_n7",
@@ -123,9 +124,9 @@
       "scheme-2": {
         "settings": {
           "background": "#f27d54",
-          "foreground_heading": "#5b5246",
-          "foreground": "#000000cf",
-          "primary": "#000000cf",
+          "foreground_heading": "#ffffff",
+          "foreground": "#ffffff",
+          "primary": "#fff8f4",
           "primary_hover": "#ffffff",
           "border": "#dfdfdf",
           "shadow": "#000000",

@@ -33,14 +33,14 @@
    .wave-divider-section{--full-page-grid-with-margins: 0;}
    
    /* Put wave ABOVE the previous section (hero) when toggled */
-   .cb-wave-divider.is-overlap-prev {
+   .wave-divider.is-overlap-prev {
      /* Pull the wave upward by its height (hide seam with +1px) */
-     margin-top: calc(-1 * var(--wave-h, 80px) + 1px);
+     margin-bottom: calc(-1 * var(--wave-h, 80px) + 1px)!important;
      /* Keep normal margin-bottom; you’re overlapping upward, not down */
    }
 
    /* Ensure the wave is drawn above hero backgrounds but not over hero content */
-   .cb-wave-divider.is-overlap-prev {
+   .wave-divider.is-overlap-prev {
      position: relative;
      z-index: 2; /* Above typical section backgrounds */
    }

@@ -114,13 +114,14 @@
       "type": "cb-wave-divider",
       "name": "CB: Wave divider",
       "settings": {
+        "overlap_previous": true,
         "fill": "#f27d54",
         "height": 80,
         "flip_vertical": false,
         "flip_horizontal": false,
         "margin_top": 0,
         "margin_bottom": -1,
-        "zindex": 0
+        "zindex": 3
       }
     }
   },
