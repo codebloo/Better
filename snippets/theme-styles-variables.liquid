@@ -50,6 +50,13 @@
   {% endif %}
 
   :root {
+	  
+  	/* Brand colours */
+      --bg-primary: {{ settings.color_background_primary | default: '#FFF8F4' }};
+      --text-primary: {{ settings.color_text_primary | default: '#1A1A1A' }};
+      --brand-blue: {{ settings.color_accent_primary | default: '#0066A6' }};
+      --footer-bg: {{ settings.color_footer_bg | default: '#803D29' }};
+	  
     /* Page Layout */
     --sidebar-width: 25rem;
     --narrow-content-width: 36rem;
@@ -163,6 +170,10 @@
     --line-height--body-tight: 1.2;
     --line-height--body-normal: 1.4;
     --line-height--body-loose: 1.6;
+	
+	
+
+	
 
     /* Typography presets */
     {% liquid

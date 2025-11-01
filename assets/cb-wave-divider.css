@@ -1,0 +1,67 @@
+  .wave-divider {
+	  margin-bottom: var(--wave-mb); 
+	    margin-top: var(--wave-mt);
+    position: relative;
+	    width: 100vw;
+    z-index: var(--wave-z);
+  
+  }
+  .wave-divider__inner {
+    color: var(--wave-fill);  
+    height: var(--wave-h);
+    line-height: 0;
+    pointer-events: none;
+	    position: relative;
+  }
+  .wave-divider__svg {
+    
+	 display: block;
+    height: 100%;
+	width: 100%;
+   
+  }
+  .wave-divider__inner.is-flip-v {
+    transform: scaleY(-1);
+    transform-origin: center;
+  }
+  .wave-divider__inner.is-flip-h {
+    transform: scaleX(-1);
+    transform-origin: center;
+  }
+  
+
+   .wave-divider-section{--full-page-grid-with-margins: 0;}
+   
+   /* Put wave ABOVE the previous section (hero) when toggled */
+   .cb-wave-divider.is-overlap-prev {
+     /* Pull the wave upward by its height (hide seam with +1px) */
+     margin-top: calc(-1 * var(--wave-h, 80px) + 1px);
+     /* Keep normal margin-bottom; you’re overlapping upward, not down */
+   }
+
+   /* Ensure the wave is drawn above hero backgrounds but not over hero content */
+   .cb-wave-divider.is-overlap-prev {
+     position: relative;
+     z-index: 2; /* Above typical section backgrounds */
+   }
+
+   /* Common hero wrappers in Horizon – prevent clipping */
+   .section .slideshow,
+   .section .image-banner,
+   .section .media-banner,
+   .section .banner,
+   .section .hero,
+   .section .section-hero,
+   .section .media-with-text {
+     overflow: visible;
+   }
+
+   /* If your hero content needs to sit above the wave curve, lift it slightly */
+   .section .slideshow *:not(img),
+   .section .image-banner *:not(img),
+   .section .media-banner *:not(img),
+   .section .banner *:not(img) {
+     position: relative;
+     z-index: 3;
+   }
+   

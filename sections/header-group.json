@@ -35,8 +35,8 @@
       "settings": {
         "speed": 5,
         "section_width": "page-width",
-        "color_scheme": "scheme-3",
-        "divider_width": 1,
+        "color_scheme": "scheme-6",
+        "divider_width": 0,
         "padding-block-start": 15,
         "padding-block-end": 15
       }
@@ -99,7 +99,7 @@
         "divider_width": 0,
         "divider_size": "page-width",
         "border_width": 0,
-        "color_scheme_top": "scheme-1",
+        "color_scheme_top": "scheme-2",
         "color_scheme_bottom": "",
         "color_scheme_transparent": "scheme-6",
         "enable_transparent_header_home": false,
@@ -109,10 +109,24 @@
         "enable_transparent_header_collection": false,
         "collection_color_scheme": "default"
       }
+    },
+    "cb_wave_divider_APKaQE": {
+      "type": "cb-wave-divider",
+      "name": "CB: Wave divider",
+      "settings": {
+        "fill": "#f27d54",
+        "height": 80,
+        "flip_vertical": false,
+        "flip_horizontal": false,
+        "margin_top": 0,
+        "margin_bottom": -1,
+        "zindex": 0
+      }
     }
   },
   "order": [
     "header_announcements_9jGBFp",
-    "header_section"
+    "header_section",
+    "cb_wave_divider_APKaQE"
   ]
 }

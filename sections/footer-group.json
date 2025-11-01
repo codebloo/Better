@@ -11,6 +11,19 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
+    "cb_wave_divider_3mw4tm": {
+      "type": "cb-wave-divider",
+      "name": "CB: Wave divider",
+      "settings": {
+        "fill": "#803d29",
+        "height": 80,
+        "flip_vertical": true,
+        "flip_horizontal": false,
+        "margin_top": 0,
+        "margin_bottom": -1,
+        "zindex": 0
+      }
+    },
     "footer_m9NzUG": {
       "type": "footer",
       "blocks": {
@@ -205,6 +218,7 @@
     }
   },
   "order": [
+    "cb_wave_divider_3mw4tm",
     "footer_m9NzUG",
     "footer_utilities_jLGE8U"
   ]

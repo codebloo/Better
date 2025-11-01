@@ -1,0 +1,98 @@
+{% comment %}
+  Wave Divider – drop-in section
+  Usage: Add this section before Footer (for a top-of-footer white/peach swoop),
+  or under Header (for a bottom-of-header swoop).
+{% endcomment %}
+
+{% assign default_fill = settings.color_background_primary | default: '#FFF8F4' %}
+
+<section class="wave-divider{% if section.settings.overlap_previous %} is-overlap-prev{% endif %}"
+  style="
+    --wave-h: {{ section.settings.height | default: 80 }}px;
+    --wave-fill: {{ section.settings.fill | default: default_fill }};
+    --wave-z: {{ section.settings.zindex | default: 0 }};
+    --wave-mt: {{ section.settings.margin_top | default: 0 }}px;
+    --wave-mb: {{ section.settings.margin_bottom | default: -1 }}px;
+  ">
+  {{ 'cb-wave-divider.css' | asset_url |stylesheet_tag}}
+  <div class="wave-divider__inner {% if section.settings.flip_vertical %}is-flip-v{% endif %} {% if section.settings.flip_horizontal %}is-flip-h{% endif %}">
+    <!-- Responsive SVG (stretches to any width) -->
+    <svg class="wave-divider__svg" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <!-- "Downward" gentle swoop by default (use flip_vertical to invert) -->
+      <path d="M0,40 C360,100 1080,-20 1440,40 L1440,0 L0,0 Z" fill="currentColor"></path>
+    </svg>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Wave divider",
+  "tag": "section",
+  "class": "section wave-divider-section",
+  "settings": [
+  {
+    "type": "checkbox",
+    "id": "overlap_previous",
+    "label": "Overlap next section (hero)",
+    "default": false
+  },
+    {
+      "type": "color",
+      "id": "fill",
+      "label": "Wave fill color",
+      "default": "#FFF8F4",
+      "info": "For top-of-footer, set to page background (e.g., #FFF8F4). For bottom-of-header, set to the section below."
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "min": 24,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Wave height",
+      "default": 80
+    },
+    {
+      "type": "checkbox",
+      "id": "flip_vertical",
+      "label": "Flip vertically (make wave curve upward)",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "flip_horizontal",
+      "label": "Flip horizontally",
+      "default": false
+    },
+    {
+        "type": "number",
+        "id": "margin_top",
+        "label": "Margin top (px)",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "margin_bottom",
+        "label": "Margin bottom (px)",
+        "default": -1
+      },
+    {
+      "type": "range",
+      "id": "zindex",
+      "min": -5,
+      "max": 10,
+      "step": 1,
+      "label": "Z-index",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wave divider",
+      "category": "Decor"
+    }
+  ]
+}
+{% endschema %}
