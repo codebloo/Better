@@ -16,18 +16,18 @@
 
 
 
-.sls-purchase-options-container{margin-bottom:9px;}
-.sls-purchase-options-label{
-color: #fff;
+.product-information .sls-purchase-options-container{margin-bottom:9px;}
+.product-information .sls-purchase-options-label{
+color: #fff!important;
 display: block;
 font-family: 'Petrona';
 font-size: 22px;
 margin-bottom: 18px;
 }
-.sls-price,
-.sealsubs-container .sls-option-container label{
+.product-information .sls-price,
+.product-information .sealsubs-container .sls-option-container label{
 	color: #fff;
 	font-size: 18px;}
 	
-.sls-subscription-details-label{color: #fff;}
-.sls-sub-icon svg{fill:#fff;}
+.product-information .sls-subscription-details-label{color: #fff;}
+.product-information .sls-sub-icon svg{fill:#fff!important;}
