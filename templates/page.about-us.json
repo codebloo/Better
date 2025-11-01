@@ -10,29 +10,27 @@
 {
   "sections": {
     "main": {
-      "type": "product-information",
+      "type": "main-page",
       "blocks": {
-        "media-gallery": {
-          "type": "_product-media-gallery",
-          "static": true,
+        "heading": {
+          "type": "text",
+          "name": "Title",
           "settings": {
-            "media_presentation": "carousel",
-            "media_columns": "two",
-            "image_gap": 4,
-            "large_first_image": false,
-            "icons_style": "none",
-            "slideshow_controls_style": "counter",
-            "slideshow_mobile_controls_style": "dots",
-            "thumbnail_position": "right",
-            "thumbnail_width": 44,
-            "aspect_ratio": "1",
-            "constrain_to_viewport": true,
-            "media_fit": "cover",
-            "media_radius": 0,
-            "extend_media": false,
-            "zoom": false,
-            "video_loop": false,
-            "hide_variants": true,
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -40,20 +38,155 @@
           },
           "blocks": {}
         },
-        "product-details": {
-          "type": "_product-details",
-          "static": true,
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "disabled": true,
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    },
+    "hero_8tEYrL": {
+      "type": "hero",
+      "blocks": {
+        "text_zaYyqV": {
+          "type": "text",
           "settings": {
-            "width": "fill",
+            "text": "<h1>The Better Movement</h1>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_EBcHfH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re here to change what \"better\" tastes like.<br/><br/>No sugar, no fake energy. Just real electrolytes, clean hydration, and bold flavor.</p><p><strong>Because better isn’t just what’s inside your drink.<br/><br/>It’s how you feel after every sip.</strong></p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 32,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_UDjB6q": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop Better Hydration",
+            "link": "shopify://collections/better-than-flavors",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
             "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_zaYyqV",
+        "text_EBcHfH",
+        "button_UDjB6q"
+      ],
+      "name": "t:names.hero",
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/BetterOrange.jpg",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "large",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-5",
+        "toggle_overlay": true,
+        "overlay_color": "#00000026",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 80,
+        "padding-block-end": 40
+      }
+    },
+    "section_MaK97E": {
+      "type": "section",
+      "blocks": {
+        "group_innnKi": {
+          "type": "group",
+          "name": "Image",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 40,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
-            "details_position": "flex-start",
-            "gap": 28,
-            "sticky_details_desktop": true,
+            "custom_height": 100,
             "inherit_color_scheme": true,
-            "color_scheme": "scheme-1",
+            "color_scheme": "",
             "background_media": "none",
             "video_position": "cover",
             "background_image_position": "cover",
@@ -61,15 +194,90 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "padding-block-start": 24,
-            "padding-block-end": 24,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_icgrde": {
+            "image_JXtCph": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/4_4c34b644-b348-40f6-90dc-f2841a3075ec.png",
+                "link": "",
+                "image_ratio": "square",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 6,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_JXtCph"
+          ]
+        },
+        "group_CJFA9T": {
+          "type": "group",
+          "name": "Text",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fill",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_HwBhje": {
               "type": "group",
-              "name": "Header",
+              "name": "t:names.group",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -78,9 +286,9 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
+                "gap": 18,
+                "width": "custom",
+                "custom_width": 70,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fit",
@@ -107,20 +315,20 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_Mxt3bE": {
+                "text_NErPhb": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "t:names.heading",
                   "settings": {
-                    "text": "<p><strong>Real energy. Real hydration. Real flavor.</strong></p>",
+                    "text": "<h2>We started Better to make hydration honest again.</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "h3",
                     "font": "var(--font-body--family)",
-                    "font_size": "0.75rem",
+                    "font_size": "1rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
-                    "case": "uppercase",
+                    "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
                     "background": false,
@@ -133,37 +341,11 @@
                   },
                   "blocks": {}
                 },
-                "text_xrnftG": {
-                  "type": "text",
-                  "name": "Product title",
-                  "settings": {
-                    "text": "<p>{{ closest.product.title }}</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h3",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_fNTVdL": {
+                "text_MEYN6f": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "{{ closest.product.metafields.custom.short_description | metafield_tag }}",
+                    "text": "<p>After years in the beverage industry, our founders saw how “healthy” drinks were anything but; loaded with sugar, caffeine, and artificial promises.</p><p>So they built <strong>Better</strong>, a clean hydration brand for people who want results <em>without compromise.</em> Each stick is powered by real electrolytes and nutrients, designed to refresh your body, energize your mind, and actually taste good.</p><p>It’s hydration that keeps up with your ambition, and makes feeling good, simple.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -187,140 +369,53 @@
                 }
               },
               "block_order": [
-                "text_Mxt3bE",
-                "text_xrnftG",
-                "text_fNTVdL"
+                "text_NErPhb",
+                "text_MEYN6f"
               ]
-            },
-            "variant_picker_R3rGDr": {
-              "type": "variant-picker",
-              "settings": {
-                "variant_style": "buttons",
-                "show_swatches": false,
-                "alignment": "left",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "group_qkDMLE": {
-              "type": "group",
-              "name": "t:names.group",
-              "settings": {
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 0,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": false,
-                "color_scheme": "scheme-2",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 6,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 9,
-                "padding-block-end": 0,
-                "padding-inline-start": 18,
-                "padding-inline-end": 18
-              },
-              "blocks": {
-                "seal_subscriptions_subscription_widget_BPUeNU": {
-                  "type": "shopify://apps/seal-subscriptions/blocks/subscription-widget/13b25004-a140-4ab7-b5fe-29918f759699",
-                  "settings": {
-                    "product": "{{closest.product}}"
-                  }
-                }
-              },
-              "block_order": [
-                "seal_subscriptions_subscription_widget_BPUeNU"
-              ]
-            },
-            "buy_buttons_eYQEYi": {
-              "type": "buy-buttons",
-              "settings": {
-                "stacking": true,
-                "show_pickup_availability": false,
-                "gift_card_form": true,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "quantity": {
-                  "type": "quantity",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                },
-                "add-to-cart": {
-                  "type": "add-to-cart",
-                  "static": true,
-                  "settings": {
-                    "style_class": "button"
-                  },
-                  "blocks": {}
-                },
-                "accelerated-checkout": {
-                  "type": "accelerated-checkout",
-                  "disabled": true,
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                }
-              },
-              "block_order": []
             }
           },
           "block_order": [
-            "group_icgrde",
-            "variant_picker_R3rGDr",
-            "group_qkDMLE",
-            "buy_buttons_eYQEYi"
+            "group_HwBhje"
           ]
         }
       },
-      "custom_css": [
-        ".sls-more-info-text {padding-bottom: 0;}",
-        ".sealsubs-container {margin-bottom: 0;}",
-        ".shopify-app-block {width: 100%;}"
+      "block_order": [
+        "group_innnKi",
+        "group_CJFA9T"
       ],
+      "name": "Our Story",
       "settings": {
-        "content_width": "content-center-aligned",
-        "desktop_media_position": "left",
-        "equal_columns": false,
-        "limit_details_width": false,
-        "gap": 48,
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
         "color_scheme": "",
-        "padding-block-start": 80,
-        "padding-block-end": 0
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
       }
     },
-    "section_KCHaqQ": {
+    "section_X4rBff": {
       "type": "section",
       "blocks": {
-        "group_ywn7RG": {
+        "group_nN83Ry": {
           "type": "group",
           "name": "Header",
           "settings": {
@@ -360,11 +455,11 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_Fijafz": {
+            "text_UGg7Hd": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Why You'll Love It</h2>",
+                "text": "<h2>Our Values</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -388,10 +483,10 @@
             }
           },
           "block_order": [
-            "text_Fijafz"
+            "text_UGg7Hd"
           ]
         },
-        "group_yak4F9": {
+        "group_Ey9PTD": {
           "type": "group",
           "name": "Cards",
           "settings": {
@@ -431,7 +526,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_tpAJH6": {
+            "group_6C9Ppq": {
               "type": "group",
               "name": "Reason Why",
               "settings": {
@@ -471,7 +566,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_7rXe96": {
+                "group_qcHgjR": {
                   "type": "group",
                   "name": "Icon",
                   "settings": {
@@ -511,7 +606,7 @@
                     "padding-inline-end": 18
                   },
                   "blocks": {
-                    "icon_Gem3bX": {
+                    "icon_yTUADT": {
                       "type": "icon",
                       "name": "t:names.icon",
                       "settings": {
@@ -525,10 +620,10 @@
                     }
                   },
                   "block_order": [
-                    "icon_Gem3bX"
+                    "icon_yTUADT"
                   ]
                 },
-                "group_LHaQPa": {
+                "group_mnFHxi": {
                   "type": "group",
                   "name": "Text",
                   "settings": {
@@ -568,11 +663,11 @@
                     "padding-inline-end": 18
                   },
                   "blocks": {
-                    "text_phBgTx": {
+                    "text_ETUpar": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h3>Hydration that lasts</h3>",
+                        "text": "<h3>Integrity</h3>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -594,11 +689,11 @@
                       },
                       "blocks": {}
                     },
-                    "text_aRHxbX": {
+                    "text_4VzBHw": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>20× more electrolytes than water to keep you balanced through workouts, travel, and long days.</p>",
+                        "text": "<p>We use science-backed ingredients that work naturally with your body, not against it.</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -622,17 +717,17 @@
                     }
                   },
                   "block_order": [
-                    "text_phBgTx",
-                    "text_aRHxbX"
+                    "text_ETUpar",
+                    "text_4VzBHw"
                   ]
                 }
               },
               "block_order": [
-                "group_7rXe96",
-                "group_LHaQPa"
+                "group_qcHgjR",
+                "group_mnFHxi"
               ]
             },
-            "group_hq3ddc": {
+            "group_NYwEAe": {
               "type": "group",
               "name": "Reason Why",
               "settings": {
@@ -672,7 +767,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_4LaDVg": {
+                "group_RRynrx": {
                   "type": "group",
                   "name": "Icon",
                   "settings": {
@@ -712,7 +807,7 @@
                     "padding-inline-end": 18
                   },
                   "blocks": {
-                    "icon_y4M4J9": {
+                    "icon_N6JBzN": {
                       "type": "icon",
                       "name": "t:names.icon",
                       "settings": {
@@ -726,10 +821,10 @@
                     }
                   },
                   "block_order": [
-                    "icon_y4M4J9"
+                    "icon_N6JBzN"
                   ]
                 },
-                "group_KJAagw": {
+                "group_96efkd": {
                   "type": "group",
                   "name": "Text",
                   "settings": {
@@ -769,11 +864,11 @@
                     "padding-inline-end": 18
                   },
                   "blocks": {
-                    "text_MrYN4k": {
+                    "text_N3Dmz9": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h3>Zero crash</h3>",
+                        "text": "<h3>Motivation</h3>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -795,11 +890,11 @@
                       },
                       "blocks": {}
                     },
-                    "text_dBKpmi": {
+                    "text_bgDJ99": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>",
+                        "text": "<p>We believe better energy starts with better hydration, and the drive to do what’s right for yourself every day.</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -823,17 +918,17 @@
                     }
                   },
                   "block_order": [
-                    "text_MrYN4k",
-                    "text_dBKpmi"
+                    "text_N3Dmz9",
+                    "text_bgDJ99"
                   ]
                 }
               },
               "block_order": [
-                "group_4LaDVg",
-                "group_KJAagw"
+                "group_RRynrx",
+                "group_96efkd"
               ]
             },
-            "group_LbWfJg": {
+            "group_cdtiGG": {
               "type": "group",
               "name": "Reason Why",
               "settings": {
@@ -873,7 +968,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_pXrRMN": {
+                "group_j3WGX4": {
                   "type": "group",
                   "name": "Icon",
                   "settings": {
@@ -913,7 +1008,7 @@
                     "padding-inline-end": 18
                   },
                   "blocks": {
-                    "icon_LPKtxr": {
+                    "icon_cDG7zh": {
                       "type": "icon",
                       "name": "t:names.icon",
                       "settings": {
@@ -927,10 +1022,10 @@
                     }
                   },
                   "block_order": [
-                    "icon_LPKtxr"
+                    "icon_cDG7zh"
                   ]
                 },
-                "group_A8UKLx": {
+                "group_8ajaH9": {
                   "type": "group",
                   "name": "Text",
                   "settings": {
@@ -970,11 +1065,11 @@
                     "padding-inline-end": 18
                   },
                   "blocks": {
-                    "text_xqVLNi": {
+                    "text_6Y37y7": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h3>Balanced electrolytes</h3>",
+                        "text": "<h3>Innovation</h3>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -996,11 +1091,11 @@
                       },
                       "blocks": {}
                     },
-                    "text_A9AWQ9": {
+                    "text_tQT4Ri": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Sodium, potassium, calcium, and magnesium in ratios your body actually recognizes.</p>",
+                        "text": "<p>We’re always improving what goes inside the pack so you get more from every sip.</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1024,17 +1119,17 @@
                     }
                   },
                   "block_order": [
-                    "text_xqVLNi",
-                    "text_A9AWQ9"
+                    "text_6Y37y7",
+                    "text_tQT4Ri"
                   ]
                 }
               },
               "block_order": [
-                "group_pXrRMN",
-                "group_A8UKLx"
+                "group_j3WGX4",
+                "group_8ajaH9"
               ]
             },
-            "group_Uw6dbc": {
+            "group_VTXtM3": {
               "type": "group",
               "name": "Reason Why",
               "settings": {
@@ -1074,7 +1169,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_3zFQ7W": {
+                "group_QMAHm3": {
                   "type": "group",
                   "name": "Icon",
                   "settings": {
@@ -1114,7 +1209,7 @@
                     "padding-inline-end": 18
                   },
                   "blocks": {
-                    "icon_nEznyw": {
+                    "icon_YLCiUb": {
                       "type": "icon",
                       "name": "t:names.icon",
                       "settings": {
@@ -1128,10 +1223,10 @@
                     }
                   },
                   "block_order": [
-                    "icon_nEznyw"
+                    "icon_YLCiUb"
                   ]
                 },
-                "group_H4pgMQ": {
+                "group_rCnMhP": {
                   "type": "group",
                   "name": "Text",
                   "settings": {
@@ -1171,11 +1266,11 @@
                     "padding-inline-end": 18
                   },
                   "blocks": {
-                    "text_TKqPj9": {
+                    "text_qDmj6C": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h3>Tastes amazing</h3>",
+                        "text": "<h3>Fun</h3>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1197,11 +1292,11 @@
                       },
                       "blocks": {}
                     },
-                    "text_KwV4in": {
+                    "text_UpKELa": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Because if it doesn’t taste good, you won’t drink it. Staying hydrated shouldn’t feel like a chore.</p>",
+                        "text": "<p>Better hydration should taste amazing. Every flavor is crafted to make you smile.</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1225,17 +1320,17 @@
                     }
                   },
                   "block_order": [
-                    "text_TKqPj9",
-                    "text_KwV4in"
+                    "text_qDmj6C",
+                    "text_UpKELa"
                   ]
                 }
               },
               "block_order": [
-                "group_3zFQ7W",
-                "group_H4pgMQ"
+                "group_QMAHm3",
+                "group_rCnMhP"
               ]
             },
-            "group_jyG6P4": {
+            "group_gpnJfK": {
               "type": "group",
               "name": "Reason Why",
               "settings": {
@@ -1275,7 +1370,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_mTRcHw": {
+                "group_BtHQJY": {
                   "type": "group",
                   "name": "Icon",
                   "settings": {
@@ -1315,7 +1410,7 @@
                     "padding-inline-end": 18
                   },
                   "blocks": {
-                    "icon_GpKgEJ": {
+                    "icon_cMzNNz": {
                       "type": "icon",
                       "name": "t:names.icon",
                       "settings": {
@@ -1329,10 +1424,10 @@
                     }
                   },
                   "block_order": [
-                    "icon_GpKgEJ"
+                    "icon_cMzNNz"
                   ]
                 },
-                "group_y9PeVq": {
+                "group_bipBCB": {
                   "type": "group",
                   "name": "Text",
                   "settings": {
@@ -1372,11 +1467,11 @@
                     "padding-inline-end": 18
                   },
                   "blocks": {
-                    "text_zR4Hkq": {
+                    "text_iE3VkF": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h3>Clean ingredients</h3>",
+                        "text": "<h3>Aspiration</h3>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1398,11 +1493,11 @@
                       },
                       "blocks": {}
                     },
-                    "text_ChUJNT": {
+                    "text_PJEW7w": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>No sugar, no fake stuff, no mystery \"proprietary blends.\" Just the essentials that work.</p>",
+                        "text": "<p>Our mission extends beyond the drink, fueling confidence, wellness, and giving back through hydration programs worldwide</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1426,31 +1521,31 @@
                     }
                   },
                   "block_order": [
-                    "text_zR4Hkq",
-                    "text_ChUJNT"
+                    "text_iE3VkF",
+                    "text_PJEW7w"
                   ]
                 }
               },
               "block_order": [
-                "group_mTRcHw",
-                "group_y9PeVq"
+                "group_BtHQJY",
+                "group_bipBCB"
               ]
             }
           },
           "block_order": [
-            "group_tpAJH6",
-            "group_hq3ddc",
-            "group_LbWfJg",
-            "group_Uw6dbc",
-            "group_jyG6P4"
+            "group_6C9Ppq",
+            "group_NYwEAe",
+            "group_cdtiGG",
+            "group_VTXtM3",
+            "group_gpnJfK"
           ]
         }
       },
       "block_order": [
-        "group_ywn7RG",
-        "group_yak4F9"
+        "group_nN83Ry",
+        "group_Ey9PTD"
       ],
-      "name": "Why you'll love it",
+      "name": "Our Values",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1479,186 +1574,19 @@
         "padding-block-end": 45
       }
     },
-    "section_mnX4cK": {
+    "section_CwfXhT": {
       "type": "section",
       "blocks": {
-        "group_HAiVpm": {
+        "group_wg9FLT": {
           "type": "group",
-          "name": "How to use",
+          "name": "t:names.group",
           "settings": {
-            "content_direction": "row",
+            "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fill",
-            "custom_height": 100,
-            "inherit_color_scheme": false,
-            "color_scheme": "scheme-08e26847-1c56-444f-8470-dd4055b6e6ce",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "image_GmxV8t": {
-              "type": "image",
-              "name": "t:names.image",
-              "settings": {
-                "image": "shopify://shop_images/Better_than_WaterLemonLime.png",
-                "link": "",
-                "image_ratio": "adapt",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fill",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 6,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "group_RYUWDV": {
-              "type": "group",
-              "name": "Text",
-              "settings": {
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 9,
-                "width": "fit-content",
-                "custom_width": 60,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fill",
-                "custom_height": 100,
-                "inherit_color_scheme": false,
-                "color_scheme": "scheme-08e26847-1c56-444f-8470-dd4055b6e6ce",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 6,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 18,
-                "padding-block-end": 18,
-                "padding-inline-start": 36,
-                "padding-inline-end": 36
-              },
-              "blocks": {
-                "text_rHMLaU": {
-                  "type": "text",
-                  "name": "t:names.heading",
-                  "settings": {
-                    "text": "<h2>How to Use</h2>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_93BkNP": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Mix one stick with 16–20 oz of cold water. <br/>Drink pre- or post-workout, mid-day, or anytime you need a lift.</p>",
-                    "width": "fit-content",
-                    "max_width": "narrow",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_rHMLaU",
-                "text_93BkNP"
-              ]
-            }
-          },
-          "block_order": [
-            "image_GmxV8t",
-            "group_RYUWDV"
-          ]
-        },
-        "group_qE8PDx": {
-          "type": "group",
-          "name": "Ingredients",
-          "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
             "width": "fill",
@@ -1689,33 +1617,33 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_gpa6B4": {
+            "group_aAixdj": {
               "type": "group",
-              "name": "Text",
+              "name": "t:names.group",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 9,
-                "width": "fit-content",
-                "custom_width": 60,
+                "gap": 18,
+                "width": "custom",
+                "custom_width": 70,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "height": "fill",
+                "height": "fit",
                 "custom_height": 100,
-                "inherit_color_scheme": false,
-                "color_scheme": "scheme-3",
+                "inherit_color_scheme": true,
+                "color_scheme": "",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_radius": 6,
+                "border_radius": 0,
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
@@ -1723,17 +1651,69 @@
                 "link": "",
                 "open_in_new_tab": false,
                 "placeholder": "",
-                "padding-block-start": 18,
-                "padding-block-end": 18,
-                "padding-inline-start": 36,
-                "padding-inline-end": 36
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
               "blocks": {
-                "text_axLhBk": {
+                "text_rmUAjx": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Ingredients</h2>",
+                    "text": "<h2>What makes Better, <em>better</em>.</h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_XpAjpj": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Every scoop, stick, or sip is made to deliver:</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_mqC3Rf": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<ul><li><strong>Real hydration:</strong> balanced electrolytes that match your body’s natural rhythm.<br/><br/></li><li><strong>Clean energy:</strong> caffeine-free focus powered by B vitamins, D3, and K2.<br/><br/></li><li><strong>Flavor you’ll crave:</strong> made with taste in mind, because better can be delicious.<br/><br/></li><li><strong>Transparency always:</strong> no gimmicks, no hidden junk, no compromises.</li></ul>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1755,114 +1735,391 @@
                   },
                   "blocks": {}
                 },
-                "image_Q88Tth": {
-                  "type": "image",
-                  "name": "t:names.image",
+                "group_DmWNRD": {
+                  "type": "group",
+                  "name": "Icons",
                   "settings": {
-                    "image": "shopify://shop_images/10_71c7ba5c-95a5-44ca-82e9-b1d7c9d6a1e1.png",
-                    "link": "",
-                    "image_ratio": "adapt",
+                    "content_direction": "row",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "center",
+                    "vertical_alignment": "flex-start",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 12,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
                     "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
                     "border": "none",
                     "border_width": 1,
                     "border_opacity": 100,
                     "border_radius": 0,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
-                  "blocks": {}
-                },
-                "text_dx76Mi": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "",
-                    "width": "fit-content",
-                    "max_width": "narrow",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                  "blocks": {
+                    "group_mxe86t": {
+                      "type": "group",
+                      "name": "Icon",
+                      "settings": {
+                        "content_direction": "column",
+                        "vertical_on_mobile": true,
+                        "horizontal_alignment": "flex-start",
+                        "vertical_alignment": "center",
+                        "align_baseline": false,
+                        "horizontal_alignment_flex_direction_column": "center",
+                        "vertical_alignment_flex_direction_column": "flex-start",
+                        "gap": 9,
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fill",
+                        "custom_height": 100,
+                        "inherit_color_scheme": false,
+                        "color_scheme": "scheme-3",
+                        "background_media": "none",
+                        "video_position": "cover",
+                        "background_image_position": "cover",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 6,
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
+                        "overlay_style": "solid",
+                        "gradient_direction": "to top",
+                        "link": "",
+                        "open_in_new_tab": false,
+                        "placeholder": "",
+                        "padding-block-start": 9,
+                        "padding-block-end": 9,
+                        "padding-inline-start": 9,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {
+                        "icon_7WV36g": {
+                          "type": "icon",
+                          "name": "t:names.icon",
+                          "settings": {
+                            "icon": "price_tag",
+                            "width": 24,
+                            "link": "",
+                            "open_in_new_tab": false
+                          },
+                          "blocks": {}
+                        },
+                        "text_GeqLKE": {
+                          "type": "text",
+                          "name": "t:names.text",
+                          "settings": {
+                            "text": "<p>20x more electrolytes than water.</p>",
+                            "width": "fit-content",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "color": "var(--color-foreground)",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "icon_7WV36g",
+                        "text_GeqLKE"
+                      ]
+                    },
+                    "group_EHRPnE": {
+                      "type": "group",
+                      "name": "Icon",
+                      "settings": {
+                        "content_direction": "column",
+                        "vertical_on_mobile": true,
+                        "horizontal_alignment": "flex-start",
+                        "vertical_alignment": "center",
+                        "align_baseline": false,
+                        "horizontal_alignment_flex_direction_column": "center",
+                        "vertical_alignment_flex_direction_column": "flex-start",
+                        "gap": 9,
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fill",
+                        "custom_height": 100,
+                        "inherit_color_scheme": false,
+                        "color_scheme": "scheme-3",
+                        "background_media": "none",
+                        "video_position": "cover",
+                        "background_image_position": "cover",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 6,
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
+                        "overlay_style": "solid",
+                        "gradient_direction": "to top",
+                        "link": "",
+                        "open_in_new_tab": false,
+                        "placeholder": "",
+                        "padding-block-start": 9,
+                        "padding-block-end": 9,
+                        "padding-inline-start": 9,
+                        "padding-inline-end": 9
+                      },
+                      "blocks": {
+                        "icon_DJAmwc": {
+                          "type": "icon",
+                          "name": "t:names.icon",
+                          "settings": {
+                            "icon": "price_tag",
+                            "width": 24,
+                            "link": "",
+                            "open_in_new_tab": false
+                          },
+                          "blocks": {}
+                        },
+                        "text_VMRWYq": {
+                          "type": "text",
+                          "name": "t:names.text",
+                          "settings": {
+                            "text": "<p>0g sugar.</p>",
+                            "width": "fit-content",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "color": "var(--color-foreground)",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "icon_DJAmwc",
+                        "text_VMRWYq"
+                      ]
+                    },
+                    "group_qRyjcp": {
+                      "type": "group",
+                      "name": "Icon",
+                      "settings": {
+                        "content_direction": "column",
+                        "vertical_on_mobile": true,
+                        "horizontal_alignment": "flex-start",
+                        "vertical_alignment": "center",
+                        "align_baseline": false,
+                        "horizontal_alignment_flex_direction_column": "center",
+                        "vertical_alignment_flex_direction_column": "flex-start",
+                        "gap": 9,
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fill",
+                        "custom_height": 100,
+                        "inherit_color_scheme": false,
+                        "color_scheme": "scheme-3",
+                        "background_media": "none",
+                        "video_position": "cover",
+                        "background_image_position": "cover",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 6,
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
+                        "overlay_style": "solid",
+                        "gradient_direction": "to top",
+                        "link": "",
+                        "open_in_new_tab": false,
+                        "placeholder": "",
+                        "padding-block-start": 9,
+                        "padding-block-end": 9,
+                        "padding-inline-start": 9,
+                        "padding-inline-end": 9
+                      },
+                      "blocks": {
+                        "icon_KApHCw": {
+                          "type": "icon",
+                          "name": "t:names.icon",
+                          "settings": {
+                            "icon": "price_tag",
+                            "width": 24,
+                            "link": "",
+                            "open_in_new_tab": false
+                          },
+                          "blocks": {}
+                        },
+                        "text_TGaUDp": {
+                          "type": "text",
+                          "name": "t:names.text",
+                          "settings": {
+                            "text": "<p>100% feel-good flavor.</p>",
+                            "width": "fit-content",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "color": "var(--color-foreground)",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "icon_KApHCw",
+                        "text_TGaUDp"
+                      ]
+                    }
                   },
-                  "blocks": {}
+                  "block_order": [
+                    "group_mxe86t",
+                    "group_EHRPnE",
+                    "group_qRyjcp"
+                  ]
                 }
               },
               "block_order": [
-                "text_axLhBk",
-                "image_Q88Tth",
-                "text_dx76Mi"
+                "text_rmUAjx",
+                "text_XpAjpj",
+                "text_mqC3Rf",
+                "group_DmWNRD"
               ]
             }
           },
           "block_order": [
-            "group_gpa6B4"
+            "group_aAixdj"
+          ]
+        },
+        "group_6qXTB6": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 40,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "image_3HDEb8": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/4_4c34b644-b348-40f6-90dc-f2841a3075ec.png",
+                "link": "",
+                "image_ratio": "square",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 6,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_3HDEb8"
           ]
         }
       },
       "block_order": [
-        "group_HAiVpm",
-        "group_qE8PDx"
+        "group_wg9FLT",
+        "group_6qXTB6"
       ],
-      "name": "Usage & Nutrition",
+      "name": "The Better Promise",
       "settings": {
         "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "center",
-        "vertical_alignment": "flex-start",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 18,
-        "section_width": "page-width",
-        "section_height": "small",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 6,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "1762035016c8fd612a": {
-      "type": "_blocks",
-      "blocks": {
-        "appio_product_reviews_reviews_widget_3AHrJj": {
-          "type": "shopify://apps/appio-product-reviews/blocks/reviews-widget/569167b3-e5d6-4314-9866-f51281b506d7",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "appio_product_reviews_reviews_widget_3AHrJj"
-      ],
-      "settings": {
-        "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
@@ -1871,7 +2128,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "page-width",
-        "section_height": "",
+        "section_height": "small",
         "section_height_custom": 50,
         "color_scheme": "",
         "background_media": "none",
@@ -1886,14 +2143,121 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-end": 40
+      }
+    },
+    "section_E9eWRN": {
+      "type": "section",
+      "blocks": {
+        "text_QHYgYY": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Ready to feel better?</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_Qq6PP8": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h3>Join the clean hydration movement.</h3>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_wj4e44": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop Flavors",
+            "link": "shopify://collections/better-than-flavors",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_QHYgYY",
+        "text_Qq6PP8",
+        "button_wj4e44"
+      ],
+      "name": "CTA",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-3",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 80
       }
     }
   },
   "order": [
     "main",
-    "section_KCHaqQ",
-    "section_mnX4cK",
-    "1762035016c8fd612a"
+    "hero_8tEYrL",
+    "section_MaK97E",
+    "section_X4rBff",
+    "section_CwfXhT",
+    "section_E9eWRN"
   ]
 }
