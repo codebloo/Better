@@ -17,7 +17,7 @@
       "settings": {
         "overlap_next": false,
         "overlap_previous": true,
-        "fill": "#803d29",
+        "fill": "#0066a6",
         "height": 80,
         "flip_vertical": true,
         "flip_horizontal": false,
@@ -158,7 +158,7 @@
       "settings": {
         "section_width": "page-width",
         "gap": 20,
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-6",
         "padding-block-start": 30,
         "padding-block-end": 30
       }
@@ -213,7 +213,7 @@
         "section_width": "page-width",
         "gap": 24,
         "divider_thickness": 0,
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-6",
         "padding-block-start": 20,
         "padding-block-end": 48
       }

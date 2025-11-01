@@ -462,7 +462,7 @@
       },
       "name": "Featured collection",
       "settings": {
-        "collection": "all",
+        "collection": "better-than-flavors",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 8,
@@ -876,7 +876,7 @@
             "open_in_new_tab": false,
             "placeholder": "",
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 80,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -973,7 +973,7 @@
         "section_width": "full-width",
         "section_height": "medium",
         "section_height_custom": 25,
-        "color_scheme": "scheme-063f1e1e-ee13-43c2-87da-2ac73b141428",
+        "color_scheme": "scheme-7eef5154-2807-4d84-b6b5-3112b5b4ec39",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",

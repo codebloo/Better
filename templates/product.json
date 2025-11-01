@@ -25,12 +25,12 @@
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "right",
             "thumbnail_width": 44,
-            "aspect_ratio": "adapt",
+            "aspect_ratio": "1",
             "constrain_to_viewport": true,
-            "media_fit": "contain",
+            "media_fit": "cover",
             "media_radius": 0,
             "extend_media": false,
-            "zoom": true,
+            "zoom": false,
             "video_loop": false,
             "hide_variants": true,
             "padding-block-start": 0,
@@ -163,7 +163,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Hydrate faster and feel better with our 4-in-1 blend for <strong>Hydration, Energy, Metabolism, and Focus, </strong>made to work with your body, not against it.</p>",
+                    "text": "{{ closest.product.metafields.custom.short_description | metafield_tag }}",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -192,40 +192,6 @@
                 "text_fNTVdL"
               ]
             },
-            "divider_VJhene": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "thickness": 1,
-                "corner_radius": "square",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
-            },
-            "price_YXBkqJ": {
-              "type": "price",
-              "settings": {
-                "show_sale_price_first": true,
-                "show_installments": false,
-                "show_tax_info": false,
-                "type_preset": "paragraph",
-                "width": "100%",
-                "alignment": "left",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "color": "var(--color-foreground)",
-                "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "variant_picker_R3rGDr": {
               "type": "variant-picker",
               "settings": {
@@ -238,6 +204,57 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "group_qkDMLE": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": false,
+                "color_scheme": "scheme-2",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 6,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 9,
+                "padding-block-end": 0,
+                "padding-inline-start": 18,
+                "padding-inline-end": 18
+              },
+              "blocks": {
+                "seal_subscriptions_subscription_widget_BPUeNU": {
+                  "type": "shopify://apps/seal-subscriptions/blocks/subscription-widget/13b25004-a140-4ab7-b5fe-29918f759699",
+                  "settings": {
+                    "product": "{{closest.product}}"
+                  }
+                }
+              },
+              "block_order": [
+                "seal_subscriptions_subscription_widget_BPUeNU"
+              ]
             },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
@@ -278,13 +295,17 @@
           },
           "block_order": [
             "group_icgrde",
-            "divider_VJhene",
-            "price_YXBkqJ",
             "variant_picker_R3rGDr",
+            "group_qkDMLE",
             "buy_buttons_eYQEYi"
           ]
         }
       },
+      "custom_css": [
+        ".sls-more-info-text {padding-bottom: 0;}",
+        ".sealsubs-container {margin-bottom: 0;}",
+        ".shopify-app-block {width: 100%;}"
+      ],
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
@@ -461,7 +482,7 @@
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 12,
+                    "gap": 0,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -495,7 +516,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "width": 24,
+                        "image_upload": "shopify://shop_images/016-mineral_water.svg",
+                        "width": 60,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -661,7 +683,7 @@
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 12,
+                    "gap": 0,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -695,7 +717,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "width": 24,
+                        "image_upload": "shopify://shop_images/047-calories.svg",
+                        "width": 60,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -861,7 +884,7 @@
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 12,
+                    "gap": 0,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -895,7 +918,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "width": 24,
+                        "image_upload": "shopify://shop_images/043-scale.svg",
+                        "width": 60,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -1061,7 +1085,7 @@
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 12,
+                    "gap": 0,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -1095,7 +1119,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "width": 24,
+                        "image_upload": "shopify://shop_images/049-banana.svg",
+                        "width": 60,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -1261,7 +1286,7 @@
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 12,
+                    "gap": 0,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -1295,7 +1320,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "width": 24,
+                        "image_upload": "shopify://shop_images/039-no_sugar.svg",
+                        "width": 60,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -1453,6 +1479,203 @@
         "padding-block-end": 45
       }
     },
+    "section_mnX4cK": {
+      "type": "section",
+      "blocks": {
+        "image_RXfqn8": {
+          "type": "image",
+          "name": "t:names.image",
+          "settings": {
+            "image": "shopify://shop_images/Better_than_WaterLemonLime.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fill",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 6,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_zwwEAa": {
+          "type": "group",
+          "name": "Text",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 9,
+            "width": "fit-content",
+            "custom_width": 60,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fill",
+            "custom_height": 100,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-08e26847-1c56-444f-8470-dd4055b6e6ce",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 6,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 18,
+            "padding-block-end": 18,
+            "padding-inline-start": 36,
+            "padding-inline-end": 36
+          },
+          "blocks": {
+            "text_rHMLaU": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>How to Use</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_93BkNP": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Mix one stick with 16–20 oz of cold water. <br/>Drink pre- or post-workout, mid-day, or anytime you need a lift.</p>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_rHMLaU",
+            "text_93BkNP"
+          ]
+        }
+      },
+      "block_order": [
+        "image_RXfqn8",
+        "group_zwwEAa"
+      ],
+      "name": "How to Use",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 6,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "1762035016c8fd612a": {
+      "type": "_blocks",
+      "blocks": {
+        "appio_product_reviews_reviews_widget_3AHrJj": {
+          "type": "shopify://apps/appio-product-reviews/blocks/reviews-widget/569167b3-e5d6-4314-9866-f51281b506d7",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "appio_product_reviews_reviews_widget_3AHrJj"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "product_recommendations_qggXJq": {
       "type": "product-recommendations",
       "blocks": {
@@ -1598,6 +1821,8 @@
   "order": [
     "main",
     "section_KCHaqQ",
+    "section_mnX4cK",
+    "1762035016c8fd612a",
     "product_recommendations_qggXJq"
   ]
 }

@@ -15,3 +15,19 @@
 }
 
 
+
+.sls-purchase-options-container{margin-bottom:9px;}
+.sls-purchase-options-label{
+color: #fff;
+display: block;
+font-family: 'Petrona';
+font-size: 22px;
+margin-bottom: 18px;
+}
+.sls-price,
+.sealsubs-container .sls-option-container label{
+	color: #fff;
+	font-size: 18px;}
+	
+.sls-subscription-details-label{color: #fff;}
+.sls-sub-icon svg{fill:#fff;}
