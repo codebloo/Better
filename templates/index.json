@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "hero_jVaWmY": {
-      "type": "hero",
+    "section_GWFGq9": {
+      "type": "section",
       "blocks": {
-        "group_yVQTra": {
+        "group_f9HX64": {
           "type": "group",
           "name": "t:names.group",
           "settings": {
@@ -21,17 +21,17 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-end",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 18,
+            "gap": 12,
             "width": "custom",
-            "custom_width": 50,
+            "custom_width": 40,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
             "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-08e26847-1c56-444f-8470-dd4055b6e6ce",
             "background_media": "none",
             "video_position": "cover",
             "background_image_position": "cover",
@@ -49,18 +49,86 @@
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 36
+            "padding-inline-end": 0
           },
           "blocks": {
-            "text_r68AWE": {
+            "image_4xRwWQ": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/Better_than_WaterLemonLime.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_4xRwWQ"
+          ]
+        },
+        "group_KYzEpD": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 18,
+            "width": "fill",
+            "custom_width": 60,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fill",
+            "custom_height": 100,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-08e26847-1c56-444f-8470-dd4055b6e6ce",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_BA4UmT": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>Real Tastes Better.</p>",
+                "text": "<h1>Real Tastes Better.</h1>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h2",
+                "type_preset": "h1",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -78,15 +146,15 @@
               },
               "blocks": {}
             },
-            "text_7YC9Kh": {
+            "text_eGrLpe": {
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Clean soda built on honest electrolytes, <br/>zero sugar, and the radical idea that flavor matters.</p>",
+                "text": "<h2>Clean soda built on honest electrolytes, <br/>zero sugar, and the radical idea that flavor matters.</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "h4",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -104,7 +172,7 @@
               },
               "blocks": {}
             },
-            "button_rar7gf": {
+            "button_R3tDP9": {
               "type": "button",
               "name": "t:names.button",
               "settings": {
@@ -121,46 +189,43 @@
             }
           },
           "block_order": [
-            "text_r68AWE",
-            "text_7YC9Kh",
-            "button_rar7gf"
+            "text_BA4UmT",
+            "text_eGrLpe",
+            "button_R3tDP9"
           ]
         }
       },
       "block_order": [
-        "group_yVQTra"
+        "group_f9HX64",
+        "group_KYzEpD"
       ],
-      "name": "t:names.hero",
+      "name": "Hero Custom",
       "settings": {
-        "media_type_1": "image",
-        "image_1": "shopify://shop_images/BetterOrange.jpg",
-        "media_type_2": "image",
-        "stack_media_on_mobile": false,
-        "custom_mobile_media": false,
-        "media_type_1_mobile": "image",
-        "media_type_2_mobile": "image",
-        "link": "",
-        "open_in_new_tab": false,
-        "content_direction": "column",
+        "content_direction": "row",
         "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "flex-end",
-        "align_baseline": true,
-        "horizontal_alignment_flex_direction_column": "flex-end",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 24,
+        "gap": 0,
         "section_width": "full-width",
-        "section_height": "large",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "section_height": "small",
+        "section_height_custom": 25,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
         "toggle_overlay": false,
-        "overlay_color": "#12121266",
+        "overlay_color": "#00000026",
         "overlay_style": "solid",
-        "gradient_direction": "to bottom",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 72
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "cb_wave_divider_zxwjJK": {
@@ -168,7 +233,7 @@
       "name": "CB Wave divider",
       "settings": {
         "overlap_previous": false,
-        "fill": "#f3d4a7",
+        "fill": "#edebc0",
         "height": 80,
         "flip_vertical": false,
         "flip_horizontal": false,
@@ -373,7 +438,7 @@
     }
   },
   "order": [
-    "hero_jVaWmY",
+    "section_GWFGq9",
     "cb_wave_divider_zxwjJK",
     "product_list_fa6P9H"
   ]
