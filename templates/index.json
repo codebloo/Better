@@ -114,10 +114,10 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-block-start": 9,
+            "padding-block-end": 9,
+            "padding-inline-start": 18,
+            "padding-inline-end": 18
           },
           "blocks": {
             "text_jWeMFp": {
@@ -150,7 +150,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h2>Clean soda built on honest electrolytes, <br/>zero sugar, and the radical idea that flavor matters.</h2>",
+                "text": "<h2>Delicious hydration powder built on honest electrolytes, <br/>zero sugar, and the radical idea that flavor matters.</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -855,9 +855,9 @@
             "gap": 18,
             "width": "fill",
             "custom_width": 60,
-            "width_mobile": "fill",
+            "width_mobile": "fit-content",
             "custom_width_mobile": 100,
-            "height": "fill",
+            "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
             "color_scheme": "scheme-08e26847-1c56-444f-8470-dd4055b6e6ce",
@@ -875,10 +875,10 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 0,
+            "padding-block-start": 36,
             "padding-block-end": 80,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-inline-start": 36,
+            "padding-inline-end": 36
           },
           "blocks": {
             "text_BA4UmT": {
@@ -913,7 +913,7 @@
               "settings": {
                 "text": "<p>We don’t hide ingredients behind science. We explain them.</p>",
                 "width": "fit-content",
-                "max_width": "normal",
+                "max_width": "narrow",
                 "alignment": "left",
                 "type_preset": "h4",
                 "font": "var(--font-body--family)",
