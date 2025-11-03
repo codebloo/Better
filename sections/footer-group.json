@@ -13,6 +13,7 @@
   "sections": {
     "cb_wave_divider_3mw4tm": {
       "type": "cb-wave-divider",
+      "custom_css": [],
       "name": "CB: Wave divider",
       "settings": {
         "overlap_next": false,
@@ -474,45 +475,183 @@
         "padding-block-end": 30
       }
     },
-    "footer_utilities_jLGE8U": {
-      "type": "footer-utilities",
+    "section_RBQGWQ": {
+      "type": "section",
       "blocks": {
-        "footer_copyright_jweRK8": {
-          "type": "footer-copyright",
+        "group_EUjpbw": {
+          "type": "group",
+          "name": "Sub Footer",
           "settings": {
-            "show_powered_by": false,
-            "font_size": "0.75rem",
-            "case": "uppercase"
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fill",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "footer_copyright_LT8Wcc": {
+              "type": "footer-copyright",
+              "name": "t:names.copyright",
+              "settings": {
+                "show_powered_by": false,
+                "font_size": "0.75rem",
+                "case": "none"
+              },
+              "blocks": {}
+            },
+            "footer_policy_list_iCnqRj": {
+              "type": "footer-policy-list",
+              "name": "t:names.policy_list",
+              "settings": {
+                "font_size": "0.75rem",
+                "case": "none"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "footer_copyright_LT8Wcc",
+            "footer_policy_list_iCnqRj"
+          ]
         },
-        "footer_policy_list_VCdnpa": {
-          "type": "footer-policy-list",
+        "group_iiiHKY": {
+          "type": "group",
+          "name": "FDA",
           "settings": {
-            "font_size": "0.75rem",
-            "case": "none"
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "text_efmC7t": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><em>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</em></p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_efmC7t"
+          ]
         }
       },
       "block_order": [
-        "footer_copyright_jweRK8",
-        "footer_policy_list_VCdnpa"
+        "group_EUjpbw",
+        "group_iiiHKY"
       ],
-      "name": "t:names.utilities",
+      "name": "t:names.custom_section",
       "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
         "section_width": "page-width",
-        "gap": 24,
-        "divider_thickness": 0,
+        "section_height": "",
+        "section_height_custom": 50,
         "color_scheme": "scheme-6",
-        "padding-block-start": 20,
-        "padding-block-end": 48
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 18
       }
     }
   },
   "order": [
     "cb_wave_divider_3mw4tm",
     "footer_m9NzUG",
-    "footer_utilities_jLGE8U"
+    "section_RBQGWQ"
   ]
 }

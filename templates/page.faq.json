@@ -310,7 +310,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "Is it sugar-free?",
+                "heading": "Does Better contain sugar?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -319,7 +319,7 @@
                 "text_HcCf6r": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Yes. Better contains <strong>0g sugar</strong> and no artificial sweeteners.<br/><br/>We use natural flavors and a touch of plant-based stevia for smoothness.</p>",
+                    "text": "<p>Yes, just a little. Each serving includes <strong>5g of organic cane sugar</strong>, which helps your body absorb electrolytes more efficiently and gives Better its naturally balanced flavor. We believe a touch of real sugar is better than artificial sweeteners that can upset your system or taste synthetic.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -344,6 +344,46 @@
               },
               "block_order": [
                 "text_HcCf6r"
+              ]
+            },
+            "accordion_row_hdnaiR": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Is Better keto-friendly or okay for low-sugar diets?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_9KGmTR": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Better isn’t fully keto, but it’s <strong>low-sugar and designed for balance</strong>, not restriction. The small amount of organic cane sugar supports hydration and energy without the crash or artificial aftertaste of zero-calorie sweeteners. Most customers find it fits easily into balanced, health-focused lifestyles,  including intermittent fasting and moderate low-carb plans.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_9KGmTR"
               ]
             },
             "accordion_row_zpFGiE": {
@@ -674,6 +714,7 @@
             "accordion_row_eQ3Lc9",
             "accordion_row_TEFX87",
             "accordion_row_LAXiiD",
+            "accordion_row_hdnaiR",
             "accordion_row_zpFGiE",
             "accordion_row_EJnNAc",
             "accordion_row_CJ6PH6",

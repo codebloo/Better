@@ -1,11 +1,15 @@
-
-
 {% if closest.product == blank %}
   {% assign text = 'placeholders.product_title' | t %}
   {% assign product_title = '<p>' | append: text | append: '</p>' %}
   {% render 'text', fallback_text: product_title, block: block %}
-{% elsif closest.product != blank %}
-  {% assign product_title = '<p>' | append: closest.product.title | append: '</p>' %}
+
+{% else %}
+  {%- assign display_title = closest.product.title -%}
+  {%- if closest.product.metafields.custom.flavor_title != blank -%}
+    {%- assign display_title = closest.product.metafields.custom.flavor_title -%}
+  {%- endif -%}
+
+  {%- assign product_title = '<p>' | append: display_title | append: '</p>' -%}
   <a
     class="contents user-select-text"
     ref="productTitleLink"
@@ -14,6 +18,7 @@
     {% render 'text', fallback_text: product_title, block: block %}
   </a>
 {% endif %}
+
 
 {% schema %}
 {

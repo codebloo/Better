@@ -32,7 +32,7 @@
             "extend_media": false,
             "zoom": false,
             "video_loop": false,
-            "hide_variants": true,
+            "hide_variants": false,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -107,56 +107,6 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_Mxt3bE": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "disabled": true,
-                  "settings": {
-                    "text": "<p><strong>Better energy. Better hydration. Better flavor.</strong></p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "custom",
-                    "font": "var(--font-body--family)",
-                    "font_size": "0.75rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "uppercase",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "ai_gen_block_8b04e1b_MThhAx": {
-                  "type": "ai_gen_block_8b04e1b",
-                  "settings": {
-                    "show_label": false,
-                    "label_text": "",
-                    "separator": "",
-                    "label_size": 14,
-                    "label_color": "#5c4033",
-                    "label_weight": "600",
-                    "label_uppercase": false,
-                    "value_size": 14,
-                    "value_color": "#5c4033",
-                    "value_weight": "600",
-                    "value_uppercase": false,
-                    "link_to_collection": false,
-                    "link_color": "#0066a6",
-                    "link_hover_color": "#035385",
-                    "link_underline_on_hover": false,
-                    "padding": 10,
-                    "separator_color": "#5c4033"
-                  },
-                  "blocks": {}
-                },
                 "product_title_9U6xRm": {
                   "type": "product-title",
                   "name": "t:names.title",
@@ -175,6 +125,29 @@
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_4abrD6": {
+                  "type": "price",
+                  "name": "t:names.product_price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -207,40 +180,12 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
-                },
-                "product_description_kDQEjk": {
-                  "type": "product-description",
-                  "name": "t:names.product_description",
-                  "settings": {
-                    "text": "{{ closest.product.description }}",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
-                "text_Mxt3bE",
-                "ai_gen_block_8b04e1b_MThhAx",
                 "product_title_9U6xRm",
-                "text_WJWtCC",
-                "product_description_kDQEjk"
+                "price_4abrD6",
+                "text_WJWtCC"
               ]
             },
             "variant_picker_R3rGDr": {
@@ -255,12 +200,6 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "seal_subscriptions_subscription_widget_8UMpdd": {
-              "type": "shopify://apps/seal-subscriptions/blocks/subscription-widget/13b25004-a140-4ab7-b5fe-29918f759699",
-              "settings": {
-                "product": "{{closest.product}}"
-              }
             },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
@@ -297,13 +236,308 @@
                 }
               },
               "block_order": []
+            },
+            "text_pVFikC": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Better 40 Bundle Includes</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "accordion_hnb6AN": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "type_preset": "h5",
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_jMk9a4": {
+                  "type": "_accordion-row",
+                  "name": "t:names.accordion_row",
+                  "settings": {
+                    "heading": "Hyburt Hydration Mix",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_xCRFcM": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>45 Hyburst energy & hydration packets loaded with our proprietary blend of electrolytes, vitamins and major & trace minerals.  Powered by the most bioactive forms of B-Vitamins for cellular energy, alongside Vegan Vitamin D3 and Vitamin K2 (MK-7) for comprehensive health support. L-Theanine offers mental clarity and focus, ensuring you're energized and alert, naturally.  15 packets of each leading flavor: Raspberry Lemonade, Peach Mango, and Passion Fruit.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_xCRFcM"
+                  ]
+                },
+                "accordion_row_JM7LYR": {
+                  "type": "_accordion-row",
+                  "name": "t:names.accordion_row",
+                  "settings": {
+                    "heading": "Hyburst Water Bottle",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_id7jAa": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Take your hydration and nutrition with you throughout the day to make it convenient for your lifestyle.  This 24oz insulated stainless-steel bottle features the innovative FreeSip spout, a versatile design that lets you sip upright through the built-in straw or tilt back for a refreshing swig.  Double-wall insulation keeps your Hyburst hydration mix col for up to 24 hours.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_id7jAa"
+                  ]
+                },
+                "accordion_row_GqHTFa": {
+                  "type": "_accordion-row",
+                  "name": "t:names.accordion_row",
+                  "settings": {
+                    "heading": "Inner War Book",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_PMce6i": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>An inspiring and practical guide to a better life written by our company’s founder, Ash Ghandehari.  A powerful exploration of the struggle between external success and true personal fulfillment.  The story and framework accelerate a mindset shift to embrace joy, fulfillment, and purpose-driven living.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_PMce6i"
+                  ]
+                },
+                "accordion_row_TPMbHG": {
+                  "type": "_accordion-row",
+                  "name": "t:names.accordion_row",
+                  "settings": {
+                    "heading": "Live Better40 Weekly Coaching Sessions",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_H3aUXQ": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>The proven, step-by-step blueprint that other busy professionals like you have used to achieve lasting change — with simple daily habits and no overwhelming complexity.  Receive real time coaching on live weekly calls with world class coaches and professional athletes to help you overcome even your most challenging obstacles that have been in the way up until now to becoming the better YOU.  These live sessions will be led by Ash Ghandehari and feature world champion athletes Mirinida Carfrae, Tim O’Donnell, and others to help you along your journey.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_H3aUXQ"
+                  ]
+                },
+                "accordion_row_ECH736": {
+                  "type": "_accordion-row",
+                  "name": "t:names.accordion_row",
+                  "settings": {
+                    "heading": "Better40 5-Pillar Journal",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_GWLq9f": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>A daily journal to guide you through your 40-day transformation leveraging the 5 key Better40 pillars.  This journal will help you stay on track and guide you through milestones, and reflect throughout the experience.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_GWLq9f"
+                  ]
+                },
+                "accordion_row_yqPNbp": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Online Community",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_LjwCLH": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>You’ll become part of an exclusive, member-only community for sharing ideas, inspiration, questions, and encouragement as you unlock your transformation and help encourage others along the same path.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_LjwCLH"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_jMk9a4",
+                "accordion_row_JM7LYR",
+                "accordion_row_GqHTFa",
+                "accordion_row_TPMbHG",
+                "accordion_row_ECH736",
+                "accordion_row_yqPNbp"
+              ]
             }
           },
           "block_order": [
             "group_icgrde",
             "variant_picker_R3rGDr",
-            "seal_subscriptions_subscription_widget_8UMpdd",
-            "buy_buttons_eYQEYi"
+            "buy_buttons_eYQEYi",
+            "text_pVFikC",
+            "accordion_hnb6AN"
           ]
         }
       },
@@ -1704,16 +1938,43 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Caffeine_Free.svg",
-                        "width": 72,
+                        "image_upload": "shopify://shop_images/Caffeine-Free.png",
+                        "width": 46,
                         "link": "",
                         "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_f76Jaj": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Zero Caffeine</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "h5",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
                   },
                   "block_order": [
-                    "icon_BRWqWz"
+                    "icon_BRWqWz",
+                    "text_f76Jaj"
                   ]
                 },
                 "group_4nMyDk": {
@@ -1761,16 +2022,43 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Dairy_Free.svg",
-                        "width": 60,
+                        "image_upload": "shopify://shop_images/Dairy-Free.png",
+                        "width": 46,
                         "link": "",
                         "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_TnYWt6": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Dairy Free</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "h5",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
                   },
                   "block_order": [
-                    "icon_jN6Hqk"
+                    "icon_jN6Hqk",
+                    "text_TnYWt6"
                   ]
                 },
                 "group_jekHVK": {
@@ -1818,16 +2106,43 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Gluten_Free.svg",
-                        "width": 64,
+                        "image_upload": "shopify://shop_images/Gluten-Free.png",
+                        "width": 46,
                         "link": "",
                         "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_8GYAVx": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Gluten Free</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "h5",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
                   },
                   "block_order": [
-                    "icon_aJRmrB"
+                    "icon_aJRmrB",
+                    "text_8GYAVx"
                   ]
                 },
                 "group_rc9yeT": {
@@ -1875,8 +2190,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/GMO_Free.svg",
-                        "width": 60,
+                        "image_upload": "shopify://shop_images/NON_GMO_copy.png",
+                        "width": 46,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -1886,7 +2201,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "",
+                        "text": "<p>Non-GMO</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1959,8 +2274,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Soy_Free.svg",
-                        "width": 60,
+                        "image_upload": "shopify://shop_images/Soy-Free.png",
+                        "width": 46,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -1970,7 +2285,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "",
+                        "text": "<p>Soy Free</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -2043,16 +2358,43 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Vegan.svg",
-                        "width": 70,
+                        "image_upload": "shopify://shop_images/Vegan.png",
+                        "width": 46,
                         "link": "",
                         "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_TtCnBn": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Vegan</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "h5",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
                   },
                   "block_order": [
-                    "icon_7zebmk"
+                    "icon_7zebmk",
+                    "text_TtCnBn"
                   ]
                 },
                 "group_87JbMx": {
@@ -2100,16 +2442,43 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/made-in-usa.svg",
-                        "width": 72,
+                        "image_upload": "shopify://shop_images/USA.png",
+                        "width": 46,
                         "link": "",
                         "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_Gzyq3f": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Made in USA</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "h5",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
                   },
                   "block_order": [
-                    "icon_WKCWap"
+                    "icon_WKCWap",
+                    "text_Gzyq3f"
                   ]
                 }
               },
@@ -2169,7 +2538,9 @@
       "settings": {
         "custom_class": "",
         "section_width": "page-width",
-        "color_scheme": ""
+        "color_scheme": "",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "1762035016c8fd612a": {

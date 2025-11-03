@@ -1,0 +1,57 @@
+/* ===== Slim 2-color wave spacer ===== */
+
+/* Section wrapper (edge-to-edge) */
+.cb-slim-wave-section {
+  align-items: stretch;
+  display: block;
+  height: var(--wave-h, 56px);
+  line-height: 0;
+  margin-bottom: var(--wave-mb, 0);
+  margin-top: var(--wave-mt, 0);
+  position: relative;
+  width: 100vw;             /* break out of page container */
+  left: 50%;                /* center the 100vw element */
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: var(--wave-z, 0);
+}
+
+/* Overlap helpers (hide seams) */
+.cb-slim-wave-section {
+  /* pull into previous section */
+  margin-top: calc(var(--wave-overlap-up) * -1 * (var(--wave-h, 56px) / 2));
+  /* pull into next section */
+  margin-bottom: calc(var(--wave-overlap-down) * -1 * (var(--wave-h, 56px) / 2));
+}
+
+/* SVG sizing */
+.cb-slim-wave__svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* Colors */
+.cb-slim-wave__top {
+  fill: var(--wave-top, #fff8f4);
+}
+
+.cb-slim-wave__bottom {
+  fill: var(--wave-bottom, #803d29);
+}
+
+/* Flips */
+.cb-slim-wave-section.is-flip-v {
+  transform: translateX(-50%) scaleY(-1);
+  transform-origin: center;
+}
+
+.cb-slim-wave-section.is-flip-h {
+  transform: translateX(-50%) scaleX(-1);
+  transform-origin: center;
+}
+
+/* If both flips are on, combine properly */
+.cb-slim-wave-section.is-flip-v.is-flip-h {
+  transform: translateX(-50%) scale(-1, -1);
+}

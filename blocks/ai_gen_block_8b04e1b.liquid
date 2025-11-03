@@ -1,0 +1,250 @@
+{% doc %}
+  @prompt
+    product type
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-product-type-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: {{ block.settings.padding }}px 0;
+  }
+
+  .ai-product-type__label-{{ ai_gen_id }} {
+    font-size: {{ block.settings.label_size }}px;
+    color: {{ block.settings.label_color }};
+    font-weight: {{ block.settings.label_weight }};
+    {% if block.settings.label_uppercase %}
+      text-transform: uppercase;
+    {% endif %}
+  }
+
+  .ai-product-type__value-{{ ai_gen_id }} {
+    font-size: {{ block.settings.value_size }}px;
+    color: {{ block.settings.value_color }};
+    font-weight: {{ block.settings.value_weight }};
+    {% if block.settings.value_uppercase %}
+      text-transform: uppercase;
+    {% endif %}
+  }
+
+  .ai-product-type__separator-{{ ai_gen_id }} {
+    color: {{ block.settings.separator_color }};
+    font-size: {{ block.settings.value_size }}px;
+  }
+
+  .ai-product-type__link-{{ ai_gen_id }} {
+    color: {{ block.settings.link_color }};
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .ai-product-type__link-{{ ai_gen_id }}:hover {
+    color: {{ block.settings.link_hover_color }};
+    {% if block.settings.link_underline_on_hover %}
+      text-decoration: underline;
+    {% endif %}
+  }
+{% endstyle %}
+
+<div class="ai-product-type-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.show_label %}
+    <span class="ai-product-type__label-{{ ai_gen_id }}">{{ block.settings.label_text }}</span>
+    <span class="ai-product-type__separator-{{ ai_gen_id }}">{{ block.settings.separator }}</span>
+  {% endif %}
+  
+  {% if product.type != blank %}
+    {% if block.settings.link_to_collection %}
+      <a href="{{ product.type | url_for_type }}" class="ai-product-type__value-{{ ai_gen_id }} ai-product-type__link-{{ ai_gen_id }}">
+        {{ product.type }}
+      </a>
+    {% else %}
+      <span class="ai-product-type__value-{{ ai_gen_id }}">{{ product.type }}</span>
+    {% endif %}
+  {% else %}
+    <span class="ai-product-type__value-{{ ai_gen_id }}" style="color: #999; font-style: italic;">
+      No product type set
+    </span>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Product type",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_label",
+      "label": "Show label",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "label_text",
+      "label": "Label text",
+      "default": "Type"
+    },
+    {
+      "type": "text",
+      "id": "separator",
+      "label": "Separator",
+      "default": ":"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Label size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Label color",
+      "default": "#5c4033"
+    },
+    {
+      "type": "select",
+      "id": "label_weight",
+      "label": "Label weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "checkbox",
+      "id": "label_uppercase",
+      "label": "Uppercase label",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Value"
+    },
+    {
+      "type": "range",
+      "id": "value_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Value size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "value_color",
+      "label": "Value color",
+      "default": "#5c4033"
+    },
+    {
+      "type": "select",
+      "id": "value_weight",
+      "label": "Value weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "checkbox",
+      "id": "value_uppercase",
+      "label": "Uppercase value",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "link_to_collection",
+      "label": "Link to product type collection",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link color",
+      "default": "#0066a6"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Link hover color",
+      "default": "#035385"
+    },
+    {
+      "type": "checkbox",
+      "id": "link_underline_on_hover",
+      "label": "Underline on hover",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "separator_color",
+      "label": "Separator color",
+      "default": "#5c4033"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product type"
+    }
+  ]
+}
+{% endschema %}

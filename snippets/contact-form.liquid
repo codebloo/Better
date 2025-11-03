@@ -91,19 +91,17 @@
 
     <label
       class="visually-hidden"
-      for="ContactForm-phone"
+      for="ContactForm-ordernumber"
     >
-      {{- 'blocks.contact_form.phone' | t -}}
+      Order Number
     </label>
     <input
-      type="tel"
-      id="ContactForm-phone"
+      type="text"
+      id="ContactForm-ordernumber"
       class="contact-form__input"
-      autocomplete="tel"
-      name="contact[phone]"
-      pattern="[0-9\-]*"
-      value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-      placeholder="{{ 'blocks.contact_form.phone' | t }}"
+      name="contact[ordernumber]"
+      value="{% if form.ordernumber %}{{ form.ordernumber }}{% endif %}"
+      placeholder="Order Number"
     >
 
     <label

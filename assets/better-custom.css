@@ -10,11 +10,31 @@
   font-family: "Delvona";
   font-style: normal;
   font-weight: 400;
-  src: url("{{ 'Delvona-Bold.woff2' | asset_url }}") format("woff2"),
-       url("{{ 'Delvona-Bold.woff' | asset_url }}") format("woff");
+  src: url('Delvona-Bold.woff2') format("woff2"),
+       url('Delvona-Bold.woff') format("woff");
 }
 
+/* ====== Background styles (map to your brand gradients) ====== */
+.bg-none { background: transparent; }
 
+.bg-peach  { background: var(--gradient-peach, linear-gradient(180deg, #FFE7D9 0%, #FFD8E1 50%, #FFD0EB 100%)); }
+.bg-pink   { background: var(--gradient-pink,  linear-gradient(180deg, #FFF3F9 0%, #FFE2F2 50%, #FFD0EB 100%)); }
+.bg-blue   { background: var(--gradient-blue,  linear-gradient(180deg, #E5F6FF 0%, #D0EEFF 50%, #C0E6FF 100%)); }
+.bg-green  { background: var(--gradient-green, linear-gradient(180deg, #F1FFE8 0%, #E3FDD3 50%, #D4FAC0 100%)); }
+.bg-orange { background: var(--gradient-orange,linear-gradient(180deg, #FFF0DA 0%, #FFE2B8 50%, #FFD89A 100%)); }
+.bg-brown  { background: var(--gradient-brown, linear-gradient(180deg, #F8EEE9 0%, #EFDCD2 50%, #E4CDBF 100%)); }
+ .border-top-peach {border-top: 4px solid var(--brand-accent, #FA8F69); /* set per band */}
+.border-top-pink {border-top: 4px solid var(--brand-accent, #FFD8E1); /* set per band */}
+ .border-top-blue{border-top: 4px solid var(--brand-accent, #0585C7); /* set per band */}
+ .border-top-green{border-top: 4px solid var(--brand-accent, #17A34A); /* set per band */}
+ .border-top-orange{border-top: 4px solid var(--brand-accent, #FFB229); /* set per band */}
+.border-top-brown{border-top: 4px solid var(--brand-accent, #803D29); /* set per band */}
+
+.sealsubs-full{
+   background-color:rgb(242 125 84 / 1.0);
+   border-radius:6px;
+   padding:18px;
+}
 
 .product-information .sls-purchase-options-container{margin-bottom:9px;}
 .product-information .sls-purchase-options-label{
@@ -28,6 +48,35 @@ margin-bottom: 18px;
 .product-information .sealsubs-container .sls-option-container label{
 	color: #fff;
 	font-size: 18px;}
-	
+.product-information .sls-total-price .sls-original-price,	
 .product-information .sls-subscription-details-label{color: #fff;}
 .product-information .sls-sub-icon svg{fill:#fff!important;}
+
+.shopify-policy__container{
+   padding-bottom:80px;
+   padding-top:80px;}
+
+
+   .pdp-icons > .group-block-content {flex-wrap:wrap;}
+   .pdp-icons .group-block-content .group-block-content{width:100px;}
+
+.one-liner img{
+   filter: drop-shadow(0 6px 10px rgba(0,0,0,0.08));
+  transform: rotate(-4deg);
+  display: block;
+  margin-inline: auto;
+  transform: rotate(-4deg);
+
+}
+
+.benefit-icons {
+  border-top: 1px solid rgba(0,0,0,0.08);
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.benefit-icons img:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: all 0.25s ease;
+}

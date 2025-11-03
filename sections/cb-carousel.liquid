@@ -113,6 +113,26 @@ padding-inline-end: var(--util-page-margin-offset);}
   "tag": "section",
   "class": "cb-media-carousel-section",
   "settings": [
+     { "type": "header", "content": "Defaults" },
+    { "type": "range", "id": "slides_default", "label": "Slides per view (default)", "min": 1, "max": 10, "step": 0.1, "default": 1 },
+    { "type": "range", "id": "space_default",  "label": "Space between (px, default)", "min": 0, "max": 48, "step": 1, "default": 10 },
+
+    { "type": "header", "content": "Breakpoint: ≥ 320px" },
+    { "type": "range", "id": "slides_320", "label": "Slides per view", "min": 1, "max": 10, "step": 0.1, "default": 1.2 },
+    { "type": "range", "id": "space_320",  "label": "Space between (px)", "min": 0, "max": 48, "step": 1, "default": 18 },
+
+    { "type": "header", "content": "Breakpoint: ≥ 768px" },
+    { "type": "range", "id": "slides_768", "label": "Slides per view", "min": 1, "max": 10, "step": 0.1, "default": 3.2 },
+    { "type": "range", "id": "space_768",  "label": "Space between (px)", "min": 0, "max": 48, "step": 1, "default": 18 },
+
+    { "type": "header", "content": "Breakpoint: ≥ 990px" },
+    { "type": "range", "id": "slides_990", "label": "Slides per view", "min": 1, "max": 10, "step": 0.1, "default": 4.2 },
+    { "type": "range", "id": "space_990",  "label": "Space between (px)", "min": 0, "max": 48, "step": 1, "default": 18 },
+
+    { "type": "header", "content": "Breakpoint: ≥ 1280px" },
+    { "type": "range", "id": "slides_1280", "label": "Slides per view", "min": 1, "max": 10, "step": 0.1, "default": 5 },
+    { "type": "range", "id": "space_1280",  "label": "Space between (px)", "min": 0, "max": 48, "step": 1, "default": 18 },
+
     { "type": "text", 
       "id": "heading", 
       "label": "Heading" },

@@ -1,0 +1,92 @@
+.cb-comparison{
+    max-width: 100%;
+    padding-bottom: 40px;
+    padding-top: 40px;}
+.cb-comparison .comparison-chart-title{
+    padding-bottom:27px;
+    text-align:center}
+.cb-comparison .comparison-chart{
+    border:2px solid #5C4033;
+    border-radius:6px;
+    overflow-x:auto;
+    padding:0 0 18px 0;
+}
+.cb-comparison .chart-row{
+        align-items: center;
+    display:grid;
+    height:100px;
+    grid-template-columns:repeat(7,1fr);
+    grid-column-gap:0px;
+    grid-row-gap:0px;
+    position:relative}
+.cb-comparison .chart-head{
+        align-items: center;
+        background-color:#5C4033;
+        color:#fff;
+    margin-bottom:9px;
+    padding-top:9px;
+width:fit-content;}
+
+.cb-comparison .chart-head .chart-col{padding-bottom:9px;}
+.cb-comparison .featured-text,
+.cb-comparison .col-head{
+    display:block;
+    font-size:16px;
+    font-weight:600;
+    line-height:16px;
+    text-align:center}
+.cb-comparison .featured-text{padding-top:9px}
+.cb-comparison .logo{
+        margin-left: 18px;
+    width:120px;}
+.cb-comparison .other{
+            margin: 0 auto;
+        width: 60px;}
+.cb-comparison .chart-col{
+    display: flex;
+    justify-content: center;
+    padding:0 9px 0 0;
+text-align: center;
+width: 147px;}
+.cb-comparison .chart-col svg{width: 45px;}
+.cb-comparison .chart-col.sticky-col{
+    background-color:#FFF8F4;
+    display:block;
+    left:0;
+    position:sticky;
+    width:160px}
+.cb-comparison .chart-col.post-sticky{margin-left:0}
+.cb-comparison .chart-col span.brand{
+    font-size:16px;
+    padding: 0 9px;
+    text-align: center;}
+.cb-comparison .chart-col span{
+    display:block;
+    font-family:var(--font-heading--family);
+    font-size:16px;
+    font-weight:600;
+    line-height:1.2;
+    text-align:center;}
+
+
+    
+    .cr-comparison .chart-row{
+        display:grid;
+        grid-template-columns:repeat(8,1fr);
+        grid-column-gap:0px;grid-row-gap:0px
+        position:relative;}
+        .cr-comparison .chart-head{border-bottom:1px solid #000;margin-bottom:27px}
+    .cr-comparison .chart-head .chart-col{padding-bottom:27px}
+    .cr-comparison .featured-text,
+    .cr-comparison .col-head{display:block;font-family:Fields;font-size:16px;font-weight:600;line-height:20px;text-align:center}
+    .cr-comparison .featured-text{padding-top:9px}
+    .cr-comparison .logo{width:120px}
+    .cr-comparison .chart-col{padding:0 27px 36px 0;width:147px}
+    .cr-comparison .chart-col.sticky-col{display:block;position:absolute;width:160px}
+    .cr-comparison .chart-col.post-sticky{margin-left:160px}
+    .cr-comparison .chart-col span.brand{font-size:16px}
+  
+    .cr-comparison .chart-col span.yes{
+        align-items:center;
+        display:flex;
+        justify-content:center;}

@@ -60,81 +60,152 @@
     "hero_8tEYrL": {
       "type": "hero",
       "blocks": {
-        "text_zaYyqV": {
-          "type": "text",
+        "group_DADthH": {
+          "type": "group",
+          "name": "Text",
           "settings": {
-            "text": "<h1>The Better Movement</h1>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "h1",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 9,
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
-        },
-        "text_EBcHfH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We’re here to change what \"better\" tastes like.<br/><br/>No sugar, no fake energy. Just real electrolytes, clean hydration, and bold flavor.</p><p><strong>Because better isn’t just what’s inside your drink.<br/><br/>It’s how you feel after every sip.</strong></p>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 32,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+          "blocks": {
+            "text_jKx799": {
+              "type": "text",
+              "settings": {
+                "text": "<h1>The Better Movement</h1>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_de3rTw": {
+              "type": "text",
+              "settings": {
+                "text": "<h1>We’re here to change what \"better\" tastes like.</h1>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "h1",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_wLKEqn": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Because better isn’t just what’s inside your drink. It’s how you feel after every sip.</p>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.25rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 18,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_eHxdFw": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Shop Better Hydration",
+                "link": "shopify://collections/better-than-flavors",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
           },
-          "blocks": {}
-        },
-        "button_UDjB6q": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop Better Hydration",
-            "link": "shopify://collections/better-than-flavors",
-            "open_in_new_tab": false,
-            "style_class": "button",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
+          "block_order": [
+            "text_jKx799",
+            "text_de3rTw",
+            "text_wLKEqn",
+            "button_eHxdFw"
+          ]
         }
       },
       "block_order": [
-        "text_zaYyqV",
-        "text_EBcHfH",
-        "button_UDjB6q"
+        "group_DADthH"
       ],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/BetterOrange.jpg",
+        "image_1": "shopify://shop_images/BetterThanWaterGroup1.webp",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -147,9 +218,9 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
+        "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "gap": 0,
         "section_width": "page-width",
         "section_height": "large",
         "section_height_custom": 50,
@@ -161,7 +232,22 @@
         "blurred_reflection": false,
         "reflection_opacity": 75,
         "padding-block-start": 80,
-        "padding-block-end": 40
+        "padding-block-end": 60
+      }
+    },
+    "cb_wave_divider_cVkR9g": {
+      "type": "cb-wave-divider",
+      "name": "CB Wave divider",
+      "settings": {
+        "overlap_next": false,
+        "overlap_previous": false,
+        "fill": "#d28238",
+        "height": 48,
+        "flip_vertical": false,
+        "flip_horizontal": false,
+        "margin_top": 0,
+        "margin_bottom": -1,
+        "zindex": 0
       }
     },
     "section_MaK97E": {
@@ -209,11 +295,11 @@
           "blocks": {
             "image_JXtCph": {
               "type": "image",
-              "name": "t:names.image",
+              "name": "Girl",
               "settings": {
-                "image": "shopify://shop_images/Website_Homepage_Images_4.png",
+                "image": "shopify://shop_images/P1001071.webp",
                 "link": "",
-                "image_ratio": "square",
+                "image_ratio": "portrait",
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -500,7 +586,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "image_upload": "shopify://shop_images/016-mineral_water.svg",
+                    "image_upload": "shopify://shop_images/blue_raspberries_03_Transparent.webp",
                     "width": 60,
                     "link": "",
                     "open_in_new_tab": false
@@ -701,7 +787,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "image_upload": "shopify://shop_images/047-calories.svg",
+                    "image_upload": "shopify://shop_images/passionfruit-h.webp",
                     "width": 60,
                     "link": "",
                     "open_in_new_tab": false
@@ -902,7 +988,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "image_upload": "shopify://shop_images/016-mineral_water.svg",
+                    "image_upload": "shopify://shop_images/lime-whole.webp",
                     "width": 60,
                     "link": "",
                     "open_in_new_tab": false
@@ -1103,8 +1189,8 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "image_upload": "shopify://shop_images/043-scale.svg",
-                    "width": 60,
+                    "image_upload": "shopify://shop_images/mango.webp",
+                    "width": 46,
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -1304,7 +1390,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "image_upload": "shopify://shop_images/039-no_sugar.svg",
+                    "image_upload": "shopify://shop_images/raspberries3.webp",
                     "width": 60,
                     "link": "",
                     "open_in_new_tab": false
@@ -1441,7 +1527,7 @@
       "blocks": {
         "group_wg9FLT": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "What makes better better",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -1602,7 +1688,7 @@
                   "name": "Icons",
                   "settings": {
                     "content_direction": "row",
-                    "vertical_on_mobile": true,
+                    "vertical_on_mobile": false,
                     "horizontal_alignment": "center",
                     "vertical_alignment": "flex-start",
                     "align_baseline": false,
@@ -1611,9 +1697,9 @@
                     "gap": 12,
                     "width": "fill",
                     "custom_width": 100,
-                    "width_mobile": "fill",
+                    "width_mobile": "fit-content",
                     "custom_width_mobile": 100,
-                    "height": "fit",
+                    "height": "fill",
                     "custom_height": 100,
                     "inherit_color_scheme": true,
                     "color_scheme": "",
@@ -1639,7 +1725,7 @@
                   "blocks": {
                     "group_mxe86t": {
                       "type": "group",
-                      "name": "Icon",
+                      "name": "Electrolytes",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1649,11 +1735,11 @@
                         "horizontal_alignment_flex_direction_column": "center",
                         "vertical_alignment_flex_direction_column": "flex-start",
                         "gap": 18,
-                        "width": "fill",
-                        "custom_width": 100,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
-                        "height": "fill",
+                        "width": "custom",
+                        "custom_width": 30,
+                        "width_mobile": "custom",
+                        "custom_width_mobile": 30,
+                        "height": "custom",
                         "custom_height": 100,
                         "inherit_color_scheme": false,
                         "color_scheme": "scheme-3",
@@ -1691,7 +1777,7 @@
                         },
                         "group_NqUqAK": {
                           "type": "group",
-                          "name": "t:names.group",
+                          "name": "Elect",
                           "settings": {
                             "content_direction": "column",
                             "vertical_on_mobile": true,
@@ -1768,7 +1854,7 @@
                     },
                     "group_EHRPnE": {
                       "type": "group",
-                      "name": "Icon",
+                      "name": "Sugar",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1778,10 +1864,10 @@
                         "horizontal_alignment_flex_direction_column": "center",
                         "vertical_alignment_flex_direction_column": "flex-start",
                         "gap": 18,
-                        "width": "fill",
-                        "custom_width": 100,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
+                        "width": "custom",
+                        "custom_width": 30,
+                        "width_mobile": "custom",
+                        "custom_width_mobile": 30,
                         "height": "fill",
                         "custom_height": 100,
                         "inherit_color_scheme": false,
@@ -1811,7 +1897,7 @@
                           "name": "t:names.icon",
                           "settings": {
                             "icon": "price_tag",
-                            "image_upload": "shopify://shop_images/006-sugar_free.svg",
+                            "image_upload": "shopify://shop_images/008-avocado.svg",
                             "width": 50,
                             "link": "",
                             "open_in_new_tab": false
@@ -1862,7 +1948,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>0g sugar.</p>",
+                                "text": "<p>Bioavailable nutrients that work.</p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -1897,7 +1983,7 @@
                     },
                     "group_qRyjcp": {
                       "type": "group",
-                      "name": "Icon",
+                      "name": "Feel Good",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1907,10 +1993,10 @@
                         "horizontal_alignment_flex_direction_column": "center",
                         "vertical_alignment_flex_direction_column": "flex-start",
                         "gap": 18,
-                        "width": "fill",
-                        "custom_width": 100,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
+                        "width": "custom",
+                        "custom_width": 30,
+                        "width_mobile": "custom",
+                        "custom_width_mobile": 30,
                         "height": "fill",
                         "custom_height": 100,
                         "inherit_color_scheme": false,
@@ -2088,7 +2174,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/4_4c34b644-b348-40f6-90dc-f2841a3075ec.png",
+                "image": "shopify://shop_images/20f3ac8d-c1ef-48e0-9396-5b9ef015cc98.png",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -2222,6 +2308,9 @@
         "text_Qq6PP8",
         "button_wj4e44"
       ],
+      "custom_css": [
+        ".section-background {background: linear-gradient( 180deg, #ffe7d9 0%, /* soft peach */ #ffd8e1 70%, /* light coral-pink midpoint */ #ffd0eb 100% /* rosy blush base */ );}"
+      ],
       "name": "CTA",
       "settings": {
         "content_direction": "column",
@@ -2247,7 +2336,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
+        "padding-block-start": 40,
         "padding-block-end": 80
       }
     }
@@ -2255,6 +2344,7 @@
   "order": [
     "main",
     "hero_8tEYrL",
+    "cb_wave_divider_cVkR9g",
     "section_MaK97E",
     "cb_carousel_w4HPKE",
     "section_CwfXhT",

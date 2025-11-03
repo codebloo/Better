@@ -1,0 +1,23 @@
+/* ====== Container ====== */
+.cb-ingredients {
+  --container-max: 1200px;
+  --pad-inline: 20px;
+}
+
+/* ====== Band wrapper ====== */
+.cb-band {
+  margin: 0;
+  padding-block: clamp(40px, 8vw, 96px);
+}
+
+.cb-container {
+  margin-inline: auto;
+  max-width: var(--container-max);
+  padding-inline: var(--pad-inline);
+}
+
+
+/* ====== Hero tweaks ====== */
+.cb-hero .cb-heading {
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+}

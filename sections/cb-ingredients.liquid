@@ -1,0 +1,280 @@
+{% comment %}
+  CB: Ingredients Page
+  - Modular bands (hero, content bands, checklist, CTA)
+  - Uses gradient classes you can map in CSS (see cb-ingredients.css)
+{% endcomment %}
+
+<section class="cb-ingredients">
+  {{ 'cb-ingredients.css' | asset_url | stylesheet_tag }}
+
+  {% for block in section.blocks %}
+    {% case block.type %}
+
+      {% when 'hero' %}
+        <section class="cb-band cb-hero {{ block.settings.bg_style }}">
+          <div class="cb-container">
+            {% if block.settings.kicker != blank %}
+              <p class="cb-kicker">{{ block.settings.kicker }}</p>
+            {% endif %}
+            {% if block.settings.heading != blank %}
+              <h1 class="cb-heading">{{ block.settings.heading }}</h1>
+            {% endif %}
+            {% if block.settings.subtext != blank %}
+              <div class="cb-subtext rte">{{ block.settings.subtext }}</div>
+            {% endif %}
+          </div>
+        </section>
+
+      {% when 'band' %}
+        <section class="cb-band {{ block.settings.bg_style }}">
+          <div class="cb-container">
+            {% if block.settings.heading != blank %}
+              <h2 class="cb-band__title">{{ block.settings.heading }}</h2>
+            {% endif %}
+            {% if block.settings.tagline != blank %}
+              <p class="cb-band__tagline">{{ block.settings.tagline }}</p>
+            {% endif %}
+            {% if block.settings.body != blank %}
+              <div class="cb-band__body rte">{{ block.settings.body }}</div>
+            {% endif %}
+            {% if block.settings.claim != blank %}
+              <p class="cb-claim">{{ block.settings.claim }}</p>
+            {% endif %}
+          </div>
+        </section>
+
+      {% when 'checklist' %}
+        <section class="cb-band {{ block.settings.bg_style }}">
+          <div class="cb-container">
+            {% if block.settings.heading != blank %}
+              <h2 class="cb-band__title">{{ block.settings.heading }}</h2>
+            {% endif %}
+            {% assign items = block.settings.items | split: newline %}
+            <ul class="cb-checklist">
+              {% for item in items %}
+                {% assign clean = item | strip %}
+                {% if clean != blank %}
+                  <li class="cb-checklist__item">
+                    <span aria-hidden="true" class="cb-checklist__icon">✕</span>
+                    <span class="cb-checklist__text">{{ clean }}</span>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+
+      {% when 'cta' %}
+        <section class="cb-band cb-cta {{ block.settings.bg_style }}">
+          <div class="cb-container">
+            {% if block.settings.heading != blank %}
+              <h2 class="cb-band__title">{{ block.settings.heading }}</h2>
+            {% endif %}
+            {% if block.settings.body != blank %}
+              <div class="cb-band__body rte">{{ block.settings.body }}</div>
+            {% endif %}
+            {% if block.settings.btn_label != blank and block.settings.btn_link != blank %}
+              <a class="cb-button" href="{{ block.settings.btn_link }}">{{ block.settings.btn_label }}</a>
+            {% endif %}
+          </div>
+        </section>
+
+    {% endcase %}
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "CB: Ingredients",
+  "class": "section-wrapper",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "hero",
+      "name": "Hero",
+      "settings": [
+        { "type": "text", "id": "kicker", "label": "Kicker", "default": "What's inside Better" },
+        { "type": "text", "id": "heading", "label": "Heading", "default": "We’re not afraid of ingredients — we’re afraid of secrets." },
+        { "type": "richtext", "id": "subtext", "label": "Subtext", "default": "<p>No proprietary blends. Just nutrients your body recognizes — explained like you’re human.</p>" },
+        {
+          "type": "select",
+          "id": "bg_style",
+          "label": "Background style",
+          "default": "bg-peach",
+          "options": [
+            { "value": "bg-none", "label": "None" },
+            { "value": "bg-peach", "label": "Peach gradient" },
+            { "value": "bg-pink", "label": "Pink gradient" },
+            { "value": "bg-blue", "label": "Blue gradient" },
+            { "value": "bg-green", "label": "Green gradient" },
+            { "value": "bg-orange", "label": "Orange gradient" },
+            { "value": "bg-brown", "label": "Brown gradient" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "band",
+      "name": "Content band",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Better Electrolytes" },
+        { "type": "text", "id": "tagline", "label": "Tagline (small line)", "default": "Sodium · Potassium · Magnesium · Calcium" },
+        { "type": "richtext", "id": "body", "label": "Body", "default": "<p>Hydration that mirrors your body’s natural balance — so it sticks. We use Himalayan salt for its 80+ trace minerals.</p>" },
+        { "type": "text", "id": "claim", "label": "Claim (callout)", "default": "Hydrates faster and longer than water — without the sugar spike." },
+        {
+          "type": "select",
+          "id": "bg_style",
+          "label": "Background style",
+          "default": "bg-blue",
+          "options": [
+            { "value": "bg-none", "label": "None" },
+            { "value": "bg-peach", "label": "Peach gradient" },
+            { "value": "bg-pink", "label": "Pink gradient" },
+            { "value": "bg-blue", "label": "Blue gradient" },
+            { "value": "bg-green", "label": "Green gradient" },
+            { "value": "bg-orange", "label": "Orange gradient" },
+            { "value": "bg-brown", "label": "Brown gradient" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "checklist",
+      "name": "Never list",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Heading", "default": "What you’ll never find" },
+        {
+          "type": "textarea",
+          "id": "items",
+          "label": "One per line",
+          "default": "Artificial Sweeteners\nArtificial Colors\nGMOs\nGluten\nSoy\nDairy\nMystery Blends"
+        },
+        {
+          "type": "select",
+          "id": "bg_style",
+          "label": "Background style",
+          "default": "bg-none",
+          "options": [
+            { "value": "bg-none", "label": "None" },
+            { "value": "bg-peach", "label": "Peach gradient" },
+            { "value": "bg-pink", "label": "Pink gradient" },
+            { "value": "bg-blue", "label": "Blue gradient" },
+            { "value": "bg-green", "label": "Green gradient" },
+            { "value": "bg-orange", "label": "Orange gradient" },
+            { "value": "bg-brown", "label": "Brown gradient" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "name": "CTA",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Ready to feel Better?" },
+        { "type": "richtext", "id": "body", "label": "Body", "default": "<p>Shop the sticks that started the movement.</p>" },
+        { "type": "text", "id": "btn_label", "label": "Button label", "default": "Shop Hydration Sticks" },
+        { "type": "url", "id": "btn_link", "label": "Button link", "default": "/collections/all" },
+        {
+          "type": "select",
+          "id": "bg_style",
+          "label": "Background style",
+          "default": "bg-green",
+          "options": [
+            { "value": "bg-none", "label": "None" },
+            { "value": "bg-peach", "label": "Peach gradient" },
+            { "value": "bg-pink", "label": "Pink gradient" },
+            { "value": "bg-blue", "label": "Blue gradient" },
+            { "value": "bg-green", "label": "Green gradient" },
+            { "value": "bg-orange", "label": "Orange gradient" },
+            { "value": "bg-brown", "label": "Brown gradient" }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "CB: Ingredients",
+      "blocks": [
+        {
+          "type": "hero",
+          "settings": {
+            "kicker": "What's inside Better",
+            "heading": "We’re not afraid of ingredients — we’re afraid of secrets.",
+            "subtext": "<p>No proprietary blends. Just nutrients your body recognizes — explained like you’re human.</p>",
+            "bg_style": "bg-peach"
+          }
+        },
+        {
+          "type": "band",
+          "settings": {
+            "heading": "Better Electrolytes",
+            "tagline": "Sodium · Potassium · Magnesium · Calcium",
+            "body": "<p>Hydration that mirrors your body’s natural balance — so it sticks. We use Himalayan salt for its 80+ trace minerals.</p>",
+            "claim": "Hydrates faster and longer than water — without the sugar spike.",
+            "bg_style": "bg-blue"
+          }
+        },
+        {
+          "type": "band",
+          "settings": {
+            "heading": "Better Energy + Hormone Balance",
+            "tagline": "Vitamin D3 + K2 (MK-7)",
+            "body": "<p>A clinically supported combo that helps regulate hormones, mood, and sustainable energy — naturally.</p>",
+            "claim": "Clinically-supported hormonal synergy to fuel energy, drive, and performance.",
+            "bg_style": "bg-pink"
+          }
+        },
+        {
+          "type": "band",
+          "settings": {
+            "heading": "Better Brain Fuel",
+            "tagline": "L-Theanine (100mg)",
+            "body": "<p>Boosts alpha-wave activity for calm alertness. Steady focus without caffeine jitters.</p>",
+            "claim": "Energy that’s felt, not forced.",
+            "bg_style": "bg-orange"
+          }
+        },
+        {
+          "type": "band",
+          "settings": {
+            "heading": "Better Nutrition Support",
+            "tagline": "13 Essential Vitamins + Minerals",
+            "body": "<p>Fills common nutrient gaps: B12 for energy, magnesium for recovery, zinc for immunity, and more.</p>",
+            "claim": "Science-backed essentials missing from modern diets.",
+            "bg_style": "bg-green"
+          }
+        },
+        {
+          "type": "band",
+          "settings": {
+            "heading": "The Sweet Spot",
+            "tagline": "5g Organic Cane Sugar",
+            "body": "<p>A little real sugar helps your body absorb electrolytes — and makes Better taste like something you want to drink.</p>",
+            "claim": "Real sugar. Real flavor. No regrets.",
+            "bg_style": "bg-brown"
+          }
+        },
+        {
+          "type": "checklist",
+          "settings": {
+            "heading": "What you’ll never find",
+            "items": "Artificial Sweeteners\nArtificial Colors\nGMOs\nGluten\nSoy\nDairy\nMystery Blends",
+            "bg_style": "bg-none"
+          }
+        },
+        {
+          "type": "cta",
+          "settings": {
+            "heading": "Ready to feel Better?",
+            "body": "<p>Shop the sticks that started the movement.</p>",
+            "btn_label": "Shop Hydration Sticks",
+            "btn_link": "/collections/all",
+            "bg_style": "bg-peach"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
