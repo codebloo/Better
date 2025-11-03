@@ -28,11 +28,36 @@
       {% if section.settings.flip_vertical %}is-flip-v{% endif %}
       {% if section.settings.flip_horizontal %} is-flip-h{% endif %}"
     >
+      {% if secton.settings.ouline %}
+<svg
+  class="wave-divider__svg"
+  viewBox="0 0 1440 120"
+  preserveAspectRatio="none"
+  aria-hidden="true"
+  focusable="false"
+>
+  <!-- Main fill -->
+  <path
+    d="M0,40 C360,100 1080,-20 1440,40 L1440,0 L0,0 Z"
+    fill="currentColor"
+  ></path>
+
+  <!-- Top-only white stroke -->
+  <path
+    d="M0,40 C360,100 1080,-20 1440,40"
+    stroke="#fff"
+    stroke-width="3"
+    fill="none"
+  ></path>
+</svg>
+
+      {% else %}
       <!-- Responsive SVG (stretches to any width) -->
       <svg class="wave-divider__svg" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
         <!-- "Downward" gentle swoop by default (use flip_vertical to invert) -->
         <path d="M0,40 C360,100 1080,-20 1440,40 L1440,0 L0,0 Z" fill="currentColor"></path>
       </svg>
+      {% endif %}
     </div>
   </section>
 </section>
@@ -53,6 +78,12 @@
       "type": "checkbox",
       "id": "overlap_previous",
       "label": "Overlap previous section (header/prev)",
+      "default": false
+    },
+        {
+      "type": "checkbox",
+      "id": "outline",
+      "label": "Add Outline",
       "default": false
     },
     {

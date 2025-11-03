@@ -18,6 +18,7 @@
       "settings": {
         "overlap_next": false,
         "overlap_previous": true,
+        "outline": false,
         "fill": "#0066a6",
         "height": 80,
         "flip_vertical": true,
