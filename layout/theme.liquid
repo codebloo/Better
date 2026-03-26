@@ -26,12 +26,21 @@
     {%- render 'scripts' -%}
     {%- render 'theme-styles-variables' -%}
     {%- render 'color-schemes' -%}
+	{%- render 'structured-data' -%}
 
     {% if request.design_mode %}
       {%- render 'theme-editor' -%}
     {% endif %}
 
     {{ content_for_header }}
+	
+	{% if template contains 'product' %}
+	  {% render 'schema-breadcrumb', template: 'product' %}
+	  {% render 'schema-product', template: 'product' %}
+	{% elsif template contains 'collection' %}
+	  {% render 'schema-breadcrumb', template: 'collection' %}
+	{% endif %}
+	
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">

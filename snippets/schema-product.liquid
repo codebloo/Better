@@ -1,0 +1,146 @@
+{%- comment -%}
+  JSON-LD: Product schema
+  Includes: Okendo aggregate rating + SKIO subscription offers + return policy + shipping
+  Render from product template or theme.liquid on product pages only
+{%- endcomment -%}
+
+{%- comment -%} Return policy via shipping_disclaimers metaobject {%- endcomment -%}
+{%- assign disclaimer = product.metafields.custom.shipping_disclaimers.value.system.handle -%}
+{%- assign has_returns = false -%}
+{%- if disclaimer == 'freeship-usa-60-day-return-warranty' -%}
+  {%- assign has_returns = true -%}
+{%- endif -%}
+
+{%- comment -%} Pre-capture return and shipping blocks for reuse inside each offer {%- endcomment -%}
+{%- if has_returns -%}
+  {%- capture offer_return_policy -%}
+  "hasMerchantReturnPolicy": [
+    {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "US",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 60,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
+  ]
+  {%- endcapture -%}
+{%- else -%}
+  {%- capture offer_return_policy -%}
+  "hasMerchantReturnPolicy": {
+    "@type": "MerchantReturnPolicy",
+    "applicableCountry": "US",
+    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+  }
+  {%- endcapture -%}
+{%- endif -%}
+
+{%- capture offer_shipping -%}
+"shippingDetails": {
+  "@type": "OfferShippingDetails",
+  "shippingDestination": {
+    "@type": "DefinedRegion",
+    "addressCountry": "US"
+  },
+  "shippingRate": {
+    "@type": "MonetaryAmount",
+    "value": "0",
+    "currency": "USD"
+  },
+  "shippingLabel": "Free shipping on orders over $25",
+  "deliveryTime": {
+    "@type": "ShippingDeliveryTime",
+    "handlingTime": {
+      "@type": "QuantitativeValue",
+      "minValue": 0,
+      "maxValue": 1,
+      "unitCode": "DAY"
+    },
+    "transitTime": {
+      "@type": "QuantitativeValue",
+      "minValue": 3,
+      "maxValue": 7,
+      "unitCode": "DAY"
+    }
+  }
+}
+{%- endcapture -%}
+
+{%- comment -%} Build offers array {%- endcomment -%}
+{%- assign all_offers = '' -%}
+
+{%- for variant in product.variants -%}
+  {%- assign variant_url = shop.url | append: variant.url -%}
+  {%- assign variant_price = variant.price | money_without_currency | remove: ',' -%}
+
+  {%- capture oto_offer -%}
+    {
+      "@type": "Offer",
+      "url": {{ variant_url | json }},
+      "sku": {{ variant.sku | json }},
+      "name": {{ variant.title | json }},
+      "price": "{{ variant_price }}",
+      "priceCurrency": {{ cart.currency.iso_code | json }},
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "{% if variant.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+      {{ offer_return_policy }},
+      {{ offer_shipping }}
+    }
+  {%- endcapture -%}
+
+  {%- if all_offers == '' -%}
+    {%- assign all_offers = oto_offer -%}
+  {%- else -%}
+    {%- assign all_offers = all_offers | append: ',' | append: oto_offer -%}
+  {%- endif -%}
+
+  {%- for allocation in variant.selling_plan_allocations -%}
+    {%- assign plan = allocation.selling_plan -%}
+    {%- assign sub_price = allocation.price | money_without_currency | remove: ',' -%}
+
+    {%- capture sub_offer -%}
+      {
+        "@type": "Offer",
+        "url": {{ variant_url | json }},
+        "sku": {{ variant.sku | append: '-sub-' | append: plan.id | json }},
+        "name": {{ variant.title | append: ' (' | append: plan.name | append: ')' | json }},
+        "price": "{{ sub_price }}",
+        "priceCurrency": {{ cart.currency.iso_code | json }},
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "{% if variant.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+        "description": {{ plan.name | json }},
+        {{ offer_return_policy }},
+        {{ offer_shipping }}
+      }
+    {%- endcapture -%}
+
+    {%- assign all_offers = all_offers | append: ',' | append: sub_offer -%}
+
+  {%- endfor -%}
+{%- endfor -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": {{ shop.url | append: product.url | json }},
+  "description": {{ product.description | strip_html | truncate: 500 | json }},
+  "sku": {{ product.selected_or_first_available_variant.sku | json }},
+  "brand": {
+    "@type": "Brand",
+    "name": {{ shop.name | json }}
+  },
+  "image": [
+    {{ product.featured_image | image_url: width: 1200 | prepend: 'https:' | json }}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ product.metafields.reviews.rating.value }}",
+    "reviewCount": "{{ product.metafields.reviews.rating_count }}"
+  },
+  "offers": [
+    {{ all_offers }}
+  ]
+}
+</script>

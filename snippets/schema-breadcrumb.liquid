@@ -1,0 +1,121 @@
+{% comment %}
+  Schema: BreadcrumbList
+  Usage:
+    - In layout/theme.liquid <head>
+		{% if template contains 'product' %}
+		  {% render 'schema-breadcrumb', template: 'product' %}
+		{% elsif template contains 'collection' %}
+		  {% render 'schema-breadcrumb', template: 'collection' %}
+		{% endif %}
+		**OR**
+    - On product.liquid / main-product section: {% render 'schema-breadcrumb', template: 'product' %}
+    - On collection.liquid / main-collection section: {% render 'schema-breadcrumb', template: 'collection' %}
+{% endcomment %}
+
+{% liquid
+  assign shop_url = 'https://' | append: shop.permanent_domain
+  
+  comment
+    Prefer canonical domain over myshopify domain
+  endcomment
+  if shop.url != blank
+    assign shop_url = shop.url
+  endif
+%}
+
+{% if template == 'product' %}
+
+  {% liquid
+    comment
+      Determine the best parent collection for this product
+    endcomment
+
+    assign parent_collection = nil
+
+    comment
+      1. Use collection from URL context if available
+    endcomment
+    if collection != blank
+      assign parent_collection = collection
+    endif
+
+    comment
+      2. Fall back to a metafield-defined primary collection
+    endcomment
+    if parent_collection == blank and product.metafields.custom.primary_collection != blank
+      assign parent_collection = product.metafields.custom.primary_collection.value
+    endif
+
+    comment
+      3. Fall back to first non-hidden collection
+    endcomment
+    if parent_collection == blank
+      for col in product.collections
+        if col.handle != 'frontpage' and col.handle != 'all'
+          assign parent_collection = col
+          break
+        endif
+      endfor
+    endif
+  %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": {{ shop_url | append: '/' | json }}
+      }
+      {% if parent_collection != blank %}
+      ,{
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ parent_collection.title | json }},
+        "item": {{ shop_url | append: '/collections/' | append: parent_collection.handle | json }}
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ product.title | json }},
+        "item": {{ shop_url | append: '/products/' | append: product.handle | json }}
+      }
+      {% else %}
+      ,{
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ product.title | json }},
+        "item": {{ shop_url | append: '/products/' | append: product.handle | json }}
+      }
+      {% endif %}
+    ]
+  }
+  </script>
+
+{% elsif template == 'collection' %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": {{ shop_url | append: '/' | json }}
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ collection.title | json }},
+        "item": {{ shop_url | append: '/collections/' | append: collection.handle | json }}
+      }
+    ]
+  }
+  </script>
+
+{% endif %}
