@@ -267,9 +267,9 @@
               "type": "image",
               "name": "Girl",
               "settings": {
-                "image": "shopify://shop_images/Hyburst-Sachet-PassionFruit-Silo.webp",
+                "image": "shopify://shop_images/Passion_Fruit_60bec654-a6e6-4dfd-b853-7c6808341832.webp",
                 "link": "",
-                "image_ratio": "square",
+                "image_ratio": "portrait",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -547,6 +547,7 @@
       "settings": {
         "overlap_next": false,
         "overlap_previous": false,
+        "outline": false,
         "fill": "#ffd4bf",
         "height": 54,
         "flip_vertical": true,
@@ -603,9 +604,9 @@
               "type": "image",
               "name": "Girl",
               "settings": {
-                "image": "shopify://shop_images/Hyburst-Sachet-TangerineTango-Silo.webp",
+                "image": "shopify://shop_images/Tangerine_Tango_dc7632ee-1d1f-4f77-9c13-5c542aeebb59.webp",
                 "link": "",
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -883,6 +884,7 @@
       "settings": {
         "overlap_next": false,
         "overlap_previous": false,
+        "outline": false,
         "fill": "#ffd4bf",
         "height": 54,
         "flip_vertical": false,
@@ -939,9 +941,9 @@
               "type": "image",
               "name": "Girl",
               "settings": {
-                "image": "shopify://shop_images/Hyburst-Sachet-RaspberryLemonade-Silo.webp",
+                "image": "shopify://shop_images/Raspberry_Lemonade.webp",
                 "link": "",
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1219,6 +1221,7 @@
       "settings": {
         "overlap_next": false,
         "overlap_previous": false,
+        "outline": false,
         "fill": "#ffd4bf",
         "height": 54,
         "flip_vertical": true,
@@ -1275,9 +1278,9 @@
               "type": "image",
               "name": "Girl",
               "settings": {
-                "image": "shopify://shop_images/Hyburst-Sachet-BlueRaspberry-Silo.webp",
+                "image": "shopify://shop_images/Blue_Raspberry_d647d9e8-a55d-4361-9d85-d0f2c3f70646.webp",
                 "link": "",
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1555,6 +1558,7 @@
       "settings": {
         "overlap_next": false,
         "overlap_previous": false,
+        "outline": false,
         "fill": "#ffd4bf",
         "height": 54,
         "flip_vertical": false,
@@ -1611,9 +1615,9 @@
               "type": "image",
               "name": "Girl",
               "settings": {
-                "image": "shopify://shop_images/Hyburst-Sachet-LemonLime-Silo.webp",
+                "image": "shopify://shop_images/Lemon_Lime_8aa665ec-88f8-4ae4-9dae-4b5d0efc583b.webp",
                 "link": "",
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1914,10 +1918,11 @@
           },
           "blocks": {}
         },
-        "group_nCqRDA": {
-          "type": "group",
-          "name": "Icons",
+        "cb_group_krXPjV": {
+          "type": "cb-group",
+          "name": "CB Group",
           "settings": {
+            "custom_class": "benefit-icons",
             "content_direction": "row",
             "vertical_on_mobile": false,
             "horizontal_alignment": "center",
@@ -1925,9 +1930,9 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 9,
-            "width": "fill",
-            "custom_width": 50,
+            "gap": 12,
+            "width": "fit-content",
+            "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
@@ -1948,98 +1953,536 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 18,
-            "padding-block-end": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 40,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_e6RgWG": {
-              "type": "icon",
-              "name": "t:names.icon",
+            "cb_group_RUBUck": {
+              "type": "cb-group",
+              "name": "CB Group",
               "settings": {
-                "icon": "price_tag",
-                "image_upload": "shopify://shop_images/Gluten_Free.svg",
-                "width": 74,
+                "custom_class": "",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
                 "link": "",
-                "open_in_new_tab": false
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "icon_4pRtwp": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/Vegan_Gluten_Free.png",
+                    "width": 62,
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "text_EQJRRh": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Gluten Free</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_4pRtwp",
+                "text_EQJRRh"
+              ]
             },
-            "icon_FeEnE3": {
-              "type": "icon",
-              "name": "t:names.icon",
+            "cb_group_9hPpAN": {
+              "type": "cb-group",
+              "name": "CB Group",
               "settings": {
-                "icon": "price_tag",
-                "image_upload": "shopify://shop_images/GMO_Free.svg",
-                "width": 68,
+                "custom_class": "",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
                 "link": "",
-                "open_in_new_tab": false
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "icon_Xe39tn": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/Non_GMO_b03de93c-8a36-49d5-8cd3-85e016389c9d.png",
+                    "width": 60,
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "text_iWkwTf": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Non-GMO</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_Xe39tn",
+                "text_iWkwTf"
+              ]
             },
-            "icon_3gfy8G": {
-              "type": "icon",
-              "name": "t:names.icon",
+            "cb_group_N8kBTA": {
+              "type": "cb-group",
+              "name": "CB Group",
               "settings": {
-                "icon": "price_tag",
-                "image_upload": "shopify://shop_images/Dairy_Free.svg",
-                "width": 68,
+                "custom_class": "",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
                 "link": "",
-                "open_in_new_tab": false
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "icon_xaiznR": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/Dairy_Free.png",
+                    "width": 62,
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "text_JTHJLV": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Dairy Free</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_xaiznR",
+                "text_JTHJLV"
+              ]
             },
-            "icon_gtkcNi": {
-              "type": "icon",
-              "name": "t:names.icon",
+            "cb_group_3DLC7K": {
+              "type": "cb-group",
+              "name": "CB Group",
               "settings": {
-                "icon": "price_tag",
-                "image_upload": "shopify://shop_images/Soy_Free.svg",
-                "width": 68,
+                "custom_class": "",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
                 "link": "",
-                "open_in_new_tab": false
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "icon_JyKnfY": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/Soy_Free.png",
+                    "width": 62,
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "text_UB3yjc": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Soy Free</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_JyKnfY",
+                "text_UB3yjc"
+              ]
             },
-            "icon_7zdfpn": {
-              "type": "icon",
-              "name": "t:names.icon",
+            "cb_group_ziMBLy": {
+              "type": "cb-group",
+              "name": "CB Group",
               "settings": {
-                "icon": "price_tag",
-                "image_upload": "shopify://shop_images/Caffeine_Free.svg",
-                "width": 83,
+                "custom_class": "",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
                 "link": "",
-                "open_in_new_tab": false
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "icon_LR4YpD": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/Caffeine_Free.png",
+                    "width": 62,
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "text_gtrkRP": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Caffeine Free</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_LR4YpD",
+                "text_gtrkRP"
+              ]
             },
-            "icon_pKN8RE": {
-              "type": "icon",
-              "name": "t:names.icon",
+            "cb_group_HR7PLM": {
+              "type": "cb-group",
+              "name": "CB Group",
               "settings": {
-                "icon": "price_tag",
-                "image_upload": "shopify://shop_images/Vegan.svg",
-                "width": 71,
+                "custom_class": "",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
                 "link": "",
-                "open_in_new_tab": false
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "icon_ENVtfx": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/USA_Made.png",
+                    "width": 62,
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "text_7YYUii": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Made in USA</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_ENVtfx",
+                "text_7YYUii"
+              ]
             }
           },
           "block_order": [
-            "icon_e6RgWG",
-            "icon_FeEnE3",
-            "icon_3gfy8G",
-            "icon_gtkcNi",
-            "icon_7zdfpn",
-            "icon_pKN8RE"
+            "cb_group_RUBUck",
+            "cb_group_9hPpAN",
+            "cb_group_N8kBTA",
+            "cb_group_3DLC7K",
+            "cb_group_ziMBLy",
+            "cb_group_HR7PLM"
           ]
         }
       },
       "block_order": [
         "text_LRL6DK",
-        "group_nCqRDA"
+        "cb_group_krXPjV"
       ],
       "name": "What Not",
       "settings": {
@@ -2071,86 +2514,213 @@
         "padding-block-end": 40
       }
     },
-    "section_E9eWRN": {
+    "cb_wave_divider_BkfyWj": {
+      "type": "cb-wave-divider",
+      "name": "CB Wave divider",
+      "settings": {
+        "overlap_next": false,
+        "overlap_previous": false,
+        "outline": false,
+        "fill": "#ffd4bf",
+        "height": 80,
+        "flip_vertical": true,
+        "flip_horizontal": true,
+        "margin_top": 0,
+        "margin_bottom": -1,
+        "zindex": 0
+      }
+    },
+    "cb_section_yiyccX": {
       "type": "cb-section",
       "blocks": {
-        "text_QHYgYY": {
-          "type": "text",
-          "name": "t:names.heading",
+        "cb_group_awcmqV": {
+          "type": "cb-group",
+          "name": "CB Group",
           "settings": {
-            "text": "<h2>Ready to feel better?</h2>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
+            "custom_class": "one-liner",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 0,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "image_GyBWrC": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/passionfruit-h.webp",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "custom",
+                "custom_width": 20,
+                "width_mobile": "custom",
+                "custom_width_mobile": 60,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_GyBWrC"
+          ]
         },
-        "text_Qq6PP8": {
-          "type": "text",
-          "name": "t:names.text",
+        "cb_group_exH4Gd": {
+          "type": "cb-group",
+          "name": "CB Group",
           "settings": {
-            "text": "<h3>Join the clean hydration movement.</h3>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
+            "custom_class": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 9,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
-            "padding-block-end": 18,
+            "padding-block-end": 20,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
-        },
-        "button_wj4e44": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop Flavors",
-            "link": "shopify://collections/better-than-flavors",
-            "open_in_new_tab": false,
-            "style_class": "button",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
+          "blocks": {
+            "text_LCxh8d": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Ready to feel better?</h2>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_nPnyTj": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Join the clean hydration movement.</h3>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.25rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 18,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_bnD7ag": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Find your favorite flavor",
+                "link": "shopify://collections/better-than-flavors",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
           },
-          "blocks": {}
+          "block_order": [
+            "text_LCxh8d",
+            "text_nPnyTj",
+            "button_bnD7ag"
+          ]
         }
       },
       "block_order": [
-        "text_QHYgYY",
-        "text_Qq6PP8",
-        "button_wj4e44"
+        "cb_group_awcmqV",
+        "cb_group_exH4Gd"
       ],
-      "custom_css": [
-        ".section-background {background: linear-gradient( 180deg, #ffe7d9 0%, /* soft peach */ #ffd8e1 70%, /* light coral-pink midpoint */ #ffd0eb 100% /* rosy blush base */ );}"
-      ],
-      "name": "CTA",
+      "name": "CB Section",
       "settings": {
         "custom_class": "",
         "content_direction": "column",
@@ -2160,7 +2730,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 9,
+        "gap": 12,
         "section_width": "page-width",
         "section_height": "small",
         "section_height_custom": 50,
@@ -2176,7 +2746,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
+        "padding-block-start": 0,
         "padding-block-end": 80
       }
     }
@@ -2194,6 +2764,7 @@
     "cb_wave_divider_jBtEK9",
     "section_Ty39N9",
     "cb_section_UrVQyU",
-    "section_E9eWRN"
+    "cb_wave_divider_BkfyWj",
+    "cb_section_yiyccX"
   ]
 }

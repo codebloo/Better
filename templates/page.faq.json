@@ -64,7 +64,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h1>Better Hydration FAQ</h1>",
+            "text": "<h1>Better Than FAQ</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -108,7 +108,7 @@
             "accordion_row_RARmWn": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What makes Better different from other hydration or energy drinks?",
+                "heading": "What makes Better Than different from other hydration or energy drinks?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -117,7 +117,7 @@
                 "text_V4zfdd": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Better is powered by real electrolytes and nutrients, no sugar, no caffeine, no artificial sweeteners. It’s formulated to hydrate faster and help your body perform naturally, without crashes or fake buzz.</p>",
+                    "text": "<p>Better Than is powered by real electrolytes and nutrients, with no caffeine, artificial flavors or sweeteners, and no preservatives. It’s formulated to hydrate faster and help your body perform naturally, without crashes or fake buzz.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -147,7 +147,7 @@
             "accordion_row_cgwazF": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Does Better have caffeine?",
+                "heading": "Does Better Than have caffeine?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -156,7 +156,7 @@
                 "text_cEM8WQ": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Nope. Better is completely caffeine-free.<br/><br/>Your energy comes from <strong>bioavailable B-vitamins</strong> (like B12 and B6) and <strong>L-Theanine, </strong>for smooth focus without jitters.</p>",
+                    "text": "<p>Nope. Better Than is completely caffeine-free.<br/><br/>Your energy comes from <strong>bioavailable B-vitamins</strong> (like B12 and B6) and <strong>L-Theanine, </strong>for smooth focus without jitters.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -228,7 +228,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "When should I drink Better?",
+                "heading": "When should I drink Better Than?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -310,7 +310,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "Does Better contain sugar?",
+                "heading": "Does Better Than contain sugar?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -350,7 +350,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "Is Better keto-friendly or okay for low-sugar diets?",
+                "heading": "Is Better Than keto-friendly or okay for low-sugar diets?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -359,7 +359,7 @@
                 "text_9KGmTR": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Better isn’t fully keto, but it’s <strong>low-sugar and designed for balance</strong>, not restriction. The small amount of organic cane sugar supports hydration and energy without the crash or artificial aftertaste of zero-calorie sweeteners. Most customers find it fits easily into balanced, health-focused lifestyles,  including intermittent fasting and moderate low-carb plans.</p>",
+                    "text": "<p>Better Than isn’t fully keto, but it’s <strong>low-sugar and designed for balance</strong>, not restriction. The small amount of organic cane sugar supports hydration and energy without the crash or artificial aftertaste of zero-calorie sweeteners. Most customers find it fits easily into balanced, health-focused lifestyles,  including intermittent fasting and moderate low-carb plans.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -399,7 +399,7 @@
                 "text_mzP3MY": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Most customers notice increased hydration and mental clarity within minutes.<br/><br/>Because Better uses balanced electrolytes that mirror your body’s natural composition, absorption is fast and effective.</p>",
+                    "text": "<p>Most customers notice increased hydration and mental clarity within minutes.<br/><br/>Because Better Than uses balanced electrolytes that mirror your body’s natural composition, absorption is fast and effective.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -430,7 +430,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "Is Better safe for daily use?",
+                "heading": "Is Better Than safe for daily use?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -439,7 +439,7 @@
                 "text_MWR3qD": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Absolutely. Better is designed for everyday hydration.<br/><br/>It’s vegan, non-GMO, gluten-free, and made with clinically supported nutrients at safe, functional doses.</p>",
+                    "text": "<p>Absolutely. Better Than is designed for everyday hydration.<br/><br/>It’s vegan, non-GMO, gluten-free, and made with clinically supported nutrients at safe, functional doses.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -470,7 +470,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "How does Better compare to water alone?",
+                "heading": "How does Better Than compare to water alone?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -479,7 +479,7 @@
                 "text_XpXLV8": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Better hydrates <strong>up to 20x more effectively</strong> than water alone, thanks to precise electrolyte ratios and vitamins that help your body retain fluid and energy.</p>",
+                    "text": "<p>Better Than hydrates <strong>up to 20x more effectively</strong> than water alone, thanks to precise electrolyte ratios and vitamins that help your body retain fluid and energy.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -559,7 +559,7 @@
                 "text_LtUeFC": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Yes! Better was designed for travel, each stick is TSA-friendly and mess-free. Just toss a few in your bag and mix with bottled or filtered water on the go.</p>",
+                    "text": "<p>Yes! Better Than was designed for travel, each stick is TSA-friendly and mess-free. Just toss a few in your bag and mix with bottled or filtered water on the go.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -590,7 +590,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "Where is Better made?",
+                "heading": "Where is Better Than made?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -599,7 +599,7 @@
                 "text_qCXLmd": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Better products are <strong>formulated and blended in the USA</strong> using globally sourced, quality-verified ingredients.</p>",
+                    "text": "<p>Better Than products are <strong>formulated and blended in the USA</strong> using globally sourced, quality-verified ingredients.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -630,7 +630,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "Can I mix Better with other drinks?",
+                "heading": "Can I mix Better Than with other drinks?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -670,7 +670,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_row",
               "settings": {
-                "heading": "Is Better safe for kids or pregnant people?",
+                "heading": "Is Better Than safe for kids or pregnant people?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -679,7 +679,7 @@
                 "text_tqCPTF": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Better is made from safe, everyday nutrients and electrolytes.<br/><br/>However, if pregnant, nursing, or managing a medical condition, it’s always smart to check with your healthcare provider first.</p>",
+                    "text": "<p>Better Than is made from safe, everyday nutrients and electrolytes.<br/><br/>However, if pregnant, nursing, or managing a medical condition, it’s always smart to check with your healthcare provider first.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",

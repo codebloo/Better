@@ -80,3 +80,11 @@ margin-bottom: 18px;
   transform: scale(1.05);
   transition: all 0.25s ease;
 }
+.hero-berry img.image-block__image {
+  max-width: 200px;       /* slightly smaller fruit to let copy lead */
+  margin: 0 auto 1rem;
+}
+
+.home-brand-story h2{
+       max-width: 30ch;
+}

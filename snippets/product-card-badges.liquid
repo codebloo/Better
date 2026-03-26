@@ -8,6 +8,8 @@
   {% render 'product-card-badges', product: product, settings: settings %}
 {%- enddoc -%}
 
+
+
 <div
   class="product-badges product-badges--{{ settings.badge_position }}"
   style="
@@ -15,6 +17,19 @@
     --badge-font-family: var(--font-{{ settings.badge_font_family }}--family); --badge-font-weight: var(--font-{{ settings.badge_font_family }}--weight); --badge-text-transform: {{ settings.badge_text_transform }};
   "
 >
+{%- assign sticker_badge = product.metafields.custom.sticker_badge.value -%}
+{%- if sticker_badge != blank -%}
+  <div
+    class="product-badges__badge product-badges__badge--rectangle"
+    style="
+      background: {{ sticker_badge.background_color.value }};
+      color: {{ sticker_badge.text_color.value }};
+    "
+  >
+    {{- sticker_badge.text -}}
+  </div>
+{%- endif -%}
+
   {%- if product.available == false or product.compare_at_price > product.price and product.available -%}
     <div
       class="
@@ -68,6 +83,7 @@
     font-weight: var(--badge-font-weight);
     text-transform: var(--badge-text-transform);
     border-radius: var(--badge-border-radius);
+    margin-bottom:9px;
   }
 
   .product-badges__badge--rectangle {

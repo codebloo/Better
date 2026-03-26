@@ -1,0 +1,177 @@
+{% comment %}
+  Flavor Indicator Block
+  Reads from metaobject: custom.flavor_description
+  Metaobject fields: flavor, description, sweetness, tartness
+  Displays flavor info and visual bar indicators
+{% endcomment %}
+
+{% assign flavor_data = product.metafields.custom.flavor_description.value %}
+
+{% if flavor_data != blank %}
+
+{% liquid
+  assign sweetness_value = flavor_data.sweetness.value | default: flavor_data.sweetness | plus: 0
+  assign tartness_value = flavor_data.tartness.value | default: flavor_data.tartness | plus: 0
+  assign max_bars = 5
+%}
+
+<div class="flavour-block">
+  {% if flavor_data.flavor != blank %}
+    <h4 class="flavour-title">{{ flavor_data.flavor }}</h4>
+  {% endif %}
+  
+  {% if flavor_data.description != blank %}
+    <div class="flavour-description">{{ flavor_data.description | newline_to_br }}</div>
+  {% endif %}
+
+  <div class="flavour-indicators">
+    {% if sweetness_value > 0 %}
+    <div class="flavour-indicator">
+      <span class="flavour-label">Sweetness</span>
+      <div class="flavour-bars">
+        {% for i in (1..max_bars) %}
+          <span class="flavour-bar sweetness-bar {% if i <= sweetness_value %}sweetness-bar--filled{% endif %}"></span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if tartness_value > 0 %}
+    <div class="flavour-indicator">
+      <span class="flavour-label">Tartness</span>
+      <div class="flavour-bars">
+        {% for i in (1..max_bars) %}
+          <span class="flavour-bar tartness-bar {% if i <= tartness_value %}tartness-bar--filled{% endif %}"></span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% style %}
+.flavour-block {
+  margin-bottom: 18px;
+}
+
+.flavour-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: {{ block.settings.label_color }};
+  margin: 0 0 8px 0;
+}
+
+.flavour-description {
+  font-size: 14px;
+  color: {{ block.settings.label_color }};
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.flavour-indicators {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.flavour-indicator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 0;
+  font-family: inherit;
+}
+
+.flavour-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: {{ block.settings.label_color }};
+  min-width: 70px;
+}
+
+.flavour-bars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.flavour-bar {
+  width: 24px;
+  height: 8px;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.tartness-bar {
+  background-color: {{ block.settings.tartness_empty_color }};
+}
+
+.tartness-bar--filled {
+  background-color: {{ block.settings.tartness_filled_color }};
+}
+
+.sweetness-bar {
+  background-color: {{ block.settings.sweetness_empty_color }};
+}
+
+.sweetness-bar--filled {
+  background-color: {{ block.settings.sweetness_filled_color }};
+}
+{% endstyle %}
+
+{% endif %}
+
+{% schema %}
+{
+  "name": "Flavor Indicator",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Displays flavor information from the metaobject 'custom.flavor_description'. Shows flavor name, description, and sweetness/tartness bars (1-5)."
+    },
+    {
+      "type": "header",
+      "content": "Sweetness level"
+    },
+    {
+      "type": "color",
+      "id": "sweetness_empty_color",
+      "label": "Empty Bar Color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "sweetness_filled_color",
+      "label": "Filled Bar Color",
+      "default": "#dc3545"
+    },
+    {
+      "type": "header",
+      "content": "Tartness level"
+    },
+    {
+      "type": "color",
+      "id": "tartness_empty_color",
+      "label": "Empty Bar Color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "tartness_filled_color",
+      "label": "Filled Bar Color",
+      "default": "#dc3545"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Label Color",
+      "default": "#333333"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flavor Indicator"
+    }
+  ]
+}
+{% endschema %}

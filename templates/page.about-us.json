@@ -241,6 +241,7 @@
       "settings": {
         "overlap_next": false,
         "overlap_previous": false,
+        "outline": false,
         "fill": "#d28238",
         "height": 48,
         "flip_vertical": false,
@@ -1516,6 +1517,16 @@
       ],
       "name": "Our Values",
       "settings": {
+        "slides_default": 1,
+        "space_default": 10,
+        "slides_320": 1.2,
+        "space_320": 18,
+        "slides_768": 3.2,
+        "space_768": 18,
+        "slides_990": 4.2,
+        "space_990": 18,
+        "slides_1280": 5,
+        "space_1280": 18,
         "heading": "Our Values",
         "section_width": "full-width",
         "padding-block-start": 40,
@@ -2232,87 +2243,215 @@
         "padding-block-end": 40
       }
     },
-    "section_E9eWRN": {
-      "type": "section",
+    "cb_wave_divider_tFj68U": {
+      "type": "cb-wave-divider",
+      "name": "CB Wave divider",
+      "settings": {
+        "overlap_next": false,
+        "overlap_previous": false,
+        "outline": false,
+        "fill": "#ffd4bf",
+        "height": 80,
+        "flip_vertical": true,
+        "flip_horizontal": false,
+        "margin_top": 0,
+        "margin_bottom": -1,
+        "zindex": 0
+      }
+    },
+    "cb_section_fFFUqQ": {
+      "type": "cb-section",
       "blocks": {
-        "text_QHYgYY": {
-          "type": "text",
-          "name": "t:names.heading",
+        "cb_group_EkPqpt": {
+          "type": "cb-group",
+          "name": "CB Group",
           "settings": {
-            "text": "<h2>Ready to feel better?</h2>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
+            "custom_class": "one-liner",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 0,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "image_wDTDhW": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/passionfruit-h.webp",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "custom",
+                "custom_width": 20,
+                "width_mobile": "custom",
+                "custom_width_mobile": 60,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_wDTDhW"
+          ]
         },
-        "text_Qq6PP8": {
-          "type": "text",
-          "name": "t:names.text",
+        "cb_group_yFi4Hz": {
+          "type": "cb-group",
+          "name": "CB Group",
           "settings": {
-            "text": "<h3>Join the clean hydration movement.</h3>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
+            "custom_class": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 9,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
-            "padding-block-end": 18,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
-        },
-        "button_wj4e44": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop Flavors",
-            "link": "shopify://collections/better-than-flavors",
-            "open_in_new_tab": false,
-            "style_class": "button",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
+          "blocks": {
+            "text_edDLhb": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Ready to feel better?</h2>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_H7QqrY": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Join the clean hydration movement.</h3>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.25rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 18,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_zAHg9M": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Find your favorite flavor",
+                "link": "shopify://collections/better-than-flavors",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
           },
-          "blocks": {}
+          "block_order": [
+            "text_edDLhb",
+            "text_H7QqrY",
+            "button_zAHg9M"
+          ]
         }
       },
       "block_order": [
-        "text_QHYgYY",
-        "text_Qq6PP8",
-        "button_wj4e44"
+        "cb_group_EkPqpt",
+        "cb_group_yFi4Hz"
       ],
-      "custom_css": [
-        ".section-background {background: linear-gradient( 180deg, #ffe7d9 0%, /* soft peach */ #ffd8e1 70%, /* light coral-pink midpoint */ #ffd0eb 100% /* rosy blush base */ );}"
-      ],
-      "name": "CTA",
+      "name": "CB Section",
       "settings": {
+        "custom_class": "",
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
@@ -2320,7 +2459,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 9,
+        "gap": 12,
         "section_width": "page-width",
         "section_height": "small",
         "section_height_custom": 50,
@@ -2336,7 +2475,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
+        "padding-block-start": 0,
         "padding-block-end": 80
       }
     }
@@ -2348,6 +2487,7 @@
     "section_MaK97E",
     "cb_carousel_w4HPKE",
     "section_CwfXhT",
-    "section_E9eWRN"
+    "cb_wave_divider_tFj68U",
+    "cb_section_fFFUqQ"
   ]
 }

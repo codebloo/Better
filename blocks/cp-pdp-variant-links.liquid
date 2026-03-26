@@ -1,0 +1,116 @@
+
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- liquid
+  assign fake_group = product.metafields.custom.fake_variant_links.value
+  if fake_group == blank
+    echo ''
+  endif
+  assign fake_links = fake_group.links.value
+-%}
+
+{%- if fake_links != blank -%}
+  <div class="cb-pdp-variant-links">
+<legend>{{block.settings.title}}</legend>
+  <div class="fake-variant-buttons" role="group" aria-label="Select option">
+    {%- for link_entry in fake_links -%}
+      {%- liquid
+        assign btn_text  = link_entry.button_text.value
+        assign variant   = link_entry.product_link.value
+      -%}
+
+      {%- if variant == blank -%}
+        {%- continue -%}
+      {%- endif -%}
+
+      {%- liquid
+        assign linked_product = variant.product
+        assign is_current = false
+        if linked_product.id == product.id and variant.id == current_variant.id
+          assign is_current = true
+        endif
+      -%}
+
+      {%- if is_current -%}
+        <button
+          class="fake-variant-btn fake-variant-btn--selected"
+          type="button"
+          disabled
+          aria-current="true"
+          aria-pressed="true"
+        >
+          {{- btn_text -}}
+        </button>
+      {%- else -%}
+        
+         <a href="{{ linked_product.url }}?variant={{ variant.id }}"
+          class="fake-variant-btn"
+          aria-pressed="false"
+        >
+          {{- btn_text -}}
+        </a>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+  </div>
+{%- endif -%}
+
+<style>
+.cb-pdp-variant-links legend{margin-bottom:9px;}
+
+  .fake-variant-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fake-variant-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid var(--color-variant-border);
+  border-radius: var(--style-border-radius-inputs);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  background: var(--color-variant-border);
+  transition: background 0.15s, color 0.15s;
+}
+
+.fake-variant-btn:hover {
+  background: var(--color-primary-button-background);
+  border-color:var(--color-primary-button-background);
+  color: #fff;
+}
+
+.fake-variant-btn--selected {
+  background: var(--color-selected-variant-border);
+  border-color: var(--color-selected-variant-border);
+  color: #fff;
+  cursor: default;
+  pointer-events: none;
+}
+  </style>
+
+{% schema %}
+{
+  "name": "CB Fake Variants",
+  "tag": null,
+  "presets": [
+    {
+      "name": "CB Fake Variants",
+      "category": "Custom"
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label":"Group Label",
+      "default": "Packs"
+    }
+  ]
+}
+{% endschema %}

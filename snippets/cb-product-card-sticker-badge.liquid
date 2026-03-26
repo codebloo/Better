@@ -1,0 +1,71 @@
+{%- doc -%}
+  Renders a custom sticker badge from product metafield.
+  @param {object} product - The product object.
+  @param {object} settings - The theme settings object.
+  @example
+  {% render 'product-card-sticker-badge', product: product, settings: settings %}
+{%- enddoc -%}
+
+{%- liquid
+  assign sticker_badge = product.metafields.custom.sticker_badge.value
+-%}
+
+{%- if sticker_badge != blank -%}
+  <div
+    class="product-sticker-badge product-sticker-badge--{{ settings.badge_position }}"
+    style="
+      --badge-border-radius: {{ settings.badge_corner_radius }}px;
+      --badge-font-family: var(--font-{{ settings.badge_font_family }}--family);
+      --badge-font-weight: var(--font-{{ settings.badge_font_family }}--weight);
+      --badge-text-transform: {{ settings.badge_text_transform }};
+    "
+  >
+    <div
+      class="product-sticker-badge__badge product-sticker-badge__badge--rectangle"
+      style="
+        --sticker-background-color: {{ sticker_badge.background_color.value }};
+        --sticker-text-color: {{ sticker_badge.text_color.value }};
+      "
+    >
+      {{- sticker_badge.text -}}
+    </div>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  .product-sticker-badge {
+    --badge-inset: max(var(--padding-xs), calc((var(--border-radius) + var(--padding-xs)) * (1 - cos(45deg))));
+    position: absolute;
+    z-index: var(--layer-flat);
+  }
+  .product-sticker-badge--bottom-left {
+    bottom: calc(var(--badge-inset) + var(--padding-block-start));
+    left: calc(var(--badge-inset) + var(--padding-inline-start));
+  }
+  .product-sticker-badge--top-left {
+    top: calc(var(--badge-inset) + var(--padding-block-start));
+    left: calc(var(--badge-inset) + var(--padding-inline-start));
+  }
+  .product-sticker-badge--top-right {
+    top: calc(var(--badge-inset) + var(--padding-block-start));
+    right: calc(var(--badge-inset) + var(--padding-inline-start));
+  }
+  .product-sticker-badge__badge {
+    --badge-font-size: var(--font-size--xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--sticker-text-color, #fff);
+    background: var(--sticker-background-color, #000);
+    font-size: var(--badge-font-size);
+    font-family: var(--badge-font-family);
+    font-weight: var(--badge-font-weight);
+    text-transform: var(--badge-text-transform);
+    border-radius: var(--badge-border-radius);
+  }
+  .product-sticker-badge__badge--rectangle {
+    padding-block: var(--badge-rectangle-padding-block);
+    padding-inline: var(--badge-rectangle-padding-inline);
+  }
+{% endstylesheet %}

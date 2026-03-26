@@ -13,6 +13,7 @@
     "logo_inverse": "shopify://shop_images/BetterThanLogo.svg",
     "logo_height": 54,
     "logo_height_mobile": 36,
+    "favicon": "shopify://shop_images/0_9.png",
     "type_body_font": "libre_franklin_n4",
     "type_subheading_font": "libre_franklin_n6",
     "type_heading_font": "petrona_n7",
@@ -49,7 +50,7 @@
     "card_hover_effect": "none",
     "badge_position": "top-right",
     "badge_corner_radius": 100,
-    "badge_sale_color_scheme": "scheme-1",
+    "badge_sale_color_scheme": "scheme-528bb6d0-ed51-4819-8adc-c6592f3f63de",
     "badge_sold_out_color_scheme": "scheme-3",
     "badge_text_transform": "none",
     "primary_button_border_width": 0,
@@ -100,11 +101,6 @@
         "disabled": false,
         "settings": {}
       },
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": true,
-        "settings": {}
-      },
       "9356323809658795675": {
         "type": "shopify://apps/reelup-shoppable-videos-reels/blocks/reelup/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
         "disabled": false,
@@ -120,6 +116,21 @@
       },
       "2200952712151285029": {
         "type": "shopify://apps/microsoft-clarity/blocks/brandAgents_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "17992116214976573926": {
+        "type": "shopify://apps/seo-manager-venntov/blocks/seomanager/c54c366f-d4bb-4d52-8d2f-dd61ce8e7e12",
+        "disabled": false,
+        "settings": {}
+      },
+      "8232603958289840080": {
+        "type": "shopify://apps/seo-manager-venntov/blocks/seomanager-404/c54c366f-d4bb-4d52-8d2f-dd61ce8e7e12",
         "disabled": false,
         "settings": {}
       }
@@ -678,6 +689,45 @@
           "foreground": "#5c4033",
           "primary": "#fa0361",
           "primary_hover": "#ff8017",
+          "border": "#0000000f",
+          "shadow": "#1a1a1a",
+          "primary_button_background": "#0066a6",
+          "primary_button_text": "#ffffff",
+          "primary_button_border": "#ff8017",
+          "primary_button_hover_background": "#e02921",
+          "primary_button_hover_text": "#ffffff",
+          "primary_button_hover_border": "#e02921",
+          "secondary_button_background": "#ffffff",
+          "secondary_button_text": "#0066a6",
+          "secondary_button_border": "#ffffff",
+          "secondary_button_hover_background": "#0066a6",
+          "secondary_button_hover_text": "#ffffff",
+          "secondary_button_hover_border": "#0066a6",
+          "input_background": "#ffffffc7",
+          "input_text_color": "#333333",
+          "input_border_color": "#dfdfdf",
+          "input_hover_background": "#00000003",
+          "variant_background_color": "#faadab",
+          "variant_text_color": "#1a1a1a",
+          "variant_border_color": "#faadab",
+          "variant_hover_background_color": "#fa0361",
+          "variant_hover_text_color": "#ffffff",
+          "variant_hover_border_color": "#fa0361",
+          "selected_variant_background_color": "#fa0361",
+          "selected_variant_text_color": "#ffffff",
+          "selected_variant_border_color": "#fa0361",
+          "selected_variant_hover_background_color": "#0066a6",
+          "selected_variant_hover_text_color": "#ffffff",
+          "selected_variant_hover_border_color": "#0066a6"
+        }
+      },
+      "scheme-528bb6d0-ed51-4819-8adc-c6592f3f63de": {
+        "settings": {
+          "background": "#fa0361",
+          "foreground_heading": "#ffffff",
+          "foreground": "#ffffff",
+          "primary": "#ffffff",
+          "primary_hover": "#ffffff",
           "border": "#0000000f",
           "shadow": "#1a1a1a",
           "primary_button_background": "#0066a6",

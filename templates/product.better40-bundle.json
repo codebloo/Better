@@ -2538,16 +2538,14 @@
       "settings": {
         "custom_class": "",
         "section_width": "page-width",
-        "color_scheme": "",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "color_scheme": ""
       }
     },
     "1762035016c8fd612a": {
       "type": "_blocks",
       "blocks": {
         "appio_product_reviews_reviews_widget_3AHrJj": {
-          "type": "shopify://apps/appio-product-reviews/blocks/reviews-widget/569167b3-e5d6-4314-9866-f51281b506d7",
+          "type": "shopify://apps/amazon-reviews-by-appio/blocks/reviews-widget/569167b3-e5d6-4314-9866-f51281b506d7",
           "settings": {}
         }
       },
