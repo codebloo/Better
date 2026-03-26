@@ -1155,6 +1155,7 @@
     "when_will_order_arrive": "When will I get my order?",
     "where_are_products_made": "Where are your products manufactured?"
   },
+    "settings_schema": {
   "social-media": {
       "name": "Social media",
       "settings": {
@@ -1200,4 +1201,5 @@
       }
     }
   }
+}
 
