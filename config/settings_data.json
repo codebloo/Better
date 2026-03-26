@@ -89,6 +89,8 @@
     "variant_button_border_width": 1,
     "variant_button_radius": 6,
     "variant_button_width": "default-width-buttons",
+    "social_instagram_link": "https://www.instagram.com/getmybetter/",
+    "social_tiktok_link": "https://www.tiktok.com/@enjoybetterthan",
     "content_for_index": [],
     "blocks": {
       "341186785192672687": {
