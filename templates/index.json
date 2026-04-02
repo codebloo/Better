@@ -90,7 +90,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-end",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 18,
             "width": "fill",
@@ -119,7 +119,7 @@
             "padding-block-start": 18,
             "padding-block-end": 18,
             "padding-inline-start": 18,
-            "padding-inline-end": 18
+            "padding-inline-end": 78
           },
           "blocks": {
             "text_jWeMFp": {
