@@ -24,10 +24,11 @@
     </div>
 </div>
 <style>
-#block-{{ block.id }} .featured-card-icon{background-color:{{ block.settings.icon_bg }};}
-#block-{{ block.id }} .featured-card-content{background-color:{{ block.settings.text_bg }};}
+#block-{{ block.id }}{ border-radius:{{block_settings.border_radius}};}
+#block-{{ block.id }} .featured-card-icon{background-color:{{ block_settings.icon_bg }};}
+#block-{{ block.id }} .featured-card-content{background-color:{{ block_settings.text_bg }};}
 #block-{{ block.id }} .featured-card-title,
-#block-{{ block.id }} .featured-card-text{color:{{ block.settings.text_color }};}
+#block-{{ block.id }} .featured-card-text{color:{{ block_settings.text_color }};}
 </style>
 {% stylesheet %}
 
