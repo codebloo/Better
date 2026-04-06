@@ -1,2 +1,5 @@
-.cb-featured-card{border-radius:12px;}
+.cb-featured-card{
+    border-radius:12px;
+    text-align:center;}
 .featured-card-icon{padding:9px;}
+.featured-card-content{padding:9px;}
