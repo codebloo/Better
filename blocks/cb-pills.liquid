@@ -1,5 +1,5 @@
 {% assign block_settings = block.settings %}
-<div class="cb-pills cb-pills--{{ block.id }}">
+<div class="cb-pills cb-pills--{{ block.id }}" style="{% render 'spacing-style', settings: block.settings %}">
 {{ 'cb-pills.css' |asset_url | stylesheet_tag }}
   {% content_for 'blocks' %}
 </div>
