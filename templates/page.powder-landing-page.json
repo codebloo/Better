@@ -524,14 +524,13 @@
         "padding-block-end": 0
       }
     },
-    "cb_section_UtNnhC": {
-      "type": "cb-section",
+    "cb_carousel_eB48xP": {
+      "type": "cb-carousel",
       "blocks": {
-        "cb_group_Up8p3C": {
-          "type": "cb-group",
-          "name": "Card",
+        "cb_slide_b6KUDC": {
+          "type": "cb-slide",
+          "name": "CB Slide",
           "settings": {
-            "custom_class": "",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -539,7 +538,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 0,
+            "gap": 12,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -554,7 +553,7 @@
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 12,
+            "border_radius": 0,
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
@@ -568,9 +567,9 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "cb_group_ibHXLW": {
+            "cb_group_j8HEXW": {
               "type": "cb-group",
-              "name": "icon",
+              "name": "Card",
               "settings": {
                 "custom_class": "",
                 "content_direction": "column",
@@ -578,7 +577,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
+                "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 0,
                 "width": "fit-content",
@@ -587,57 +586,15 @@
                 "custom_width_mobile": 100,
                 "height": "fit",
                 "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
+                "inherit_color_scheme": false,
+                "color_scheme": "scheme-6",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "cb_group_89PfDx": {
-              "type": "cb-group",
-              "name": "text",
-              "settings": {
-                "custom_class": "",
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
+                "border_radius": 12,
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
@@ -651,11 +608,22 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_XmyAc6": {
+                "icon_NUhQJW": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "width": 24,
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "text_np8x6V": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>New arrivals</h2>",
+                    "text": "<h2>Taste You'll Crave</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -677,7 +645,7 @@
                   },
                   "blocks": {}
                 },
-                "text_k9UMwL": {
+                "text_9dA9wC": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
@@ -687,34 +655,59 @@
                     "alignment": "left",
                     "type_preset": "custom",
                     "font": "var(--font-body--family)",
-                    "font_size": "0.75rem",
+                    "font_size": "0.875rem",
                     "line_height": "tight",
                     "letter_spacing": "tight",
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
-                    "background": true,
-                    "background_color": "#115157",
+                    "background": false,
+                    "background_color": "#00000026",
                     "corner_radius": 0,
-                    "padding-block-start": 9,
-                    "padding-block-end": 9,
-                    "padding-inline-start": 9,
-                    "padding-inline-end": 9
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "text_XmyAc6",
-                "text_k9UMwL"
+                "icon_NUhQJW",
+                "text_np8x6V",
+                "text_9dA9wC"
               ]
             }
           },
           "block_order": [
-            "cb_group_ibHXLW",
-            "cb_group_89PfDx"
+            "cb_group_j8HEXW"
           ]
-        },
+        }
+      },
+      "block_order": [
+        "cb_slide_b6KUDC"
+      ],
+      "name": "CB Carousel",
+      "settings": {
+        "slides_default": 1,
+        "space_default": 10,
+        "slides_320": 1.2,
+        "space_320": 18,
+        "slides_768": 3.2,
+        "space_768": 18,
+        "slides_990": 4.2,
+        "space_990": 18,
+        "slides_1280": 5,
+        "space_1280": 18,
+        "heading": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "cb_section_UtNnhC": {
+      "type": "cb-section",
+      "blocks": {
         "image_WFRRfB": {
           "type": "image",
           "name": "Taste",
@@ -832,7 +825,6 @@
         }
       },
       "block_order": [
-        "cb_group_Up8p3C",
         "image_WFRRfB",
         "image_aVLX6q",
         "image_NXWrRR",
@@ -1503,6 +1495,7 @@
     "section_3yYjVm",
     "cb_section_Rh6DNR",
     "cb_section_jqjnfU",
+    "cb_carousel_eB48xP",
     "cb_section_UtNnhC",
     "cb_section_JRXtHD",
     "section_cGbKeq"
