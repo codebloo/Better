@@ -1,13 +1,8 @@
-{%- capture children %}
-  {% content_for 'blocks' %}
-{% endcapture %}
-
+{% assign block_settings = block.settings %}
 <div class="cb-pills">
 
 {{ 'cb-pills.css' |asset_url | stylesheet_tag }}
-
-{% render 'cb-pill', children: children, settings: block.settings, shopify_attributes: block.shopify_attributes, class: 'single-pill' %}
-
+  {% content_for 'blocks' %}
 </div>
 
 
