@@ -1,11 +1,15 @@
-.cb-featured-card{
-    border-radius:12px;
-    text-align:center;}
+:root {--fc-border-radius: 20px;}
+.cb-featured-card{text-align:center;}
 .featured-card-icon{
         align-items: center;
-        border-radius-top-left:12px;
-         border-radius-top-right:12px;
+        border-radius: var(--fc-border-radius);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     justify-content: center;
     padding:9px;}
-.featured-card-content{padding:18px 9px;}
+.featured-card-content{
+    border-radius: var(--fc-border-radius);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding:18px 9px;}
 .featured-card-title{margin-bottom:9px;}
