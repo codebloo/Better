@@ -11,7 +11,7 @@
   %}
 {% endcapture %}
 
-<div class="cb-featured-card border-style" style="{% render 'border-override', settings: settings %}" id="block-{{ block.id }}">
+<div class="cb-featured-card" id="block-{{ block.id }}">
     {{ 'cb-featured-card.css' | asset_url |stylesheet_tag }}
     <div class="featured-card-icon icon-block">{{ icon }}</div>
     <div class="featured-card-content">
