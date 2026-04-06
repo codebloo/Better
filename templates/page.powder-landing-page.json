@@ -1088,6 +1088,16 @@
                 "image_npznDt"
               ]
             },
+            "cb_pills_kgFAni": {
+              "type": "cb-pills",
+              "name": "CB Pills",
+              "settings": {
+                "bg_color": "#1a4e56",
+                "text_color": "#f1f0ea",
+                "border_radius": 12
+              },
+              "blocks": {}
+            },
             "cb_group_989chQ": {
               "type": "cb-group",
               "name": "Pills",
@@ -1958,6 +1968,7 @@
           "block_order": [
             "text_KNUpF6",
             "cb_group_QdrwRE",
+            "cb_pills_kgFAni",
             "cb_group_989chQ",
             "text_idPTeE"
           ]
