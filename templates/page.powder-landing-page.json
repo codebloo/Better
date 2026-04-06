@@ -1101,7 +1101,7 @@
                   "type": "_cb-pill",
                   "name": "CB Pill",
                   "settings": {
-                    "title": "<p>Metabolism*</p>",
+                    "title": "<p><strong>Metabolism*</strong></p>",
                     "text": ""
                   },
                   "blocks": {}
@@ -1110,7 +1110,7 @@
                   "type": "_cb-pill",
                   "name": "CB Pill",
                   "settings": {
-                    "title": "<p>Metabolism</p>",
+                    "title": "<p><strong>Metabolism</strong></p>",
                     "text": ""
                   },
                   "blocks": {}
@@ -1119,7 +1119,7 @@
                   "type": "_cb-pill",
                   "name": "CB Pill",
                   "settings": {
-                    "title": "<p>Hormonal<br/>Support*</p>",
+                    "title": "<p><strong>Hormonal<br/>Support*</strong></p>",
                     "text": ""
                   },
                   "blocks": {}
