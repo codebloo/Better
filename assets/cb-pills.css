@@ -1,3 +1,4 @@
+.cb-pills-grid{width:100%;}
 .cb-pills{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
@@ -9,5 +10,6 @@ grid-row-gap: 18px;
 
 .single-pill{
     padding:18px 9px;
+    text-align:center;
     width:100%;
 }
