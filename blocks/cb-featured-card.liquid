@@ -11,7 +11,7 @@
   %}
 {% endcapture %}
 
-<div class="cb-featured-card border-style" style="{% render 'border-override', settings: settings %}"">
+<div class="cb-featured-card border-style" style="{% render 'border-override', settings: settings %}">
     {{ 'cb-featured-card.css' | asset_url |stylesheet_tag }}
     <div class="featured-card-icon icon-block">{{ icon }}</div>
     <div class="featured-card-content">
@@ -24,7 +24,9 @@
     </div>
 </div>
 {% stylesheet %}
-.cb-featured-card .featured-card-icon{background-color:{{ block_settings.icon_bg }};}
+.cb-featured-card .featured-card-icon{
+    background-color:{{ block_settings.icon_bg }};
+}
 .cb-featured-card .featured-card-content{background-color:{{ block_settings.text_bg }};}
 .featured-card-title,
 featured-card-text{color:{{ block_settings.text_color }};}
