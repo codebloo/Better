@@ -3,6 +3,8 @@
     text-align:center;}
 .featured-card-icon{
         align-items: center;
+        border-radius-top-left:12px;
+         border-radius-top-right:12px;
     justify-content: center;
     padding:9px;}
 .featured-card-content{padding:18px 9px;}
