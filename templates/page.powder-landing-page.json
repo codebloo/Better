@@ -580,8 +580,8 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
+                "gap": 0,
+                "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
@@ -676,43 +676,43 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "text_k9UMwL": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Because if it doesn't taste good, you won't drink it. Staying hydrated shouldn't feel like a chore</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.75rem",
+                    "line_height": "tight",
+                    "letter_spacing": "tight",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": true,
+                    "background_color": "#115157",
+                    "corner_radius": 0,
+                    "padding-block-start": 9,
+                    "padding-block-end": 9,
+                    "padding-inline-start": 9,
+                    "padding-inline-end": 9
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "text_XmyAc6"
+                "text_XmyAc6",
+                "text_k9UMwL"
               ]
-            },
-            "text_GQpgG7": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<p>Because if it doesn't taste good, you won't drink it. Staying hydrated shouldn't feel like a chore</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "0.75rem",
-                "line_height": "tight",
-                "letter_spacing": "tight",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#115157",
-                "corner_radius": 0,
-                "padding-block-start": 9,
-                "padding-block-end": 9,
-                "padding-inline-start": 9,
-                "padding-inline-end": 9
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "cb_group_ibHXLW",
-            "cb_group_89PfDx",
-            "text_GQpgG7"
+            "cb_group_89PfDx"
           ]
         },
         "image_WFRRfB": {
