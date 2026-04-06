@@ -1,7 +1,9 @@
 :root {--fc-border-radius: 20px;}
+.featured-card-block{height:100%;}
 .cb-featured-card{
     display:flex;
     flex-direction:column;
+    height:100%;
     text-align:center;}
 .featured-card-icon{
         align-items: center;
