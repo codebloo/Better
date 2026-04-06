@@ -1129,7 +1129,7 @@
                   "name": "CB Pill",
                   "settings": {
                     "title": "<p><strong>Energy*</strong></p>",
-                    "text": "<p>(without caffeine)</p>"
+                    "text": "(without caffeine)"
                   },
                   "blocks": {}
                 },
