@@ -529,7 +529,7 @@
       "blocks": {
         "cb_slide_b6KUDC": {
           "type": "cb-slide",
-          "name": "CB Slide",
+          "name": "Taste",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -567,130 +567,278 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "cb_group_j8HEXW": {
-              "type": "cb-group",
-              "name": "Card",
+            "cb_featured_card_JhEH9n": {
+              "type": "cb-featured-card",
+              "name": "CB Featured Card",
               "settings": {
-                "custom_class": "",
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 0,
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": false,
-                "color_scheme": "scheme-6",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
+                "icon_bg": "#f3eb9a",
+                "text_bg": "#1a4e56",
+                "text_color": "#f1f0ea",
                 "border_radius": 12,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "icon": "price_tag",
+                "width": 24,
+                "title": "<p>Taste You'll Crave</p>",
+                "text": "<p>Because if it doesn't taste good, you won't drink it. Staying hydrated shouldn't feel like a chore</p>"
               },
-              "blocks": {
-                "icon_NUhQJW": {
-                  "type": "icon",
-                  "name": "t:names.icon",
-                  "settings": {
-                    "icon": "price_tag",
-                    "width": 24,
-                    "link": "",
-                    "open_in_new_tab": false
-                  },
-                  "blocks": {}
-                },
-                "text_np8x6V": {
-                  "type": "text",
-                  "name": "t:names.heading",
-                  "settings": {
-                    "text": "<h2>Taste You'll Crave</h2>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_9dA9wC": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Because if it doesn't taste good, you won't drink it. Staying hydrated shouldn't feel like a chore</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "custom",
-                    "font": "var(--font-body--family)",
-                    "font_size": "0.875rem",
-                    "line_height": "tight",
-                    "letter_spacing": "tight",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "icon_NUhQJW",
-                "text_np8x6V",
-                "text_9dA9wC"
-              ]
+              "blocks": {}
             }
           },
           "block_order": [
-            "cb_group_j8HEXW"
+            "cb_featured_card_JhEH9n"
+          ]
+        },
+        "cb_slide_8jMLx7": {
+          "type": "cb-slide",
+          "name": "Zero Crash",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cb_featured_card_LYHAHQ": {
+              "type": "cb-featured-card",
+              "name": "CB Featured Card",
+              "settings": {
+                "icon_bg": "#f3eb9a",
+                "text_bg": "#1a4e56",
+                "text_color": "#f1f0ea",
+                "border_radius": 12,
+                "icon": "price_tag",
+                "width": 24,
+                "title": "<p>Zero Crash</p>",
+                "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_featured_card_LYHAHQ"
+          ]
+        },
+        "cb_slide_97tW9a": {
+          "type": "cb-slide",
+          "name": "Hydration",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cb_featured_card_dLVi68": {
+              "type": "cb-featured-card",
+              "name": "CB Featured Card",
+              "settings": {
+                "icon_bg": "#f3eb9a",
+                "text_bg": "#1a4e56",
+                "text_color": "#f1f0ea",
+                "border_radius": 12,
+                "icon": "price_tag",
+                "width": 24,
+                "title": "<p>Zero Crash</p>",
+                "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_featured_card_dLVi68"
+          ]
+        },
+        "cb_slide_LjUAcP": {
+          "type": "cb-slide",
+          "name": "Balanced Electrolytes",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cb_featured_card_8nqVgG": {
+              "type": "cb-featured-card",
+              "name": "CB Featured Card",
+              "settings": {
+                "icon_bg": "#f3eb9a",
+                "text_bg": "#1a4e56",
+                "text_color": "#f1f0ea",
+                "border_radius": 12,
+                "icon": "price_tag",
+                "width": 24,
+                "title": "<p>Zero Crash</p>",
+                "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_featured_card_8nqVgG"
+          ]
+        },
+        "cb_slide_9RChKc": {
+          "type": "cb-slide",
+          "name": "Clean Ingredients",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cb_featured_card_pyWrn6": {
+              "type": "cb-featured-card",
+              "name": "CB Featured Card",
+              "settings": {
+                "icon_bg": "#f3eb9a",
+                "text_bg": "#1a4e56",
+                "text_color": "#f1f0ea",
+                "border_radius": 12,
+                "icon": "price_tag",
+                "width": 24,
+                "title": "<p>Zero Crash</p>",
+                "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_featured_card_pyWrn6"
           ]
         }
       },
       "block_order": [
-        "cb_slide_b6KUDC"
+        "cb_slide_b6KUDC",
+        "cb_slide_8jMLx7",
+        "cb_slide_97tW9a",
+        "cb_slide_LjUAcP",
+        "cb_slide_9RChKc"
       ],
       "name": "CB Carousel",
       "settings": {
-        "slides_default": 1,
-        "space_default": 10,
+        "slides_default": 4,
+        "space_default": 18,
         "slides_320": 1.2,
         "space_320": 18,
         "slides_768": 3.2,
