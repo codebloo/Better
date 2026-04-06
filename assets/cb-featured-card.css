@@ -1,5 +1,8 @@
 :root {--fc-border-radius: 20px;}
-.cb-featured-card{text-align:center;}
+.cb-featured-card{
+    display:flex;
+    flex-direction:column;
+    text-align:center;}
 .featured-card-icon{
         align-items: center;
         border-radius: var(--fc-border-radius);
@@ -11,5 +14,6 @@
     border-radius: var(--fc-border-radius);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    padding:18px 9px;}
+    flex-grow: 1;
+    padding:18px;}
 .featured-card-title{margin-bottom:9px;}
