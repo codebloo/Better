@@ -12,6 +12,7 @@
 {% endcapture %}
 
 <div class="cb-featured-card">
+    {{ 'cb-featured-card.css' | asset_url |stylesheet_tag }}
     <div class="featured-card-icon icon-block">{{ icon }}</div>
     <div class="featured-card-content">
         <div class="featured-card-title">
@@ -22,6 +23,17 @@
         </div>
     </div>
 </div>
+{% stylesheet %}
+  .icon-block {
+    display: flex;
+    fill: currentcolor;
+    flex-shrink: 0;
+  }
+
+  .icon-block__media {
+    height: auto;
+  }
+{% endstylesheet %}
 
 
 {% schema %}
