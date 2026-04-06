@@ -796,7 +796,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>Most hydration powders<br/>stop at hydration.</p>",
+                "text": "<h2>Most hydration powders <br/>stop at hydration.</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -826,7 +826,7 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
