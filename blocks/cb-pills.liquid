@@ -4,7 +4,10 @@
 {{ 'cb-pills.css' |asset_url | stylesheet_tag }}
   {% content_for 'blocks' %}
 </div>
-
+<style>
+    .single-pill{
+        background-color:{{ block_settings.bg_color }};
+color:{{block_settings.text_color }};}
 
 {% schema %}
 {
