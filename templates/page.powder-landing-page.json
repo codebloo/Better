@@ -1094,7 +1094,11 @@
               "settings": {
                 "bg_color": "#1a4e56",
                 "text_color": "#f1f0ea",
-                "border_radius": 12
+                "border_radius": 12,
+                "padding-block-start": 36,
+                "padding-block-end": 36,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
               "blocks": {
                 "cb_pill_Pewhw4": {
