@@ -1,8 +1,8 @@
 .cb-pills-grid{width:100%;}
 .cb-pills{
 display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr);
+grid-template-columns: repeat(2, 1fr);
+
 grid-column-gap: 18px;
 grid-row-gap: 18px;
 }
@@ -23,3 +23,12 @@ grid-row-gap: 18px;
 .cb-pill .subtext{
     font-sized:12px;
     font-weight:bold;}
+
+    @media screen and (min-width:768px){
+
+        .cb-pills{
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+}
+
+    }
