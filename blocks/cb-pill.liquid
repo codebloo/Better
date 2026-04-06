@@ -1,4 +1,15 @@
 
+{% capture pill %}
+<div class="single-pill">
+    {{ block.settings.title }}
+    {% if block.settings.text !=blank %}
+     {{ block.settings.text }}
+     {% endif %}
+</div>
+{% endcapture %}
+
+{{ pill }}
+
 {% schema %}
 {
   "name": "CB Pill",
