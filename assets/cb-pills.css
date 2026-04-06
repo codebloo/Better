@@ -5,3 +5,8 @@ grid-template-rows: repeat(3, 1fr);
 grid-column-gap: 18px;
 grid-row-gap: 18px;
 }
+
+.single-pill{
+    padding:18px 9px;
+    width:100%;
+}
