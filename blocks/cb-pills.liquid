@@ -1,0 +1,57 @@
+{%- capture children %}
+  {% content_for 'blocks' %}
+{% endcapture %}
+
+<div class="cb-pills">
+
+{{ 'cb-pills.css' |asset_url | stylesheet_tag }}
+
+{% render 'pill', children: children, settings: block.settings, shopify_attributes: block.shopify_attributes, class: 'single-pill' %}
+
+</div>
+
+
+{% schema %}
+{
+  "name": "CB Pills",
+  "class": "cb-pills",
+  "settings": [
+      {
+    "type": "header",
+   "content": "Pill Colors"},
+
+   {
+"type": "color",
+"id":"bg_color",
+"label":"Pill Background"
+},
+   {
+"type": "color",
+"id":"text_color",
+"label":"Text Color"
+},
+ {
+      "type": "range",
+      "id": "border_radius",
+      "label": "t:settings.border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+
+  ],
+  "blocks": [
+    {
+    "type": "cb-pill"
+}
+  ],
+  "presets": [
+    {
+      "name": "CB Pills",
+      "category": "CB"
+    }
+  ]
+}
+{% endschema %}
