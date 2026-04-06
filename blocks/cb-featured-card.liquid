@@ -11,7 +11,7 @@
   %}
 {% endcapture %}
 
-<div class="cb-featured-card">
+<div class="cb-featured-card border-style">
     {{ 'cb-featured-card.css' | asset_url |stylesheet_tag }}
     <div class="featured-card-icon icon-block">{{ icon }}</div>
     <div class="featured-card-content">
@@ -41,6 +41,34 @@
   "name": "CB Featured Card",
   "class": "icon-block",
   "settings": [
+      {
+    "type": "header",
+   "content": "Card Colors"},
+   {
+"type": "color",
+"id":"icon_bg",
+"label":"Icon Background"
+},
+   {
+"type": "color",
+"id":"text_bg",
+"label":"Text Background"
+},
+   {
+"type": "color",
+"id":"text_color",
+"label":"Text Color"
+},
+ {
+      "type": "range",
+      "id": "border_radius",
+      "label": "t:settings.border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
     {
     "type": "header",
    "content": "Icon"},
