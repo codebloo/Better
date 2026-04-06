@@ -1,9 +1,9 @@
 
 {% capture pill %}
 <div class="single-pill">
-    {{ block.settings.title }}
-    {% if block.settings.text !=blank %}
-     {{ block.settings.text }}
+    {{ settings.title }}
+    {% if settings.text !=blank %}
+     {{ settings.text }}
      {% endif %}
 </div>
 {% endcapture %}
