@@ -11,9 +11,9 @@
     attributes: block.shopify_attributes
   %}
   <div class="thermo-content">
-    {{ block_settings.title }}
+    <span class="thermo-title">{{ block_settings.title }}</span>
     {% if block_settings.text !=blank %}
-     <span class="subtext">{{ block_settings.text }}</span>
+     <span class="thermo-text">{{ block_settings.text }}</span>
      {% endif %}
      </div>
 </div>
