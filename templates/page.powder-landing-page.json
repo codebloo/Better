@@ -436,7 +436,7 @@
       ],
       "name": "CB Carousel",
       "settings": {
-        "slides_default": 1,
+        "slides_default": 3,
         "space_default": 40,
         "slides_320": 1.2,
         "space_320": 18,
