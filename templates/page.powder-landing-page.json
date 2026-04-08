@@ -1048,7 +1048,7 @@
                   "type": "_cb-pill",
                   "name": "CB Pill",
                   "settings": {
-                    "title": "<p><strong>Metabolism*</strong></p>",
+                    "title": "<p><strong>Complete<br/>Hydration*</strong></p>",
                     "text": ""
                   },
                   "blocks": {}
