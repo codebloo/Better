@@ -939,7 +939,7 @@
               "type": "cb-group",
               "name": "CB Group",
               "settings": {
-                "custom_class": "",
+                "custom_class": "this-is-better",
                 "content_direction": "row",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -1176,6 +1176,9 @@
       "block_order": [
         "cb_group_pgAAqc",
         "cb_group_NqJTCV"
+      ],
+      "custom_css": [
+        ".this-is-better img{width:223px;}"
       ],
       "name": "Highlights",
       "settings": {
