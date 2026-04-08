@@ -3,6 +3,7 @@
 
 {% capture thermo %}
 <div class="single-thermo">
+  <div class="image-wrap">
      {% render 'icon-or-image',
     icon: block_settings.icon,
     image_upload: block_settings.image_upload,
@@ -10,6 +11,7 @@
     class_name: icon_block_class,
     attributes: block.shopify_attributes
   %}
+  </div>
   <div class="thermo-content">
     <span class="thermo-title">{{ block_settings.title }}</span>
     {% if block_settings.text !=blank %}
