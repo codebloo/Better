@@ -302,10 +302,10 @@
       "name": "CB Thermometers",
       "settings": {
         "section_width": "page-width",
-        "gap": 12,
+        "gap": 40,
         "color_scheme": "scheme-4bbd2f34-4bd3-4712-910c-48302e9bce07",
         "padding-block-start": 32,
-        "padding-block-end": 32
+        "padding-block-end": 21
       }
     },
     "cb_featured_product_edKjxf": {
