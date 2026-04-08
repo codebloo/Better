@@ -108,11 +108,13 @@ margin-bottom: 18px;
    padding: 18px 21px 18px 24px;
 }
 .single-thermo .thermo-title{
+   display:block;
    font-size:17px;
    font-weight:700;
    letter-spacing:-0.5px;
 line-height:22px;}
 .single-thermo .thermo-text{
+    display:block;
    font-size:14px;
  letter-spacing:-0.6px;
 line-height:16px;}
