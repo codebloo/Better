@@ -93,8 +93,17 @@ margin-bottom: 18px;
    align-items:center;
    display:flex;
    gap:20px;}
-.single-thermo img{}
+.single-thermo  .image-wrap{
+   border-radius:100%;
+   background-color:#EE362F;
+   padding: 10px;
+}
+.single-thermo img{
+   
+}
 .single-thermo .thermo-content{
+   background-color:#EE362F;
+   border-radius:18px;
    padding: 18px 21px 18px;
 }
 .single-thermo .thermo-title{
