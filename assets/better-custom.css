@@ -91,8 +91,7 @@ margin-bottom: 18px;
 
 .single-thermo{
    align-items:center;
-   display:flex;
-   gap:20px;}
+   display:flex;}
 .single-thermo  .image-wrap{
    border-radius:100%;
    background-color:#EE362F;
@@ -104,8 +103,9 @@ margin-bottom: 18px;
 .single-thermo .thermo-content{
    background-color:#EE362F;
    border-radius:18px;
+   color:#fff;
    margin-left:-4px;
-   padding: 18px 21px 18px 24px;
+   padding: 18px 21px 18px 30px;
 }
 .single-thermo .thermo-title{
    display:block;
