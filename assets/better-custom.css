@@ -96,6 +96,7 @@ margin-bottom: 18px;
    border-radius:100%;
    background-color:#EE362F;
    padding: 10px;
+       z-index: 2;
 }
 .single-thermo img{
    
@@ -104,7 +105,7 @@ margin-bottom: 18px;
    background-color:#EE362F;
    border-radius:18px;
    color:#fff;
-   margin-left:-25px;
+   margin-left:-35px;
    max-width:366px;
    padding: 18px 21px 18px 50px;
 
