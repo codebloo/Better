@@ -759,7 +759,7 @@
                 "border_radius": 12,
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/Clean_Ingredients_Icon_1.svg",
-                "width": 73,
+                "width": 70,
                 "title": "<p>Clean Ingredients</p>",
                 "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
               },
@@ -1010,7 +1010,7 @@
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "custom",
-                    "custom_width": 35,
+                    "custom_width": 30,
                     "width_mobile": "fit-content",
                     "custom_width_mobile": 100,
                     "height": "fit",
