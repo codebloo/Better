@@ -1178,7 +1178,7 @@
         "cb_group_NqJTCV"
       ],
       "custom_css": [
-        ".this-is-better img{width:223px;}"
+        ".this-is-better img {width: 223px;}"
       ],
       "name": "Highlights",
       "settings": {
@@ -1400,7 +1400,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-62ca894c-922b-4748-a103-304cb1d9e810",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
