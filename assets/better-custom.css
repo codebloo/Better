@@ -94,5 +94,10 @@ margin-bottom: 18px;
 .single-thermo .thermo-content{}
 .single-thermo .thermo-title{
    font-size:17px;
-   font-weight:700}
-.single-thermo .thermo-text{font-size:14px;}
+   font-weight:700;
+   letter-spacing:-0.5px;
+line-height:22px;}
+.single-thermo .thermo-text{
+   font-size:14px;
+ letter-spacing:-0.6px;
+line-height:16px;}
