@@ -286,14 +286,14 @@
         "padding-block-end": 30
       }
     },
-    "product_information_FrjPfy": {
-      "type": "product-information",
+    "cb_featured_product_edKjxf": {
+      "type": "cb-featured-product",
       "blocks": {
         "media-gallery": {
           "type": "_product-media-gallery",
           "static": true,
           "settings": {
-            "media_presentation": "carousel",
+            "media_presentation": "grid",
             "media_columns": "one",
             "image_gap": 0,
             "large_first_image": false,
@@ -344,7 +344,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_ynrkRd": {
+            "text_9EciJa": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
@@ -370,11 +370,11 @@
               },
               "blocks": {}
             },
-            "text_9Yne8G": {
+            "text_3EdVed": {
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "{{ closest.product.metafields.custom.short_description | metafield_tag }}",
+                "text": "<p>{{ closest.product.metafields.custom.short_description | metafield_tag }}</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -396,15 +396,19 @@
               },
               "blocks": {}
             },
-            "custom_liquid_gTE3GG": {
-              "type": "custom-liquid",
-              "name": "t:names.custom_liquid",
+            "cb_flavour_bars_mearyg": {
+              "type": "cb-flavour-bars",
+              "name": "Flavor Indicator",
               "settings": {
-                "custom_liquid": ""
+                "sweetness_empty_color": "#e0e0e0",
+                "sweetness_filled_color": "#dc3545",
+                "tartness_empty_color": "#e0e0e0",
+                "tartness_filled_color": "#dc3545",
+                "label_color": "#333333"
               },
               "blocks": {}
             },
-            "text_hbLKrA": {
+            "text_xktGYa": {
               "type": "text",
               "name": "t:names.text",
               "settings": {
@@ -430,7 +434,7 @@
               },
               "blocks": {}
             },
-            "variant_picker_PXVwaV": {
+            "variant_picker_GRbBAy": {
               "type": "variant-picker",
               "name": "t:names.product_variant_picker",
               "settings": {
@@ -444,13 +448,13 @@
               },
               "blocks": {}
             },
-            "seal_subscriptions_subscription_widget_CRaXFe": {
+            "seal_subscriptions_subscription_widget_8mX9R7": {
               "type": "shopify://apps/seal-subscriptions/blocks/subscription-widget/13b25004-a140-4ab7-b5fe-29918f759699",
               "settings": {
                 "product": "electrolyte-vitamin-supplement-powder-variety-pack-2"
               }
             },
-            "buy_buttons_MU9YNR": {
+            "buy_buttons_aAUbmH": {
               "type": "buy-buttons",
               "name": "t:names.product_buy_buttons",
               "settings": {
@@ -489,17 +493,17 @@
             }
           },
           "block_order": [
-            "text_ynrkRd",
-            "text_9Yne8G",
-            "custom_liquid_gTE3GG",
-            "text_hbLKrA",
-            "variant_picker_PXVwaV",
-            "seal_subscriptions_subscription_widget_CRaXFe",
-            "buy_buttons_MU9YNR"
+            "text_9EciJa",
+            "text_3EdVed",
+            "cb_flavour_bars_mearyg",
+            "text_xktGYa",
+            "variant_picker_GRbBAy",
+            "seal_subscriptions_subscription_widget_8mX9R7",
+            "buy_buttons_aAUbmH"
           ]
         }
       },
-      "name": "t:names.product_information",
+      "name": "CB Featured Product",
       "settings": {
         "product": "electrolyte-vitamin-supplement-powder-variety-pack-2",
         "content_width": "content-center-aligned",
@@ -1514,7 +1518,7 @@
     "main",
     "section_3yYjVm",
     "cb_section_Rh6DNR",
-    "product_information_FrjPfy",
+    "cb_featured_product_edKjxf",
     "cb_carousel_eB48xP",
     "cb_section_JRXtHD",
     "section_cGbKeq"
