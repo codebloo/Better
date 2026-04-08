@@ -88,3 +88,11 @@ margin-bottom: 18px;
 .home-brand-story h2{
        max-width: 30ch;
 }
+
+.single-thermo{}
+.single-thermo img{}
+.single-thermo .thermo-content{}
+.single-thermo .thermo-title{
+   font-size:17px;
+   font-weight:700}
+.single-thermo .thermo-text{font-size:14px;}
