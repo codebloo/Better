@@ -254,53 +254,202 @@
         "padding-block-end": 40
       }
     },
-    "cb_section_Rh6DNR": {
-      "type": "cb-section",
+    "cb_carousel_6A4z3Y": {
+      "type": "cb-carousel",
       "blocks": {
-        "cb_thermo_zctMer": {
-          "type": "cb-thermo",
-          "name": "CB Thermometer",
+        "cb_slide_kXHaxf": {
+          "type": "cb-slide",
+          "name": "CB Slide",
           "settings": {
-            "icon": "apple",
-            "image_upload": "shopify://shop_images/thermo-natural.png",
-            "width": 100,
-            "title": "Natural Energy Support",
-            "text": "Bio-available B-vitamins help convert food to steady energy."
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "cb_thermo_YW8KmR": {
+              "type": "cb-thermo",
+              "name": "CB Thermometer",
+              "settings": {
+                "icon": "apple",
+                "image_upload": "shopify://shop_images/thermo-natural.png",
+                "width": 110,
+                "title": "Natural Energy Support",
+                "text": "Bio-available B-vitamins help convert food to steady energy."
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_thermo_YW8KmR"
+          ]
+        },
+        "cb_slide_eDMPLP": {
+          "type": "cb-slide",
+          "name": "CB Slide",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cb_thermo_UdcaQV": {
+              "type": "cb-thermo",
+              "name": "CB Thermometer",
+              "settings": {
+                "icon": "apple",
+                "image_upload": "shopify://shop_images/thermo-muscle.png",
+                "width": 110,
+                "title": "Muscle + Recovery Support",
+                "text": "Magnesium + electrolytes to  replenish & restore."
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_thermo_UdcaQV"
+          ]
+        },
+        "cb_slide_FhGab7": {
+          "type": "cb-slide",
+          "name": "CB Slide",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cb_thermo_FeMeR8": {
+              "type": "cb-thermo",
+              "name": "CB Thermometer",
+              "settings": {
+                "icon": "apple",
+                "image_upload": "shopify://shop_images/thermo-focus.png",
+                "width": 110,
+                "title": "Clearer Focus + Better Mood",
+                "text": "L-Theanine, the same compound found in matcha, promotes calm, clear mental focus."
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_thermo_FeMeR8"
+          ]
         }
       },
       "block_order": [
-        "cb_thermo_zctMer"
+        "cb_slide_kXHaxf",
+        "cb_slide_eDMPLP",
+        "cb_slide_FhGab7"
       ],
-      "name": "CB Section",
+      "name": "CB Carousel",
       "settings": {
-        "custom_class": "",
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
+        "slides_default": 1,
+        "space_default": 10,
+        "slides_320": 1.2,
+        "space_320": 18,
+        "slides_768": 3.2,
+        "space_768": 18,
+        "slides_990": 4.2,
+        "space_990": 18,
+        "slides_1280": 5,
+        "space_1280": 18,
+        "heading": "",
         "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-4bbd2f34-4bd3-4712-910c-48302e9bce07",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 30,
-        "padding-block-end": 30
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "cb_featured_product_edKjxf": {
@@ -1862,7 +2011,7 @@
   "order": [
     "main",
     "section_3yYjVm",
-    "cb_section_Rh6DNR",
+    "cb_carousel_6A4z3Y",
     "cb_featured_product_edKjxf",
     "cb_carousel_eB48xP",
     "cb_section_JRXtHD",
