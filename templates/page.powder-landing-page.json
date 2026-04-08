@@ -254,202 +254,58 @@
         "padding-block-end": 40
       }
     },
-    "cb_carousel_6A4z3Y": {
-      "type": "cb-carousel",
+    "cb_thermometers_M94LLY": {
+      "type": "cb-thermometers",
       "blocks": {
-        "cb_slide_kXHaxf": {
-          "type": "cb-slide",
-          "name": "CB Slide",
+        "cb_thermo_6eppKB": {
+          "type": "cb-thermo",
+          "name": "CB Thermometer",
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "icon": "apple",
+            "image_upload": "shopify://shop_images/thermo-natural.png",
+            "width": 110,
+            "title": "Natural Energy Support",
+            "text": "Bio-available B-vitamins help convert food to steady energy."
           },
-          "blocks": {
-            "cb_thermo_YW8KmR": {
-              "type": "cb-thermo",
-              "name": "CB Thermometer",
-              "settings": {
-                "icon": "apple",
-                "image_upload": "shopify://shop_images/thermo-natural.png",
-                "width": 110,
-                "title": "Natural Energy Support",
-                "text": "Bio-available B-vitamins help convert food to steady energy."
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "cb_thermo_YW8KmR"
-          ]
+          "blocks": {}
         },
-        "cb_slide_eDMPLP": {
-          "type": "cb-slide",
-          "name": "CB Slide",
+        "cb_thermo_DnK8Dy": {
+          "type": "cb-thermo",
+          "name": "CB Thermometer",
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "icon": "apple",
+            "image_upload": "shopify://shop_images/thermo-muscle.png",
+            "width": 110,
+            "title": "Muscle + Recovery Support",
+            "text": "Magnesium + electrolytes to  replenish & restore."
           },
-          "blocks": {
-            "cb_thermo_UdcaQV": {
-              "type": "cb-thermo",
-              "name": "CB Thermometer",
-              "settings": {
-                "icon": "apple",
-                "image_upload": "shopify://shop_images/thermo-muscle.png",
-                "width": 110,
-                "title": "Muscle + Recovery Support",
-                "text": "Magnesium + electrolytes to  replenish & restore."
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "cb_thermo_UdcaQV"
-          ]
+          "blocks": {}
         },
-        "cb_slide_FhGab7": {
-          "type": "cb-slide",
-          "name": "CB Slide",
+        "cb_thermo_rHXxEH": {
+          "type": "cb-thermo",
+          "name": "CB Thermometer",
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "icon": "apple",
+            "image_upload": "shopify://shop_images/thermo-focus.png",
+            "width": 110,
+            "title": "Clearer Focus + Better Mood",
+            "text": "L-Theanine, the same compound found in matcha, promotes calm, clear mental focus."
           },
-          "blocks": {
-            "cb_thermo_FeMeR8": {
-              "type": "cb-thermo",
-              "name": "CB Thermometer",
-              "settings": {
-                "icon": "apple",
-                "image_upload": "shopify://shop_images/thermo-focus.png",
-                "width": 110,
-                "title": "Clearer Focus + Better Mood",
-                "text": "L-Theanine, the same compound found in matcha, promotes calm, clear mental focus."
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "cb_thermo_FeMeR8"
-          ]
+          "blocks": {}
         }
       },
       "block_order": [
-        "cb_slide_kXHaxf",
-        "cb_slide_eDMPLP",
-        "cb_slide_FhGab7"
+        "cb_thermo_6eppKB",
+        "cb_thermo_DnK8Dy",
+        "cb_thermo_rHXxEH"
       ],
-      "name": "CB Carousel",
+      "name": "CB Thermometers",
       "settings": {
-        "slides_default": 3,
-        "space_default": 40,
-        "slides_320": 1.2,
-        "space_320": 18,
-        "slides_768": 2,
-        "space_768": 18,
-        "slides_990": 3,
-        "space_990": 40,
-        "slides_1280": 3,
-        "space_1280": 48,
-        "heading": "",
-        "section_width": "full-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "section_width": "page-width",
+        "gap": 12,
+        "color_scheme": "",
+        "padding-block-start": 32,
+        "padding-block-end": 32
       }
     },
     "cb_featured_product_edKjxf": {
@@ -2011,7 +1867,7 @@
   "order": [
     "main",
     "section_3yYjVm",
-    "cb_carousel_6A4z3Y",
+    "cb_thermometers_M94LLY",
     "cb_featured_product_edKjxf",
     "cb_carousel_eB48xP",
     "cb_section_JRXtHD",
