@@ -89,7 +89,10 @@ margin-bottom: 18px;
        max-width: 30ch;
 }
 
-.cb-thermometers .section-resource-list{display:flex;}
+.cb-thermometers .section-resource-list{
+   align-items:center;
+   display:flex;
+   overflow-x:scroll;}
 .single-thermo{
    align-items:center;
    display:flex;}
