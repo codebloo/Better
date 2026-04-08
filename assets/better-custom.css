@@ -104,7 +104,8 @@ margin-bottom: 18px;
 .single-thermo .thermo-content{
    background-color:#EE362F;
    border-radius:18px;
-   padding: 18px 21px 18px;
+   margin-left:-4px;
+   padding: 18px 21px 18px 24px;
 }
 .single-thermo .thermo-title{
    font-size:17px;
