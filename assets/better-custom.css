@@ -110,8 +110,9 @@ margin-bottom: 18px;
    border-radius:18px;
    color:#fff;
    margin-left:-35px;
-   max-width:366px;
+   max-width:100%;
    padding: 18px 21px 18px 50px;
+    width:366px;
 
 }
 .single-thermo .thermo-title{
