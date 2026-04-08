@@ -256,6 +256,23 @@
     },
     "cb_section_Rh6DNR": {
       "type": "cb-section",
+      "blocks": {
+        "cb_thermo_zctMer": {
+          "type": "cb-thermo",
+          "name": "CB Thermometer",
+          "settings": {
+            "icon": "apple",
+            "image_upload": "shopify://shop_images/thermo-natural.png",
+            "width": 100,
+            "title": "Natural Energy Support",
+            "text": "Bio-available B-vitamins help convert food to steady energy."
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "cb_thermo_zctMer"
+      ],
       "name": "CB Section",
       "settings": {
         "custom_class": "",
