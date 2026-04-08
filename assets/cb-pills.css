@@ -29,6 +29,6 @@ grid-row-gap: 18px;
         .cb-pills{
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(3, 1fr);
-}
+font-size:24px;}
 
     }
