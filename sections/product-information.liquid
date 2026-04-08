@@ -37,7 +37,7 @@
       assign content_width = 'full-width'
   endcase
 %}
-{%  if section.settings.product !=blank %}
+{%  if section.settings.product %}
 <script type="application/ld+json">
   {{ section.settings.product | structured_data }}
 </script>
