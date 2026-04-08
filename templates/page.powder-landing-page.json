@@ -637,7 +637,7 @@
                 "border_radius": 12,
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/Lasting_Hydration_Icon_1.svg",
-                "width": 24,
+                "width": 64,
                 "title": "<p>Lastin Hydration</p>",
                 "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
               },
