@@ -95,7 +95,9 @@ margin-bottom: 18px;
    overflow-x:scroll;}
 .single-thermo{
    align-items:center;
-   display:flex;}
+   display:flex;
+   max-width:100%;
+   width:427px;}
 .single-thermo  .image-wrap{
    border-radius:100%;
    background-color:#EE362F;
