@@ -514,7 +514,8 @@
                 "text_color": "#f1f0ea",
                 "border_radius": 12,
                 "icon": "price_tag",
-                "width": 24,
+                "image_upload": "shopify://shop_images/Taste_Icon_1.svg",
+                "width": 82,
                 "title": "<p>Taste You'll Crave</p>",
                 "text": "<p>Because if it doesn't taste good, you won't drink it. Staying hydrated shouldn't feel like a chore</p>"
               },
@@ -574,7 +575,8 @@
                 "text_color": "#f1f0ea",
                 "border_radius": 12,
                 "icon": "price_tag",
-                "width": 24,
+                "image_upload": "shopify://shop_images/Zero_Crash_Icon_1.svg",
+                "width": 82,
                 "title": "<p>Zero Crash</p>",
                 "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
               },
@@ -634,6 +636,7 @@
                 "text_color": "#f1f0ea",
                 "border_radius": 12,
                 "icon": "price_tag",
+                "image_upload": "shopify://shop_images/Lasting_Hydration_Icon_1.svg",
                 "width": 24,
                 "title": "<p>Lastin Hydration</p>",
                 "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
@@ -694,7 +697,8 @@
                 "text_color": "#f1f0ea",
                 "border_radius": 12,
                 "icon": "price_tag",
-                "width": 24,
+                "image_upload": "shopify://shop_images/Balance_Icon_1.svg",
+                "width": 82,
                 "title": "<p>Balanced Electrolytes</p>",
                 "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
               },
@@ -754,7 +758,8 @@
                 "text_color": "#f1f0ea",
                 "border_radius": 12,
                 "icon": "price_tag",
-                "width": 24,
+                "image_upload": "shopify://shop_images/Clean_Ingredients_Icon_1.svg",
+                "width": 82,
                 "title": "<p>Clean Ingredients</p>",
                 "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
               },
