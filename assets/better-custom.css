@@ -92,6 +92,7 @@ margin-bottom: 18px;
 .cb-thermometers .section-resource-list{
    align-items:center;
    display:flex;
+   gap:65px;
    overflow-x:scroll;}
 .single-thermo{
    align-items:center;
