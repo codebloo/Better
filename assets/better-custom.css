@@ -89,9 +89,14 @@ margin-bottom: 18px;
        max-width: 30ch;
 }
 
-.single-thermo{}
+.single-thermo{
+   align-items:center;
+   display:flex;
+   gap:20px;}
 .single-thermo img{}
-.single-thermo .thermo-content{}
+.single-thermo .thermo-content{
+   padding: 18px 21px 18px;
+}
 .single-thermo .thermo-title{
    font-size:17px;
    font-weight:700;
