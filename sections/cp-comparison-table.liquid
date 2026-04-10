@@ -265,7 +265,6 @@
 .ct-row:nth-child(odd) .ct-cell--label,
 .ct-row:nth-child(odd) .ct-cell--competitor {
   background: var(--ct-row-alt);
-  border-bottom: 1px solid var(--ct-teal);
 }
 
 .ct-row:nth-child(even) .ct-cell--label,
@@ -277,8 +276,12 @@
 .ct-row:last-child .ct-cell--better {
   border-radius: 0 0 var(--ct-radius) var(--ct-radius);
 }
+.ct-row:first-child .ct-cell--better {
+  border-radius: var(--ct-radius) var(--ct-radius) 0 0;
+}
 
 .ct-cell {
+border-bottom: 1px solid var(--ct-teal);
   display: flex;
   align-items: center;
   justify-content: center;
