@@ -259,12 +259,16 @@
 
 .ct-header__better-inner {
   background: var(--ct-teal);
-  border-radius: var(--ct-radius) var(--ct-radius) 0 0;
+  border-radius: var(--ct-radius) 0 0 0;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding: 20px 16px 0;
   width: 100%;
+}
+
+@media (min-width: 600px) {
+   .ct-header__better-inner{border-radius: var(--ct-radius) var(--ct-radius) 0 0;}
 }
 
 .ct-header__product-img {
