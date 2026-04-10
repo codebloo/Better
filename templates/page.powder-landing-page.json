@@ -134,7 +134,7 @@
         "cb_group_MGNbTj"
       ],
       "custom_css": [
-        "img{display: block; margin:0 auto; width:123px;}"
+        "img {display: block; margin: 0 auto; width: 123px;}"
       ],
       "name": "CB Section",
       "settings": {
@@ -144,9 +144,9 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
+        "gap": 0,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
@@ -162,8 +162,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 12,
+        "padding-block-end": 17
       }
     },
     "section_3yYjVm": {
