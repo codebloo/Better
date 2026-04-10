@@ -308,6 +308,13 @@
         "padding-block-end": 21
       }
     },
+    "cp_comparison_table_tyeYT8": {
+      "type": "cp-comparison-table",
+      "name": "CB Comparison Table",
+      "settings": {
+        "comparison_table": "landing-page"
+      }
+    },
     "cb_featured_product_edKjxf": {
       "type": "cb-featured-product",
       "blocks": {
@@ -1868,6 +1875,7 @@
     "main",
     "section_3yYjVm",
     "cb_thermometers_M94LLY",
+    "cp_comparison_table_tyeYT8",
     "cb_featured_product_edKjxf",
     "cb_carousel_eB48xP",
     "cb_section_JRXtHD",
