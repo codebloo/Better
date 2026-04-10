@@ -56,7 +56,12 @@
         <div class="ct-header">
 
           <div class="ct-header__label">
-            {{ c1_title }}
+         
+            {%- if c1_title != blank -%}
+              <span class="ct-label__main">{{ c1_title }}</span>
+            {%- endif -%}
+            
+       
           </div>
 
           <div class="ct-header__better ct-col--better">
