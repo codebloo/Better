@@ -288,7 +288,7 @@
   
 }
 @media (min-width: 600px) {
-    .ct-header__competitor{width:150px;;}
+    .ct-header__competitor{width:150px;}
 }
 
 
@@ -354,10 +354,14 @@
   padding: 18px 20px 14px 26px;
   gap: 0;
 }
- .ct-cell--competitor{width:150px;}
+
 
 .ct-row:last-of-type .ct-cell--label{border-bottom-left-radius: var(--ct-radius);}
 .ct-row:last-of-type .ct-cell--competitor{border-bottom-right-radius: var(--ct-radius);}
+
+@media (min-width: 600px) {
+    .ct-cell--competitor{width:150px;}
+}
 
 /* ── Label text ──────────────────────────────────────────────────── */
 .ct-label__main {
