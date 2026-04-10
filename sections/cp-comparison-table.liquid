@@ -285,8 +285,13 @@
   justify-content: flex-end;
   padding: 20px 12px 12px;
   gap: 6px;
-  width:150px;
+  
 }
+@media (min-width: 600px) {
+    .ct-header__competitor{width:150px;;}
+}
+
+
 .ct-header__competitor .ct-cell--label{border-top-left-radius: var(--ct-radius);}
 
 .ct-header__competitor-check {
@@ -313,9 +318,6 @@
 }
 
 /* ── Data rows ───────────────────────────────────────────────────── */
-.ct-row {
-
-}
 
 .ct-row .ct-cell--competitor{
       border-right: 1px solid var(--ct-teal);
