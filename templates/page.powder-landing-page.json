@@ -310,6 +310,23 @@
     },
     "cp_comparison_table_tyeYT8": {
       "type": "cp-comparison-table",
+      "blocks": {
+        "cb_thermo_ffqzWf": {
+          "type": "cb-thermo",
+          "name": "CB Thermometer",
+          "settings": {
+            "icon": "apple",
+            "image_upload": "shopify://shop_images/thermo-lab.png",
+            "width": 110,
+            "title": "Manufactured in NSF-Certified Facilities for Safety and Quality.",
+            "text": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "cb_thermo_ffqzWf"
+      ],
       "name": "CB Comparison Table",
       "settings": {
         "comparison_table": "landing-page"
