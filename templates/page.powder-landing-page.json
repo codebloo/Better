@@ -8,7 +8,7 @@
  * ------------------------------------------------------------
  */
 {
-     "layout": "landing-page",
+  "layout": "landing-page",
   "sections": {
     "main": {
       "type": "main-page",
@@ -117,8 +117,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 10,
+        "padding-block-end": 15
       }
     },
     "cb_section_ML97AJ": {
@@ -438,7 +438,7 @@
             "image_upload": "shopify://shop_images/thermo-natural.png",
             "width": 110,
             "title": "Natural Energy Support",
-            "text": "Bio-available B-vitamins help convert foodto steady energy."
+            "text": "Bio-available B-vitamins help convert food to steady energy."
           },
           "blocks": {}
         },
@@ -450,7 +450,7 @@
             "image_upload": "shopify://shop_images/thermo-muscle.png",
             "width": 110,
             "title": "Muscle + Recovery Support",
-            "text": "Magnesium + electrolytes to replenish & restore."
+            "text": "Magnesium + electrolytes to  replenish & restore."
           },
           "blocks": {}
         },

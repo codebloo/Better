@@ -46,6 +46,7 @@
         "announcement_BxgCk9",
         "announcement_tFbNey"
       ],
+      "disabled": true,
       "name": "t:names.announcement_bar",
       "settings": {
         "speed": 5,
@@ -94,6 +95,7 @@
           "blocks": {}
         }
       },
+      "disabled": true,
       "custom_css": [
         ".mega-menu__content-list--products {padding-top: 18px;}"
       ],
@@ -130,6 +132,7 @@
     },
     "cb_wave_divider_APKaQE": {
       "type": "cb-wave-divider",
+      "disabled": true,
       "name": "CB: Wave divider",
       "settings": {
         "overlap_next": true,
