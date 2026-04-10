@@ -20,6 +20,11 @@
   id="comparison-table-{{ section.id }}"
   data-section-id="{{ section.id }}"
 >
+
+    <div class="comparison-table-top">
+<div class="">{% for block in section.blocks %}{% endfor %}</div>
+
+    </div>
   <div class="comparison-table__card">
 
     {%- for row in table.rows.value -%}
@@ -423,6 +428,11 @@ width: 15px;
       "id": "comparison_table",
       "label": "Comparison Table",
       "metaobject_type": "comparison_table"
+    }
+  ],
+   "blocks": [
+    {
+      "type": "cb-thermo"
     }
   ],
   "presets": [
