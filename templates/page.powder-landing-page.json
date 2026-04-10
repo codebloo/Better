@@ -329,7 +329,8 @@
       ],
       "name": "CB Comparison Table",
       "settings": {
-        "comparison_table": "landing-page"
+        "comparison_table": "landing-page",
+        "comparison_table_blob": "shopify://shop_images/chart-blob.png"
       }
     },
     "cb_featured_product_edKjxf": {
