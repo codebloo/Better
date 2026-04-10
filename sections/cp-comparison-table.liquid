@@ -1,0 +1,400 @@
+{%- liquid
+  assign table = section.settings.comparison_table
+  if table == blank
+    if request.design_mode
+      assign show_placeholder = true
+    else
+      echo ''
+    endif
+  endif
+-%}
+
+{% if show_placeholder %}
+  <div class="comparison-table__placeholder">
+    <p>Assign a Comparison Table metaobject in the section settings.</p>
+  </div>
+{% elsif table != blank %}
+
+<section
+  class="comparison-table"
+  id="comparison-table-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+>
+  <div class="comparison-table__card">
+
+    {%- for row in table.rows.value -%}
+
+      {%- comment -%} 
+          Resolve each column's display value.
+          Priority: image → number → text → check_x (boolean, nil-safe)
+       {%- endcomment -%}
+
+ {%- liquid
+        assign c2_image   = row.column_2_image.value
+        assign c3_image   = row.column_3_image.value
+        assign c2_number  = row.column_2_number.value
+        assign c3_number  = row.column_3_integer.value
+        assign c2_text    = row.column_2_text.value
+        assign c3_text    = row.column_3_text.value
+        assign c2_bool    = row.column_2_check_x.value
+        assign c3_bool    = row.column_3_check_x.value
+        assign c1_title   = row.column_1_title.value
+        assign c1_sub     = row.column_1_title_subtitle.value
+  -%}
+       {%- comment -%} Is this the header row? Images in col 2 or col 3 trigger header layout. {%- endcomment -%}
+   {%- liquid
+        if c2_image != blank or c3_image != blank
+          assign is_header = true
+        else
+          assign is_header = false
+        endif
+      -%}
+
+      {%- if is_header -%}
+
+        {%- comment -%} ── Header row ─────────────────────────────────────────── {%- endcomment -%}
+        <div class="ct-header">
+
+          <div class="ct-header__label"></div>
+
+          <div class="ct-header__better ct-col--better">
+            <div class="ct-header__better-inner">
+              {%- if c2_image != blank -%}
+                <img
+                  src="{{ c2_image | image_url: width: 300 }}"
+                  alt="{{ c2_image.alt | default: 'Product image' }}"
+                  width="150"
+                  loading="eager"
+                  class="ct-header__product-img"
+                >
+              {%- endif -%}
+            </div>
+          </div>
+
+          <div class="ct-header__competitor">
+            {%- if c3_text != blank -%}
+              <span class="ct-header__competitor-check" aria-hidden="true">✓</span>
+              <span class="ct-header__competitor-label">{{ c3_text }}</span>
+            {%- endif -%}
+            {%- if c3_image != blank -%}
+              <img
+                src="{{ c3_image | image_url: width: 240 }}"
+                alt="{{ c3_image.alt | default: 'Competitor image' }}"
+                width="120"
+                loading="eager"
+                class="ct-header__competitor-img"
+              >
+            {%- endif -%}
+          </div>
+
+        </div>
+
+      {%- else -%}
+
+        {%- comment -%} ── Data row ───────────────────────────────────────────── {%- endcomment -%}
+        <div class="ct-row">
+
+          {%- comment -%} Label cell {%- endcomment -%}
+          <div class="ct-cell ct-cell--label">
+            {%- if c1_title != blank -%}
+              <span class="ct-label__main">{{ c1_title }}</span>
+            {%- endif -%}
+            {%- if c1_sub != blank -%}
+              <span class="ct-label__sub">{{ c1_sub }}</span>
+            {%- endif -%}
+          </div>
+
+          {%- comment -%} Better (col 2) cell {%- endcomment -%}
+          <div class="ct-cell ct-cell--better ct-col--better">
+            {%- if c2_number != blank -%}
+              <span class="ct-val ct-val--number">{{ c2_number }}</span>
+            {%- elsif c2_text != blank -%}
+              <span class="ct-val ct-val--text">{{ c2_text }}</span>
+            {%- elsif c2_bool != nil -%}
+              {%- if c2_bool -%}
+                <span class="ct-icon ct-icon--check" aria-label="Yes">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                    <path d="M3 9.5L7.5 14L15 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              {%- else -%}
+                <span class="ct-icon ct-icon--x" aria-label="No">✕</span>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+
+          {%- comment -%} Competitor (col 3) cell {%- endcomment -%}
+          <div class="ct-cell ct-cell--competitor">
+            {%- if c3_number != blank -%}
+              <span class="ct-val ct-val--number">{{ c3_number }}</span>
+            {%- elsif c3_text != blank -%}
+              <span class="ct-val ct-val--text">{{ c3_text }}</span>
+            {%- elsif c3_bool != nil -%}
+              {%- if c3_bool -%}
+                <span class="ct-icon ct-icon--check ct-icon--check-competitor" aria-label="Yes">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                    <path d="M3 9.5L7.5 14L15 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              {%- else -%}
+                <span class="ct-icon ct-icon--x" aria-label="No">✕</span>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+
+        </div>
+
+      {%- endif -%}
+    {%- endfor -%}
+
+  </div>
+</section>
+
+{% endif %}
+
+{% stylesheet %}
+/* ── CSS custom properties ─────────────────────────────────────── */
+.comparison-table {
+  --ct-cream:      #f5f0e8;
+  --ct-teal:       #1a5c52;
+  --ct-gold:       #d4b84a;
+  --ct-red:        #cc3333;
+  --ct-text:       #1e1e1e;
+  --ct-row-alt:    #ede8df;
+  --ct-radius:     20px;
+  --ct-font-head:  'Montserrat', sans-serif;
+  --ct-font-body:  'DM Sans', sans-serif;
+
+  padding: 40px 20px;
+  background: var(--ct-cream);
+  font-family: var(--ct-font-body);
+}
+
+/* ── Card wrapper ────────────────────────────────────────────────── */
+.comparison-table__card {
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: var(--ct-radius);
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* ── Shared grid ─────────────────────────────────────────────────── */
+.ct-header,
+.ct-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ── Better (teal) column colouring ─────────────────────────────── */
+.ct-col--better,
+.ct-cell--better {
+  background: var(--ct-teal);
+}
+
+/* ── Header ──────────────────────────────────────────────────────── */
+.ct-header {
+  background: var(--ct-cream);
+  align-items: flex-end;
+}
+
+.ct-header__label {
+  /* empty spacer */
+}
+
+.ct-header__better {
+  display: flex;
+  justify-content: center;
+}
+
+.ct-header__better-inner {
+  background: var(--ct-teal);
+  border-radius: var(--ct-radius) var(--ct-radius) 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px 16px 0;
+  width: 100%;
+}
+
+.ct-header__product-img {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.ct-header__competitor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 12px 12px;
+  gap: 6px;
+}
+
+.ct-header__competitor-check {
+  font-size: 1.4rem;
+  color: var(--ct-red);
+  font-weight: 700;
+}
+
+.ct-header__competitor-label {
+  font-family: var(--ct-font-body);
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: var(--ct-red);
+  text-align: center;
+  line-height: 1.35;
+}
+
+.ct-header__competitor-img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  opacity: 0.85;
+}
+
+/* ── Data rows ───────────────────────────────────────────────────── */
+.ct-row {
+  min-height: 68px;
+}
+
+/* Alternating row background for label + competitor cells */
+.ct-row:nth-child(odd) .ct-cell--label,
+.ct-row:nth-child(odd) .ct-cell--competitor {
+  background: var(--ct-cream);
+}
+
+.ct-row:nth-child(even) .ct-cell--label,
+.ct-row:nth-child(even) .ct-cell--competitor {
+  background: var(--ct-row-alt);
+}
+
+/* Round bottom of teal column on last row */
+.ct-row:last-child .ct-cell--better {
+  border-radius: 0 0 var(--ct-radius) var(--ct-radius);
+}
+
+.ct-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+}
+
+.ct-cell--label {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 14px 20px;
+  gap: 3px;
+}
+
+/* ── Label text ──────────────────────────────────────────────────── */
+.ct-label__main {
+  font-family: var(--ct-font-head);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ct-text);
+  line-height: 1.3;
+}
+
+.ct-label__sub {
+  font-size: 0.74rem;
+  color: #666;
+}
+
+/* ── Cell values ─────────────────────────────────────────────────── */
+.ct-val--number {
+  font-family: var(--ct-font-head);
+  font-weight: 900;
+  font-size: 2.1rem;
+  line-height: 1;
+}
+
+.ct-cell--better   .ct-val--number { color: var(--ct-gold); }
+.ct-cell--competitor .ct-val--number { color: var(--ct-red);  }
+
+.ct-val--text {
+  font-family: var(--ct-font-body);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.ct-cell--better   .ct-val--text { color: var(--ct-gold); }
+.ct-cell--competitor .ct-val--text { color: var(--ct-red);  }
+
+/* ── Icons ───────────────────────────────────────────────────────── */
+.ct-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.ct-icon--check {
+  background: rgba(212,184,74,0.15);
+  color: var(--ct-gold);
+}
+
+.ct-icon--check-competitor {
+  background: rgba(204,51,51,0.1);
+  color: var(--ct-red);
+}
+
+.ct-icon--x {
+  background: rgba(204,51,51,0.1);
+  color: var(--ct-red);
+}
+
+/* ── Placeholder (editor only) ──────────────────────────────────── */
+.comparison-table__placeholder {
+  padding: 40px;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────── */
+@media (max-width: 520px) {
+  .ct-header__product-img  { height: 80px; }
+  .ct-header__competitor-img { height: 66px; }
+  .ct-val--number          { font-size: 1.6rem; }
+  .ct-label__main          { font-size: 0.8rem; }
+  .ct-cell--label          { padding: 12px 14px; }
+  .ct-val--text            { font-size: 0.78rem; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Comparison Table",
+  "tag": "section",
+  "class": "comparison-table-section",
+  "settings": [
+    {
+      "type": "metaobject",
+      "id": "comparison_table",
+      "label": "Comparison Table",
+      "metaobject_type": "comparison_table"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison Table"
+    }
+  ]
+}
+{% endschema %}
