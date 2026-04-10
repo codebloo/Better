@@ -22,7 +22,27 @@
 >
 
     <div class="comparison-table-top">
-<img src="{{ block.settings.comparison_table_blob | asset_url }}">
+{% assign image = section.settings.comparison_table_blob  %}
+
+{% if image != blank %}
+  {% assign image_height = height | default: image.height %}
+  {% assign image_height_2x = height | default: image_height | times: 2 %}
+  {% assign image_height_3x = height | default: image_height | times: 3 %}
+
+  {% capture image_srcset -%}
+    {{ image | image_url: height: image_height }} 1x, {{ image | image_url: height: image_height_2x }} 2x, {{ image | image_url: height: image_height_3x }} 3x
+  {%- endcapture %}
+
+  {% assign style_value = style | default: '' %}
+
+  {% if unset_image_tag %}
+    {% assign style_value = style_value | append: 'object-position: inherit;' %}
+  {% endif %}
+
+  {{ image | image_url: height: image_height | image_tag: class: class, srcset: image_srcset, style: style_value }}
+{% elsif text_fallback %}
+  {{ text_fallback }}
+{% endif %}
 
  {% content_for 'blocks' %}
 
