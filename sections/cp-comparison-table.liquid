@@ -39,7 +39,7 @@
     {% assign style_value = style_value | append: 'object-position: inherit;' %}
   {% endif %}
 
-  {{ image | image_url: height: image_height | image_tag: class: blob, srcset: image_srcset, style: style_value }}
+  {{ image | image_url: height: image_height | image_tag: class: class, srcset: image_srcset, style: style_value }}
 {% elsif text_fallback %}
   {{ text_fallback }}
 {% endif %}
@@ -226,7 +226,7 @@
     position:relative;
 }
 
-.comparison-table-top img.blob{
+.comparison-table-top > img{
     bottom: -300px;
     position: absolute;
     width: 300px;;
