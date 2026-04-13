@@ -439,37 +439,50 @@
             "transparent_background": true,
             "padding-block-start": 24,
             "padding-block-end": 24,
-            "gap_between_elements": 24
+            "gap_between_elements": 65
           },
           "blocks": {
-            "text_t3gnCQ": {
-              "type": "text",
+            "cb_thermo_MHXbkw": {
+              "type": "cb-thermo",
+              "name": "CB Thermometer",
               "settings": {
-                "text": "<p>Explore our latest products.</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h1",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "icon": "apple",
+                "image_upload": "shopify://shop_images/thermo-natural.png",
+                "width": 110,
+                "title": "Natural Energy Support",
+                "text": "Bio-available B-vitamins help convert food to steady energy."
+              },
+              "blocks": {}
+            },
+            "cb_thermo_4KJde7": {
+              "type": "cb-thermo",
+              "name": "CB Thermometer",
+              "settings": {
+                "icon": "apple",
+                "image_upload": "shopify://shop_images/thermo-muscle.png",
+                "width": 110,
+                "title": "Muscle + Recovery Support",
+                "text": "Magnesium + electrolytes to  replenish & restore."
+              },
+              "blocks": {}
+            },
+            "cb_thermo_tY3eTK": {
+              "type": "cb-thermo",
+              "name": "CB Thermometer",
+              "settings": {
+                "icon": "apple",
+                "image_upload": "shopify://shop_images/thermo-focus.png",
+                "width": 110,
+                "title": "Clearer Focus + Better Mood",
+                "text": "L-Theanine, the same compound found in matcha, promotes calm, clear mental focus."
               },
               "blocks": {}
             }
           },
           "block_order": [
-            "text_t3gnCQ"
+            "cb_thermo_MHXbkw",
+            "cb_thermo_4KJde7",
+            "cb_thermo_tY3eTK"
           ]
         }
       },
@@ -504,60 +517,6 @@
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 22,
-        "padding-block-end": 21
-      }
-    },
-    "cb_thermometers_M94LLY": {
-      "type": "cb-thermometers",
-      "blocks": {
-        "cb_thermo_6eppKB": {
-          "type": "cb-thermo",
-          "name": "CB Thermometer",
-          "settings": {
-            "icon": "apple",
-            "image_upload": "shopify://shop_images/thermo-natural.png",
-            "width": 110,
-            "title": "Natural Energy Support",
-            "text": "Bio-available B-vitamins help convert food to steady energy."
-          },
-          "blocks": {}
-        },
-        "cb_thermo_DnK8Dy": {
-          "type": "cb-thermo",
-          "name": "CB Thermometer",
-          "settings": {
-            "icon": "apple",
-            "image_upload": "shopify://shop_images/thermo-muscle.png",
-            "width": 110,
-            "title": "Muscle + Recovery Support",
-            "text": "Magnesium + electrolytes to  replenish & restore."
-          },
-          "blocks": {}
-        },
-        "cb_thermo_rHXxEH": {
-          "type": "cb-thermo",
-          "name": "CB Thermometer",
-          "settings": {
-            "icon": "apple",
-            "image_upload": "shopify://shop_images/thermo-focus.png",
-            "width": 110,
-            "title": "Clearer Focus + Better Mood",
-            "text": "L-Theanine, the same compound found in matcha, promotes calm, clear mental focus."
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "cb_thermo_6eppKB",
-        "cb_thermo_DnK8Dy",
-        "cb_thermo_rHXxEH"
-      ],
-      "name": "CB Thermometers",
-      "settings": {
-        "section_width": "page-width",
-        "gap": 0,
-        "color_scheme": "scheme-26b3af85-0f55-4fea-b956-d8f9ac7c658e",
         "padding-block-start": 22,
         "padding-block-end": 21
       }
@@ -2254,7 +2213,6 @@
     "cb_section_ML97AJ",
     "section_3yYjVm",
     "hero_K7cJPL",
-    "cb_thermometers_M94LLY",
     "cp_comparison_table_tyeYT8",
     "cb_wave_divider_b8Tq4F",
     "cb_featured_product_edKjxf",
