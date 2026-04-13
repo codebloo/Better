@@ -327,7 +327,7 @@
               "type": "button",
               "settings": {
                 "label": "Get My Better",
-                "link": "shopify://products/tropical-citrus-multipack",
+                "link": "/",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
