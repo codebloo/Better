@@ -2061,6 +2061,22 @@
         "padding-block-end": 40
       }
     },
+    "cb_wave_divider_zNQMt3": {
+      "type": "cb-wave-divider",
+      "name": "CB Wave divider",
+      "settings": {
+        "overlap_next": true,
+        "overlap_previous": false,
+        "outline": false,
+        "fill": "#ceecf6",
+        "height": 80,
+        "flip_vertical": false,
+        "flip_horizontal": false,
+        "margin_top": 0,
+        "margin_bottom": -1,
+        "zindex": 0
+      }
+    },
     "cb_section_KKjr3T": {
       "type": "cb-section",
       "blocks": {
@@ -2130,6 +2146,7 @@
     "cb_carousel_eB48xP",
     "cb_section_JRXtHD",
     "section_cGbKeq",
+    "cb_wave_divider_zNQMt3",
     "cb_section_KKjr3T"
   ]
 }
