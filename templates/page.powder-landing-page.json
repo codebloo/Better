@@ -490,7 +490,7 @@
         "marquee_YTNc34"
       ],
       "custom_css": [
-        ".hero__image{display: none;}"
+        ".hero__image {display: none;}"
       ],
       "name": "t:names.hero_marquee",
       "settings": {
@@ -520,8 +520,8 @@
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 22,
-        "padding-block-end": 21
+        "padding-block-start": 15,
+        "padding-block-end": 16
       }
     },
     "cp_comparison_table_tyeYT8": {
