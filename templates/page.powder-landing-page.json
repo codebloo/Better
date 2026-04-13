@@ -1809,7 +1809,23 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 100,
-        "padding-block-end": 26
+        "padding-block-end": 80
+      }
+    },
+    "cb_wave_divider_Ryrn7A": {
+      "type": "cb-wave-divider",
+      "name": "CB Wave divider",
+      "settings": {
+        "overlap_next": false,
+        "overlap_previous": true,
+        "outline": false,
+        "fill": "#ceecf6",
+        "height": 80,
+        "flip_vertical": true,
+        "flip_horizontal": false,
+        "margin_top": 0,
+        "margin_bottom": -1,
+        "zindex": 0
       }
     },
     "section_cGbKeq": {
@@ -2130,7 +2146,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 25,
+        "padding-block-start": 45,
         "padding-block-end": 32
       }
     }
@@ -2145,6 +2161,7 @@
     "cb_featured_product_edKjxf",
     "cb_carousel_eB48xP",
     "cb_section_JRXtHD",
+    "cb_wave_divider_Ryrn7A",
     "section_cGbKeq",
     "cb_wave_divider_zNQMt3",
     "cb_section_KKjr3T"
