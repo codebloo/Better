@@ -2072,7 +2072,7 @@
             "font": "heading",
             "unit": "pixel",
             "percent_width": 100,
-            "pixel_height": 64,
+            "pixel_height": 32,
             "custom_mobile_size": false,
             "unit_mobile": "percent",
             "percent_width_mobile": 100,
@@ -2096,7 +2096,7 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 0,
         "section_width": "page-width",
@@ -2114,8 +2114,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 25,
+        "padding-block-end": 32
       }
     }
   },
