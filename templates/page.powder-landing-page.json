@@ -506,6 +506,22 @@
         "comparison_table_blob": "shopify://shop_images/chart-blob_952ff141-9938-4094-82b7-0bdc7fdadd24.png"
       }
     },
+    "cb_wave_divider_b8Tq4F": {
+      "type": "cb-wave-divider",
+      "name": "CB Wave divider",
+      "settings": {
+        "overlap_next": true,
+        "overlap_previous": false,
+        "outline": false,
+        "fill": "#fbf6e9",
+        "height": 80,
+        "flip_vertical": false,
+        "flip_horizontal": false,
+        "margin_top": 0,
+        "margin_bottom": -1,
+        "zindex": 0
+      }
+    },
     "cb_featured_product_edKjxf": {
       "type": "cb-featured-product",
       "blocks": {
@@ -1060,7 +1076,7 @@
         "limit_details_width": false,
         "gap": 16,
         "color_scheme": "",
-        "padding-block-start": 36,
+        "padding-block-start": 72,
         "padding-block-end": 0
       }
     },
@@ -2158,6 +2174,7 @@
     "section_3yYjVm",
     "cb_thermometers_M94LLY",
     "cp_comparison_table_tyeYT8",
+    "cb_wave_divider_b8Tq4F",
     "cb_featured_product_edKjxf",
     "cb_carousel_eB48xP",
     "cb_section_JRXtHD",
