@@ -489,6 +489,9 @@
       "block_order": [
         "marquee_YTNc34"
       ],
+      "custom_css": [
+        ".hero__image{display: none;}"
+      ],
       "name": "t:names.hero_marquee",
       "settings": {
         "media_type_1": "image",
