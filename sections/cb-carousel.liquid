@@ -40,10 +40,18 @@
   {% endif %}
 
   <!-- If we need navigation buttons -->
-  {% if section.settings.show_arrows %}
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-  {% endif %}
+ {% if section.settings.show_arrows %}
+  <div class="swiper-button-prev">
+    {% if section.settings.left_arrow %}
+      {{ section.settings.left_arrow | image_url: width: 80 | image_tag: alt: 'Previous', loading: 'eager' }}
+    {% endif %}
+  </div>
+  <div class="swiper-button-next">
+    {% if section.settings.right_arrow %}
+      {{ section.settings.right_arrow | image_url: width: 80 | image_tag: alt: 'Next', loading: 'eager' }}
+    {% endif %}
+  </div>
+{% endif %}
 
   <!-- If we need scrollbar -->
   <div class="swiper-scrollbar"></div>
