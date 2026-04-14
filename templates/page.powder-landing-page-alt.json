@@ -1307,7 +1307,7 @@
         "group_HejqYd"
       ],
       "custom_css": [
-        ".cb-media-carousel-block {margin-left: -40px; width: 400px;}"
+        "@media screen and (min-width:768px){.cb-media-carousel-block {margin-left: -40px; width: 400px;}}"
       ],
       "name": "Hero Image with text",
       "settings": {
