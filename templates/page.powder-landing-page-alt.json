@@ -276,7 +276,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h1>Your Simple, Tasty<br/>Daily Ritual</h1>",
+                "text": "<h1>Hydration That Helps You Feel Clear</h1>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -301,7 +301,7 @@
             "text_cFrzCA": {
               "type": "text",
               "settings": {
-                "text": "<p>Electrolytes + vitamins that replenish your body, fuel your mind, and set you up for the day ahead.</p>",
+                "text": "<p>✔️ Feel Clear, Not Just Hydrated  <br/>✔️ Works Even When You’re Eating Less  <br/>✔️ Made with Real Ingredients - Nothing Artificial</p>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
@@ -326,7 +326,7 @@
             "button_8HrzVa": {
               "type": "button",
               "settings": {
-                "label": "Get My Better",
+                "label": "Try Better Hydration",
                 "link": "/",
                 "open_in_new_tab": false,
                 "style_class": "button",
