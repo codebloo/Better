@@ -27,7 +27,7 @@
     {% endif %}
 
    <!-- Slider main container -->
-<div class="swiper" id="swiper-{{ section_id }}">
+<div class="swiper{% if section.settings.show_arrows %} carousel-has-arrows-{{ section_id }}{% endif %}" id="swiper-{{ section_id }}">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper group-block--height-fill">
     <!-- Slides -->
