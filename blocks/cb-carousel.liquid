@@ -15,8 +15,8 @@
   {% content_for 'blocks' %}
 {%- endcapture -%}
 
-<div class="section-background color-{{ block.settings.color_scheme }}"></div>
-<section id="cb-media-carousel-{{ block_id }}" class="kmc section section--{{ block.settings.block_width }}
+
+<div id="cb-media-carousel-{{ block_id }}" class="kmc section section--{{ block.settings.block_width }}
   color-{{ block.settings.color_scheme }} spacing-style"
   style="{% render 'spacing-style', settings: block.settings %}">
   <div class="kmc__inner {{ block.settings.block_width }}">
@@ -54,7 +54,7 @@
 </div>
 
   </div>
-</section>
+</div>
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
