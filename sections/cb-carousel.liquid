@@ -122,6 +122,8 @@ padding-inline-end: var(--util-page-margin-offset);}
   display: flex;                /* so inner card can stretch */
 }
 
+#swiper-{{ section_id }} .swiper-pagination-bullet{background:{{ section.settings.dot_color }};}
+#swiper-{{ section_id }} .swiper-pagination-bullet-active{background:{{ section.settings.dot_color_active }};}
 
 </style>
 {% schema %}
