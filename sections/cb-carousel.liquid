@@ -127,12 +127,25 @@ padding-inline-end: var(--util-page-margin-offset);}
   display: flex;                /* so inner card can stretch */
 }
 
-.kmc .carousel-has-arrows-{{ section_id }} .swiper-slide {
-    padding-left: 40px;
-    padding-right: 40px;
-}
 
 /* Swiper */
+
+.kmc__carousel-wrapper {
+  position: relative;
+  padding-inline: 40px; /* space for arrows — adjust to taste */
+}
+
+#prev-{{ section_id }},
+#next-{{ section_id }} {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+#prev-{{ section_id }} { left: 0; }
+#next-{{ section_id }} { right: 0; }
+
 #swiper-{{ section_id }}{padding-bottom:30px;}
 .carousel-has-arrows-{{ section_id }}{}
 
