@@ -1330,7 +1330,7 @@
         "space_1280": 18,
         "heading": "",
         "section_width": "page-width",
-        "padding-block-start": 0,
+        "padding-block-start": 45,
         "padding-block-end": 45
       }
     },
