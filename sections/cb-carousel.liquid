@@ -26,6 +26,7 @@
       </div>
     {% endif %}
 
+    <div class="kmc__carousel-wrapper">
    <!-- Slider main container -->
 <div class="swiper{% if section.settings.show_arrows %} carousel-has-arrows-{{ section_id }}{% endif %}" id="swiper-{{ section_id }}">
   <!-- Additional required wrapper -->
@@ -53,7 +54,7 @@
   <div class="swiper-button-prev" id="prev-{{ section_id }}"></div>
     <div class="swiper-button-next" id="next-{{ section_id }}"></div>
 {% endif %}
-
+</div>
   </div>
 </section>
 <link
