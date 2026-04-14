@@ -150,9 +150,12 @@ padding-inline-end: var(--util-page-margin-offset);}
 .carousel-has-arrows-{{ section_id }}{}
 
 /* Hide default Swiper arrow pseudo-element when a custom image is slotted in */
-#swiper-{{ section_id }} .swiper-navigation-icon{
+/* Hide default Swiper arrow pseudo-element when a custom image is slotted in */
+#prev-{{ section_id }} .swiper-navigation-icon,
+#next-{{ section_id }} .swiper-navigation-icon{
   display: none!important;
 }
+
 
 /* Size and fit the custom image within the button container */
 #prev-{{ section_id }},
