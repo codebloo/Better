@@ -44,16 +44,8 @@
 
   <!-- If we need navigation buttons -->
  {% if section.settings.show_arrows %}
-  <div class="swiper-button-prev">
-    {% if section.settings.left_arrow %}
-      {{ section.settings.left_arrow | image_url: width: 80 | image_tag: alt: 'Previous', loading: 'eager' }}
-    {% endif %}
-  </div>
-  <div class="swiper-button-next">
-    {% if section.settings.right_arrow %}
-      {{ section.settings.right_arrow | image_url: width: 80 | image_tag: alt: 'Next', loading: 'eager' }}
-    {% endif %}
-  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 {% endif %}
 
  
@@ -149,8 +141,12 @@ padding-inline-end: var(--util-page-margin-offset);}
   object-fit: contain;
   pointer-events: none; /* let clicks pass through to the button */
 }
+{% if section.settings.left_arrow %}
 #swiper-{{ section_id }} .swiper-button-prev{background-image:url({{ section.settings.left_arrow }});}
+{% endif %}
+{% if section.settings.right_arrow %}
 #swiper-{{ section_id }} .swiper-button-next{background-image:url({{ section.settings.right_arrow }});}
+{% endif %}
 
 #swiper-{{ section_id }} .swiper-pagination-bullet{background:{{ section.settings.dot_color }};}
 #swiper-{{ section_id }} .swiper-pagination-bullet-active{background:{{ section.settings.dot_color_active }};}
