@@ -66,6 +66,18 @@
     new Swiper(el, {
       slidesPerView: {{ section.settings.slides_default }},
       spaceBetween: {{ section.settings.space_default }},
+      {% if section.settings.show_arrows %}
+      navigation: {
+        nextEl: '#swiper-{{ section_id }} .swiper-button-next',
+        prevEl: '#swiper-{{ section_id }} .swiper-button-prev',
+      },
+      {% endif %}
+      {% if section.settings.show_dots %}
+      pagination: {
+        el: '#swiper-{{ section_id }} .swiper-pagination',
+        clickable: true,
+      },
+      {% endif %}
       breakpoints: {
         320: {
           slidesPerView: {{ section.settings.slides_320 }},
