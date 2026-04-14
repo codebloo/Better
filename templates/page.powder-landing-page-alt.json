@@ -2354,8 +2354,6 @@
       "name": "CB Carousel",
       "settings": {
         "show_arrows": false,
-        "left_arrow": "shopify://shop_images/chart-x.svg",
-        "right_arrow": "shopify://shop_images/chart-x.svg",
         "show_dots": false,
         "dot_color": "",
         "dot_color_active": "",
