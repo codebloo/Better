@@ -1,0 +1,2229 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "landing-page",
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "disabled": true,
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "cb_section_TFqFiM": {
+      "type": "cb-section",
+      "blocks": {
+        "text_hrQDXi": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><a href=\"/products/tropical-citrus-multipack\" title=\"Tropical & Citrus Variety Bundle\">Bundle & Save →</a></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_hrQDXi"
+      ],
+      "name": "CB Section",
+      "settings": {
+        "custom_class": "",
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-2",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 10,
+        "padding-block-end": 15
+      }
+    },
+    "cb_section_ML97AJ": {
+      "type": "cb-section",
+      "blocks": {
+        "cb_group_MGNbTj": {
+          "type": "cb-group",
+          "name": "CB Group",
+          "settings": {
+            "custom_class": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 0,
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "image_WYfcDF": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/small-logo.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 12,
+                "padding-block-end": 0,
+                "padding-inline-start": 17,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_WYfcDF"
+          ]
+        }
+      },
+      "block_order": [
+        "cb_group_MGNbTj"
+      ],
+      "custom_css": [
+        "img {display: block; margin: 0 auto; width: 123px;}"
+      ],
+      "name": "CB Section",
+      "settings": {
+        "custom_class": "",
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 12,
+        "padding-block-end": 17
+      }
+    },
+    "section_3yYjVm": {
+      "type": "section",
+      "blocks": {
+        "group_HejqYd": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_ECE8Qc": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h1>Your Simple, Tasty<br/>Daily Ritual</h1>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_cFrzCA": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Electrolytes + vitamins that replenish your body, fuel your mind, and set you up for the day ahead.</p>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_8HrzVa": {
+              "type": "button",
+              "settings": {
+                "label": "Get My Better",
+                "link": "/",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
+            "text_9QxKbD": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>No Artificial Ingredients • Balanced for Hydration • Made for Daily Use</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_ECE8Qc",
+            "text_cFrzCA",
+            "button_8HrzVa",
+            "text_9QxKbD"
+          ]
+        },
+        "image_cCU3fd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Splashing_Packs_1.webp",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_HejqYd",
+        "image_cCU3fd"
+      ],
+      "name": "Hero Image with text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-6b489045-a991-4c5c-81f8-5948be16467a",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "hero_K7cJPL": {
+      "type": "hero",
+      "blocks": {
+        "marquee_YTNc34": {
+          "type": "_marquee",
+          "settings": {
+            "movement_direction": "normal",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "transparent_background": true,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "gap_between_elements": 65
+          },
+          "blocks": {
+            "cb_thermo_MHXbkw": {
+              "type": "cb-thermo",
+              "name": "CB Thermometer",
+              "settings": {
+                "icon": "apple",
+                "image_upload": "shopify://shop_images/thermo-natural.png",
+                "width": 110,
+                "title": "Natural Energy Support",
+                "text": "Bio-available B-vitamins help convert food to steady energy."
+              },
+              "blocks": {}
+            },
+            "cb_thermo_4KJde7": {
+              "type": "cb-thermo",
+              "name": "CB Thermometer",
+              "settings": {
+                "icon": "apple",
+                "image_upload": "shopify://shop_images/thermo-muscle.png",
+                "width": 110,
+                "title": "Muscle + Recovery Support",
+                "text": "Magnesium + electrolytes to  replenish & restore."
+              },
+              "blocks": {}
+            },
+            "cb_thermo_tY3eTK": {
+              "type": "cb-thermo",
+              "name": "CB Thermometer",
+              "settings": {
+                "icon": "apple",
+                "image_upload": "shopify://shop_images/thermo-focus.png",
+                "width": 110,
+                "title": "Clearer Focus + Better Mood",
+                "text": "L-Theanine, the same compound found in matcha, promotes calm, clear mental focus."
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_thermo_MHXbkw",
+            "cb_thermo_4KJde7",
+            "cb_thermo_tY3eTK"
+          ]
+        }
+      },
+      "block_order": [
+        "marquee_YTNc34"
+      ],
+      "custom_css": [
+        ".hero__image {display: none;}"
+      ],
+      "name": "t:names.hero_marquee",
+      "settings": {
+        "media_type_1": "image",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "space-between",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "auto",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-26b3af85-0f55-4fea-b956-d8f9ac7c658e",
+        "toggle_overlay": true,
+        "overlay_color": "#00000026",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 15,
+        "padding-block-end": 16
+      }
+    },
+    "cp_comparison_table_tyeYT8": {
+      "type": "cp-comparison-table",
+      "blocks": {
+        "cb_thermo_ffqzWf": {
+          "type": "cb-thermo",
+          "name": "CB Thermometer",
+          "settings": {
+            "icon": "apple",
+            "image_upload": "shopify://shop_images/thermo-lab.png",
+            "width": 110,
+            "title": "Manufactured in NSF-Certified Facilities for Safety and Quality.",
+            "text": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "cb_thermo_ffqzWf"
+      ],
+      "name": "CB Comparison Table",
+      "settings": {
+        "comparison_table": "landing-page",
+        "comparison_table_blob": "shopify://shop_images/chart-blob_952ff141-9938-4094-82b7-0bdc7fdadd24.png"
+      }
+    },
+    "cb_wave_divider_b8Tq4F": {
+      "type": "cb-wave-divider",
+      "name": "CB Wave divider",
+      "settings": {
+        "overlap_next": true,
+        "overlap_previous": false,
+        "outline": false,
+        "fill": "#fbf6e9",
+        "height": 80,
+        "flip_vertical": false,
+        "flip_horizontal": false,
+        "margin_top": 0,
+        "margin_bottom": -1,
+        "zindex": 0
+      }
+    },
+    "cb_featured_product_edKjxf": {
+      "type": "cb-featured-product",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "carousel",
+            "media_columns": "one",
+            "image_gap": 0,
+            "large_first_image": false,
+            "icons_style": "arrow",
+            "slideshow_controls_style": "dots",
+            "slideshow_mobile_controls_style": "dots",
+            "thumbnail_position": "bottom",
+            "thumbnail_width": 64,
+            "aspect_ratio": "1",
+            "constrain_to_viewport": false,
+            "media_fit": "cover",
+            "media_radius": 4,
+            "extend_media": true,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": false,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 12,
+            "sticky_details_desktop": false,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_4pjABy": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><strong>Electrolyte + Vitamin Supplement Powder</strong></p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_9EciJa": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Citrus Variety Pack</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_3EdVed": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>{{ closest.product.metafields.custom.short_description | metafield_tag }}</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "cb_flavour_bars_mearyg": {
+              "type": "cb-flavour-bars",
+              "name": "Flavor Indicator",
+              "settings": {
+                "sweetness_empty_color": "#e0e0e0",
+                "sweetness_filled_color": "#dc3545",
+                "tartness_empty_color": "#e0e0e0",
+                "tartness_filled_color": "#dc3545",
+                "label_color": "#333333"
+              },
+              "blocks": {}
+            },
+            "text_xktGYa": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "variant_picker_GRbBAy": {
+              "type": "variant-picker",
+              "name": "t:names.product_variant_picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": true,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "seal_subscriptions_subscription_widget_8mX9R7": {
+              "type": "shopify://apps/seal-subscriptions/blocks/subscription-widget/13b25004-a140-4ab7-b5fe-29918f759699",
+              "settings": {
+                "product": "electrolyte-vitamin-supplement-powder-variety-pack-2"
+              }
+            },
+            "buy_buttons_aAUbmH": {
+              "type": "buy-buttons",
+              "name": "t:names.product_buy_buttons",
+              "settings": {
+                "stacking": false,
+                "show_pickup_availability": false,
+                "gift_card_form": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "disabled": true,
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "cb_group_PqCKM6": {
+              "type": "cb-group",
+              "name": "icons",
+              "settings": {
+                "custom_class": "",
+                "content_direction": "row",
+                "vertical_on_mobile": false,
+                "horizontal_alignment": "space-between",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "cb_group_PMqdRf": {
+                  "type": "cb-group",
+                  "name": "CB Group",
+                  "settings": {
+                    "custom_class": "",
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "center",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 12,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 4,
+                    "padding-block-end": 4,
+                    "padding-inline-start": 4,
+                    "padding-inline-end": 4
+                  },
+                  "blocks": {
+                    "icon_CqgA8G": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "truck",
+                        "width": 24,
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_AGhY4V": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Ships within 24 hours, Mon-Fri</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "custom",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.75rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon_CqgA8G",
+                    "text_AGhY4V"
+                  ]
+                },
+                "cb_group_tLNLaQ": {
+                  "type": "cb-group",
+                  "name": "CB Group",
+                  "settings": {
+                    "custom_class": "",
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "center",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 12,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 4,
+                    "padding-block-end": 4,
+                    "padding-inline-start": 4,
+                    "padding-inline-end": 4
+                  },
+                  "blocks": {
+                    "icon_bHRxBk": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "box",
+                        "width": 24,
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_3KeHzY": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>FREE avg 7-day shipping</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "custom",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.75rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon_bHRxBk",
+                    "text_3KeHzY"
+                  ]
+                },
+                "cb_group_UzGBN4": {
+                  "type": "cb-group",
+                  "name": "CB Group",
+                  "settings": {
+                    "custom_class": "",
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "center",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 12,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 4,
+                    "padding-block-end": 4,
+                    "padding-inline-start": 4,
+                    "padding-inline-end": 4
+                  },
+                  "blocks": {
+                    "icon_ycbAyy": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "heart",
+                        "width": 24,
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_hDPND3": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>30-Day Money Back Guarantee</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "custom",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.75rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon_ycbAyy",
+                    "text_hDPND3"
+                  ]
+                }
+              },
+              "block_order": [
+                "cb_group_PMqdRf",
+                "cb_group_tLNLaQ",
+                "cb_group_UzGBN4"
+              ]
+            }
+          },
+          "block_order": [
+            "text_4pjABy",
+            "text_9EciJa",
+            "text_3EdVed",
+            "cb_flavour_bars_mearyg",
+            "text_xktGYa",
+            "variant_picker_GRbBAy",
+            "seal_subscriptions_subscription_widget_8mX9R7",
+            "buy_buttons_aAUbmH",
+            "cb_group_PqCKM6"
+          ]
+        }
+      },
+      "name": "CB Featured Product",
+      "settings": {
+        "product": "electrolyte-vitamin-supplement-powder-variety-pack-2",
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 16,
+        "color_scheme": "",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "cb_carousel_eB48xP": {
+      "type": "cb-carousel",
+      "blocks": {
+        "cb_slide_b6KUDC": {
+          "type": "cb-slide",
+          "name": "Taste",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cb_featured_card_JhEH9n": {
+              "type": "cb-featured-card",
+              "name": "CB Featured Card",
+              "settings": {
+                "icon_bg": "#f3eb9a",
+                "text_bg": "#1a4e56",
+                "text_color": "#f1f0ea",
+                "border_radius": 12,
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/Taste_Icon_1.svg",
+                "width": 77,
+                "title": "<p>Taste You'll Crave</p>",
+                "text": "<p>Because if it doesn't taste good, you won't drink it. Staying hydrated shouldn't feel like a chore</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_featured_card_JhEH9n"
+          ]
+        },
+        "cb_slide_8jMLx7": {
+          "type": "cb-slide",
+          "name": "Zero Crash",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cb_featured_card_LYHAHQ": {
+              "type": "cb-featured-card",
+              "name": "CB Featured Card",
+              "settings": {
+                "icon_bg": "#f3eb9a",
+                "text_bg": "#1a4e56",
+                "text_color": "#f1f0ea",
+                "border_radius": 12,
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/Zero_Crash_Icon_1.svg",
+                "width": 87,
+                "title": "<p>Zero Crash</p>",
+                "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_featured_card_LYHAHQ"
+          ]
+        },
+        "cb_slide_97tW9a": {
+          "type": "cb-slide",
+          "name": "Hydration",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cb_featured_card_dLVi68": {
+              "type": "cb-featured-card",
+              "name": "Lastin Hydration",
+              "settings": {
+                "icon_bg": "#f3eb9a",
+                "text_bg": "#1a4e56",
+                "text_color": "#f1f0ea",
+                "border_radius": 12,
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/Lasting_Hydration_Icon_1.svg",
+                "width": 64,
+                "title": "<p>Lastin Hydration</p>",
+                "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_featured_card_dLVi68"
+          ]
+        },
+        "cb_slide_LjUAcP": {
+          "type": "cb-slide",
+          "name": "Balanced Electrolytes",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cb_featured_card_8nqVgG": {
+              "type": "cb-featured-card",
+              "name": "Balanced Electrolytes",
+              "settings": {
+                "icon_bg": "#f3eb9a",
+                "text_bg": "#1a4e56",
+                "text_color": "#f1f0ea",
+                "border_radius": 12,
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/Balance_Icon_1.svg",
+                "width": 82,
+                "title": "<p>Balanced Electrolytes</p>",
+                "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_featured_card_8nqVgG"
+          ]
+        },
+        "cb_slide_9RChKc": {
+          "type": "cb-slide",
+          "name": "Clean Ingredients",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cb_featured_card_pyWrn6": {
+              "type": "cb-featured-card",
+              "name": "Clean Ingredients",
+              "settings": {
+                "icon_bg": "#f3eb9a",
+                "text_bg": "#1a4e56",
+                "text_color": "#f1f0ea",
+                "border_radius": 12,
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/Clean_Ingredients_Icon_1.svg",
+                "width": 70,
+                "title": "<p>Clean Ingredients</p>",
+                "text": "<p>B-vitamins and L-Theanine power your focus without caffeine jitters.</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cb_featured_card_pyWrn6"
+          ]
+        }
+      },
+      "block_order": [
+        "cb_slide_b6KUDC",
+        "cb_slide_8jMLx7",
+        "cb_slide_97tW9a",
+        "cb_slide_LjUAcP",
+        "cb_slide_9RChKc"
+      ],
+      "name": "CB Carousel",
+      "settings": {
+        "slides_default": 5,
+        "space_default": 18,
+        "slides_320": 1.2,
+        "space_320": 18,
+        "slides_768": 3.2,
+        "space_768": 18,
+        "slides_990": 4.2,
+        "space_990": 18,
+        "slides_1280": 5,
+        "space_1280": 18,
+        "heading": "",
+        "section_width": "page-width",
+        "padding-block-start": 36,
+        "padding-block-end": 36
+      }
+    },
+    "cb_section_JRXtHD": {
+      "type": "cb-section",
+      "blocks": {
+        "cb_group_pgAAqc": {
+          "type": "cb-group",
+          "name": "Image",
+          "settings": {
+            "custom_class": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "image_TwTAb4": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/women-drinking.webp",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 48,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_TwTAb4"
+          ]
+        },
+        "cb_group_NqJTCV": {
+          "type": "cb-group",
+          "name": "Content",
+          "settings": {
+            "custom_class": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_KNUpF6": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Most hydration powders <br/>stop at hydration.</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "cb_group_QdrwRE": {
+              "type": "cb-group",
+              "name": "CB Group",
+              "settings": {
+                "custom_class": "this-is-better",
+                "content_direction": "row",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_RK4nqk": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>This is</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "3.5rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "image_npznDt": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/small-logo.png",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "custom",
+                    "custom_width": 28,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_RK4nqk",
+                "image_npznDt"
+              ]
+            },
+            "cb_pills_kgFAni": {
+              "type": "cb-pills",
+              "name": "CB Pills",
+              "settings": {
+                "bg_color": "#1a4e56",
+                "text_color": "#f1f0ea",
+                "border_radius": 12,
+                "padding-block-start": 36,
+                "padding-block-end": 36,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "cb_pill_Pewhw4": {
+                  "type": "_cb-pill",
+                  "name": "CB Pill",
+                  "settings": {
+                    "title": "<p><strong>Complete<br/>Hydration*</strong></p>",
+                    "text": ""
+                  },
+                  "blocks": {}
+                },
+                "cb_pill_tn9dE4": {
+                  "type": "_cb-pill",
+                  "name": "CB Pill",
+                  "settings": {
+                    "title": "<p><strong>Metabolism</strong></p>",
+                    "text": ""
+                  },
+                  "blocks": {}
+                },
+                "cb_pill_6gWQat": {
+                  "type": "_cb-pill",
+                  "name": "CB Pill",
+                  "settings": {
+                    "title": "<p><strong>Hormonal<br/>Support*</strong></p>",
+                    "text": ""
+                  },
+                  "blocks": {}
+                },
+                "cb_pill_9enzNL": {
+                  "type": "_cb-pill",
+                  "name": "CB Pill",
+                  "settings": {
+                    "title": "<p><strong>Energy*</strong></p>",
+                    "text": "(without caffeine)"
+                  },
+                  "blocks": {}
+                },
+                "cb_pill_QXjxx4": {
+                  "type": "_cb-pill",
+                  "name": "CB Pill",
+                  "settings": {
+                    "title": "<p><strong>Calm Focus*</strong></p>",
+                    "text": ""
+                  },
+                  "blocks": {}
+                },
+                "cb_pill_adf8YA": {
+                  "type": "_cb-pill",
+                  "name": "CB Pill",
+                  "settings": {
+                    "title": "<p><strong>Immune<br/>Function*</strong></p>",
+                    "text": ""
+                  },
+                  "blocks": {}
+                },
+                "cb_pill_fkLMzA": {
+                  "type": "_cb-pill",
+                  "name": "CB Pill",
+                  "settings": {
+                    "title": "<p><strong>Bone &<br/>Heart Health</strong></p>",
+                    "text": ""
+                  },
+                  "blocks": {}
+                },
+                "cb_pill_B9VDg4": {
+                  "type": "_cb-pill",
+                  "name": "CB Pill",
+                  "settings": {
+                    "title": "<p><strong>Stress Relief*</strong></p>",
+                    "text": ""
+                  },
+                  "blocks": {}
+                },
+                "cb_pill_JYw3bq": {
+                  "type": "_cb-pill",
+                  "name": "CB Pill",
+                  "settings": {
+                    "title": "<p><strong>Cognitive<br/>Support*</strong></p>",
+                    "text": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "cb_pill_Pewhw4",
+                "cb_pill_tn9dE4",
+                "cb_pill_6gWQat",
+                "cb_pill_9enzNL",
+                "cb_pill_QXjxx4",
+                "cb_pill_adf8YA",
+                "cb_pill_fkLMzA",
+                "cb_pill_B9VDg4",
+                "cb_pill_JYw3bq"
+              ]
+            },
+            "text_idPTeE": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>*These statements have not been evaluated by the FDA. Our products are not intended to diagnose, treat, cure, or prevent any disease.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "tight",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_KNUpF6",
+            "cb_group_QdrwRE",
+            "cb_pills_kgFAni",
+            "text_idPTeE"
+          ]
+        }
+      },
+      "block_order": [
+        "cb_group_pgAAqc",
+        "cb_group_NqJTCV"
+      ],
+      "custom_css": [
+        ".this-is-better img {width: 223px;}"
+      ],
+      "name": "Highlights",
+      "settings": {
+        "custom_class": "",
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-end",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 34,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-229da1bf-0e3d-4824-9c94-7d87d9afd0db",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 100,
+        "padding-block-end": 80
+      }
+    },
+    "cb_wave_divider_Ryrn7A": {
+      "type": "cb-wave-divider",
+      "name": "CB Wave divider",
+      "settings": {
+        "overlap_next": false,
+        "overlap_previous": true,
+        "outline": false,
+        "fill": "#ceecf6",
+        "height": 80,
+        "flip_vertical": true,
+        "flip_horizontal": false,
+        "margin_top": 0,
+        "margin_bottom": -1,
+        "zindex": 0
+      }
+    },
+    "section_cGbKeq": {
+      "type": "section",
+      "blocks": {
+        "group_mxTHYt": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fit-content",
+            "custom_width": 44,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_J9EbEr": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>A Palette For <br/>Everyone</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h1",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_EG7LqK": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<p>Your Drink. Your Way.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "2rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_wtnfJj": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Dial in the taste and sweetness simply by adjusting how much water you use. One stick, mixed your way.</p>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.5rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "image_KDPgTp": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/recommend-small.webp",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_J9EbEr",
+            "text_EG7LqK",
+            "text_wtnfJj",
+            "image_KDPgTp"
+          ]
+        },
+        "cb_group_7iH8d6": {
+          "type": "cb-group",
+          "name": "CB Group",
+          "settings": {
+            "custom_class": "recomment-image",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_M6KJi6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/recommend-big.webp",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "custom",
+            "custom_width": 55,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_mxTHYt",
+        "cb_group_7iH8d6",
+        "image_M6KJi6"
+      ],
+      "name": "A Palette for Everyone",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-62ca894c-922b-4748-a103-304cb1d9e810",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "cb_wave_divider_zNQMt3": {
+      "type": "cb-wave-divider",
+      "name": "CB Wave divider",
+      "settings": {
+        "overlap_next": true,
+        "overlap_previous": false,
+        "outline": false,
+        "fill": "#ceecf6",
+        "height": 80,
+        "flip_vertical": false,
+        "flip_horizontal": false,
+        "margin_top": 0,
+        "margin_bottom": -1,
+        "zindex": 0
+      }
+    },
+    "cb_section_KKjr3T": {
+      "type": "cb-section",
+      "blocks": {
+        "logo_G7itJy": {
+          "type": "logo",
+          "name": "t:names.logo",
+          "settings": {
+            "inverse": true,
+            "font": "heading",
+            "unit": "pixel",
+            "percent_width": 100,
+            "pixel_height": 32,
+            "custom_mobile_size": false,
+            "unit_mobile": "percent",
+            "percent_width_mobile": 100,
+            "pixel_height_mobile": 120,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "logo_G7itJy"
+      ],
+      "name": "CB Section",
+      "settings": {
+        "custom_class": "",
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-6b489045-a991-4c5c-81f8-5948be16467a",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 65,
+        "padding-block-end": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cb_section_TFqFiM",
+    "cb_section_ML97AJ",
+    "section_3yYjVm",
+    "hero_K7cJPL",
+    "cp_comparison_table_tyeYT8",
+    "cb_wave_divider_b8Tq4F",
+    "cb_featured_product_edKjxf",
+    "cb_carousel_eB48xP",
+    "cb_section_JRXtHD",
+    "cb_wave_divider_Ryrn7A",
+    "section_cGbKeq",
+    "cb_wave_divider_zNQMt3",
+    "cb_section_KKjr3T"
+  ]
+}
