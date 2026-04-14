@@ -1360,6 +1360,9 @@
         "cb_slide_Pb9cqb",
         "cb_slide_NnJTkM"
       ],
+      "custom_css": [
+        ".section-background{background: #FBF6E9;}"
+      ],
       "name": "CB Carousel",
       "settings": {
         "slides_default": 1,
