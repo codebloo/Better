@@ -2155,29 +2155,24 @@
     "cb_section_KKjr3T": {
       "type": "cb-section",
       "blocks": {
-        "logo_G7itJy": {
-          "type": "logo",
-          "name": "t:names.logo",
+        "button_BzAiKi": {
+          "type": "button",
+          "name": "t:names.button",
           "settings": {
-            "inverse": true,
-            "font": "heading",
-            "unit": "pixel",
-            "percent_width": 100,
-            "pixel_height": 32,
-            "custom_mobile_size": false,
-            "unit_mobile": "percent",
-            "percent_width_mobile": 100,
-            "pixel_height_mobile": 120,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "label": "Start Your Daily Ritual",
+            "link": "/",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "logo_G7itJy"
+        "button_BzAiKi"
       ],
       "name": "CB Section",
       "settings": {
