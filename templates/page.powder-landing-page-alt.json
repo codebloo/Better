@@ -1306,6 +1306,9 @@
       "block_order": [
         "group_HejqYd"
       ],
+      "custom_css": [
+        ".cb-media-carousel-block {margin-left: -40px; width: 400px;}"
+      ],
       "name": "Hero Image with text",
       "settings": {
         "content_direction": "row",
