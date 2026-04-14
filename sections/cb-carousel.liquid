@@ -141,7 +141,7 @@ padding-inline-end: var(--util-page-margin-offset);}
 }
 
 /* Size and fit the custom image within the button container */
-#next-{{ section_id }},
+#prev-{{ section_id }},
 #next-{{ section_id }} {
   background-size: contain;
   background-repeat: no-repeat;
@@ -151,7 +151,7 @@ padding-inline-end: var(--util-page-margin-offset);}
   width: 13px;}
 
 
-#next-{{ section_id }}  { background-image: url('{{ section.settings.left_arrow | image_url }}');}
+#prev-{{ section_id }}  { background-image: url('{{ section.settings.left_arrow | image_url }}');}
 #next-{{ section_id }} { background-image: url('{{ section.settings.right_arrow | image_url }}');}
 
 
