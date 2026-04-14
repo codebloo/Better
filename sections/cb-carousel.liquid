@@ -141,8 +141,8 @@ padding-inline-end: var(--util-page-margin-offset);}
 }
 
 /* Size and fit the custom image within the button container */
-#swiper-{{ section_id }} .swiper-button-prev,
-#swiper-{{ section_id }} .swiper-button-next {
+#next-{{ section_id }},
+#next-{{ section_id }} {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -151,8 +151,8 @@ padding-inline-end: var(--util-page-margin-offset);}
   width: 13px;}
 
 
-#swiper-{{ section_id }} .swiper-button-prev { background-image: url('{{ section.settings.left_arrow | image_url }}');}
-#swiper-{{ section_id }} .swiper-button-next{ background-image: url('{{ section.settings.right_arrow | image_url }}');}
+#next-{{ section_id }}  { background-image: url('{{ section.settings.left_arrow | image_url }}');}
+#next-{{ section_id }} { background-image: url('{{ section.settings.right_arrow | image_url }}');}
 
 
 #swiper-{{ section_id }} .swiper-pagination-bullet{background:{{ section.settings.dot_color }};}
