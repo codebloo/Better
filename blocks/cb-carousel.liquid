@@ -16,10 +16,9 @@
 {%- endcapture -%}
 
 
-<div id="cb-media-carousel-{{ block_id }}" class="kmc section section--{{ block.settings.block_width }}
-  color-{{ block.settings.color_scheme }} spacing-style"
+<div id="cb-media-carousel-{{ block_id }}" class="kmc  color-{{ block.settings.color_scheme }} spacing-style"
   style="{% render 'spacing-style', settings: block.settings %}">
-  <div class="kmc__inner {{ block.settings.block_width }}">
+  <div class="kmc__inner">
     {% if heading != blank %}
       <div class="kmc__heading">
         <h2>{{ heading }}</h2>
@@ -161,7 +160,7 @@ padding-inline-end: var(--util-page-margin-offset);}
 {% schema %}
 {
   "name": "CB Carousel",
-  "tag": "section",
+  "tag": "div",
   "class": "cb-media-carousel-section",
   "settings": [
     { "type": "header", "content": "Controls" },
