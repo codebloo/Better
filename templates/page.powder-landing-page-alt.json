@@ -1318,7 +1318,7 @@
       "settings": {
         "show_arrows": true,
         "show_dots": true,
-        "dot_color": "#dfdfdf",
+        "dot_color": "#fa0361",
         "dot_color_active": "#fa0361",
         "slides_default": 1,
         "space_default": 10,
