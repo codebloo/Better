@@ -53,35 +53,33 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script>
-const swiper = new Swiper('.swiper', {
-  // Default parameters
-  slidesPerView: 1,
-  spaceBetween: 10,
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1.2,
-      spaceBetween: 18
-    },
-    // when window width is >= 768px
-    768: {
-      slidesPerView: 3.2,
-      spaceBetween: 18
-    },
-    // when window width is >= 990px
-    990: {
-      slidesPerView: 4.2,
-      spaceBetween: 18
-    },
-       // when window width is >= 990px
-    1280: {
-      slidesPerView: 5,
-      spaceBetween: 18
-    }
-  }
-})
-  </script>
+  (function() {
+    const el = document.getElementById('swiper-{{ section_id }}');
+    if (!el) return;
+    new Swiper(el, {
+      slidesPerView: {{ section.settings.slides_default }},
+      spaceBetween: {{ section.settings.space_default }},
+      breakpoints: {
+        320: {
+          slidesPerView: {{ section.settings.slides_320 }},
+          spaceBetween: {{ section.settings.space_320 }}
+        },
+        768: {
+          slidesPerView: {{ section.settings.slides_768 }},
+          spaceBetween: {{ section.settings.space_768 }}
+        },
+        990: {
+          slidesPerView: {{ section.settings.slides_990 }},
+          spaceBetween: {{ section.settings.space_990 }}
+        },
+        1280: {
+          slidesPerView: {{ section.settings.slides_1280 }},
+          spaceBetween: {{ section.settings.space_1280 }}
+        }
+      }
+    });
+  })();
+</script>
 <style>.kmc__heading{
   margin-bottom:18px;
   text-align:center;}
