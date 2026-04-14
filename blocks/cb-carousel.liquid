@@ -7,7 +7,7 @@
 {% endcomment %}
 
 {% liquid
-  assign block_id = section.id
+  assign block_id = block.id
   assign heading = block.settings.heading
 %}
 
@@ -161,7 +161,7 @@ padding-inline-end: var(--util-page-margin-offset);}
 {
   "name": "CB Carousel",
   "tag": "div",
-  "class": "cb-media-carousel-section",
+  "class": "cb-media-carousel-block",
   "settings": [
     { "type": "header", "content": "Controls" },
 {
