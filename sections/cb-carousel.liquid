@@ -125,6 +125,11 @@ padding-inline-end: var(--util-page-margin-offset);}
   display: flex;                /* so inner card can stretch */
 }
 
+.kmc .carousel-has-arrows-{{ section_id }} .swiper-slide {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 /* Swiper */
 #swiper-{{ section_id }}{padding-bottom:30px;}
 .carousel-has-arrows-{{ section_id }}{}
@@ -146,7 +151,6 @@ padding-inline-end: var(--util-page-margin-offset);}
 
 
 #swiper-{{ section_id }} .swiper-button-prev { background-image: url('{{ section.settings.left_arrow | image_url }}');}
-
 #swiper-{{ section_id }} .swiper-button-next{ background-image: url('{{ section.settings.right_arrow | image_url }}');}
 
 
