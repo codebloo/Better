@@ -70,12 +70,12 @@
     new Swiper(el, {
       slidesPerView: {{ section.settings.slides_default }},
       spaceBetween: {{ section.settings.space_default }},
-      {% if section.settings.show_arrows %}
-      navigation: {
-     nextEl: '#next-{{ section_id }}',
-      prevEl: '#prev-{{ section_id }}',
-      },
-      {% endif %}
+     {% if section.settings.show_arrows %}
+navigation: {
+  nextEl: '#next-{{ section_id }}',
+  prevEl: '#prev-{{ section_id }}',
+},
+{% endif %}
       {% if section.settings.show_dots %}
       pagination: {
         el: '#swiper-{{ section_id }} .swiper-pagination',
