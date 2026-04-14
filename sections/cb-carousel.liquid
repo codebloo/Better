@@ -136,13 +136,14 @@ padding-inline-end: var(--util-page-margin-offset);}
 .carousel-has-arrows-{{ section_id }}{}
 
 /* Hide default Swiper arrow pseudo-element when a custom image is slotted in */
-#swiper-{{ section_id }} .swiper-navigation-icon{
+#swiper-{{ section_id }} .swiper-navigation-icon svg{
   display: none;
 }
 
 /* Size and fit the custom image within the button container */
-#swiper-{{ section_id }} .swiper-button-prev img,
-#swiper-{{ section_id }} .swiper-button-next img {
+#swiper-{{ section_id }} .swiper-button-prev,
+#swiper-{{ section_id }} .swiper-button-next {
+  background-size:13px 17px;
   width: 100%;
   height: 100%;
   object-fit: contain;
