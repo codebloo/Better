@@ -359,7 +359,7 @@
                 "space_1280": 18,
                 "heading": "",
                 "block_width": "page-width",
-                "padding-block-start": 0,
+                "padding-block-start": 30,
                 "padding-block-end": 0
               },
               "blocks": {
