@@ -33,15 +33,22 @@
     <!-- Slides -->
    {{ children }}
   </div>
+
   <!-- If we need pagination -->
+  {% if section.settings.show_dots %}
   <div class="swiper-pagination"></div>
+  {% endif %}
 
   <!-- If we need navigation buttons -->
+  {% if section.settings.show_arrows %}
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
+  {% endif %}
 
   <!-- If we need scrollbar -->
   <div class="swiper-scrollbar"></div>
+
+  
 </div>
 
   </div>
