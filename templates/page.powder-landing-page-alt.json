@@ -2353,7 +2353,7 @@
       ],
       "name": "CB Carousel",
       "settings": {
-        "show_arrows": true,
+        "show_arrows": false,
         "show_dots": false,
         "dot_color": "",
         "dot_color_active": "",
