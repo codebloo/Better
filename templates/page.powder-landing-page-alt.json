@@ -346,7 +346,7 @@
                 "right_arrow": "shopify://shop_images/icon-arrow-right.svg",
                 "show_dots": true,
                 "dot_color": "#ffffff",
-                "dot_color_active": "#fa0361",
+                "dot_color_active": "#ffffff",
                 "slides_default": 1,
                 "space_default": 10,
                 "slides_320": 1,
@@ -1307,7 +1307,7 @@
         "group_HejqYd"
       ],
       "custom_css": [
-        "@media screen and (min-width:768px){.cb-media-carousel-block {margin-left: -40px; width: 400px;}}"
+        "@media screen and (min-width: 768px) {.cb-media-carousel-block {margin-left: -40px; width: 400px; }}"
       ],
       "name": "Hero Image with text",
       "settings": {
