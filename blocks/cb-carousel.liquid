@@ -24,7 +24,7 @@
         <h2>{{ heading }}</h2>
       </div>
     {% endif %}
-
+<div class="kmc__carousel-wrapper">
    <!-- Slider main container -->
 <div class="swiper{% if block.settings.show_arrows %} carousel-has-arrows-{{ block_id }}{% endif %}" id="swiper-{{ block_id }}">
   <!-- Additional required wrapper -->
@@ -47,7 +47,7 @@
    <div class="swiper-button-prev" id="prev-{{ block_id }}"></div>
     <div class="swiper-button-next" id="next-{{ block_id }}"></div>
 {% endif %}
-
+</div>
   </div>
 </div>
 <link
@@ -133,7 +133,8 @@ padding-inline-end: var(--util-page-margin-offset);}
 .carousel-has-arrows-{{ block_id }}{}
 
 /* Hide default Swiper arrow pseudo-element when a custom image is slotted in */
-#swiper-{{ block_id }} .swiper-navigation-icon{
+#prev-{{ block_id }} .swiper-navigation-icon,
+#next-{{ block_id }} .swiper-navigation-icon{
   display: none!important;
 }
 
