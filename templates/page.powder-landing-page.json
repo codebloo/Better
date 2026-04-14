@@ -1361,10 +1361,12 @@
         "cb_slide_NnJTkM"
       ],
       "custom_css": [
-        ".section-background{background: #FBF6E9;}"
+        ".section-background {background: #fbf6e9;}"
       ],
       "name": "CB Carousel",
       "settings": {
+        "show_arrows": false,
+        "show_dots": false,
         "slides_default": 1,
         "space_default": 10,
         "slides_320": 1.2,
@@ -2395,6 +2397,8 @@
       ],
       "name": "CB Carousel",
       "settings": {
+        "show_arrows": false,
+        "show_dots": false,
         "slides_default": 5,
         "space_default": 18,
         "slides_320": 1.2,
