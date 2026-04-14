@@ -63,12 +63,12 @@
     new Swiper(el, {
       slidesPerView: {{ block.settings.slides_default }},
       spaceBetween: {{ block.settings.space_default }},
-      {% if block.settings.show_arrows %}
-      navigation: {
-        nextEl: '#next-{{ block_id }}',
-        prevEl: '#next-{{ block_id }}',
-      },
-      {% endif %}
+   {% if block.settings.show_arrows %}
+navigation: {
+  nextEl: '#next-{{ block_id }}',
+  prevEl: '#prev-{{ block_id }}',
+},
+{% endif %}
       {% if block.settings.show_dots %}
       pagination: {
         el: '#swiper-{{ block_id }} .swiper-pagination',
