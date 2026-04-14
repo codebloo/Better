@@ -101,7 +101,9 @@
     });
   })();
 </script>
-<style>.kmc__heading{
+<style>
+  
+  .kmc__heading{
   margin-bottom:18px;
   text-align:center;}
 
@@ -142,10 +144,10 @@ padding-inline-end: var(--util-page-margin-offset);}
   pointer-events: none; /* let clicks pass through to the button */
   width: 13px;}
 
-{% if section.settings.left_arrow %}
+{% if section.settings.left_arrow != blank %}
 #swiper-{{ section_id }} .swiper-button-prev { background-image: url({{ section.settings.left_arrow | image_url: width: 80 }});}
 {% endif %}
-{% if section.settings.right_arrow %}
+{% if section.settings.right_arrow != blank %}
 #swiper-{{ section_id }} .swiper-button-next{ background-image: url({{ section.settings.right_arrow | image_url: width: 80 }});}
 {% endif %}
 
