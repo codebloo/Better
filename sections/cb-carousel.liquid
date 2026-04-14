@@ -135,17 +135,18 @@ padding-inline-end: var(--util-page-margin-offset);}
 /* Size and fit the custom image within the button container */
 #swiper-{{ section_id }} .swiper-button-prev,
 #swiper-{{ section_id }} .swiper-button-next {
-  background-size:100% auto;
-  width: 13px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 17px;
-  object-fit: contain;
   pointer-events: none; /* let clicks pass through to the button */
-}
+  width: 13px;}
+
 {% if section.settings.left_arrow %}
-#swiper-{{ section_id }} .swiper-button-prev{background-image:url({{ section.settings.left_arrow | image_url: width: 80 | image_tag: alt: 'Previous', loading: 'eager' }});}
+#swiper-{{ section_id }} .swiper-button-prev{background-image:url({{ section.settings.left_arrow | image_url: width: 80 }});}
 {% endif %}
 {% if section.settings.right_arrow %}
-#swiper-{{ section_id }} .swiper-button-next{background-image:url({{ section.settings.right_arrow | image_url: width: 80 | image_tag: alt: 'Previous', loading: 'eager'  }});}
+#swiper-{{ section_id }} .swiper-button-next{background-image:url({{ section.settings.right_arrow | image_url: width: 80 }});}
 {% endif %}
 
 #swiper-{{ section_id }} .swiper-pagination-bullet{background:{{ section.settings.dot_color }};}
