@@ -149,6 +149,8 @@ padding-inline-end: var(--util-page-margin-offset);}
   object-fit: contain;
   pointer-events: none; /* let clicks pass through to the button */
 }
+#swiper-{{ section_id }} .swiper-button-prev{background-image:url({{ section.settings.left_arrow }});}
+#swiper-{{ section_id }} .swiper-button-next{background-image:url({{ section.settings.right_arrow }});}
 
 #swiper-{{ section_id }} .swiper-pagination-bullet{background:{{ section.settings.dot_color }};}
 #swiper-{{ section_id }} .swiper-pagination-bullet-active{background:{{ section.settings.dot_color_active }};}
