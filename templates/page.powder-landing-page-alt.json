@@ -65,7 +65,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"/products/tropical-citrus-multipack\" title=\"Tropical & Citrus Variety Bundle\">Bundle & Save →</a></p>",
+            "text": "<p><strong>20% Off First Order | Free Shipping Within the USA</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
