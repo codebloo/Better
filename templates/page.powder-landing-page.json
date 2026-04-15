@@ -2680,7 +2680,7 @@
                   "type": "_cb-pill",
                   "name": "CB Pill",
                   "settings": {
-                    "title": "<p><strong>Metabolism</strong></p>",
+                    "title": "<p><strong>Metabolism*</strong></p>",
                     "text": ""
                   },
                   "blocks": {}
