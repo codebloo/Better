@@ -327,7 +327,7 @@
               "type": "button",
               "settings": {
                 "label": "Try Better Hydration",
-                "link": "/",
+                "link": "#shopify-section-template--18572863438911__cb_featured_product_edKjxf",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -3076,7 +3076,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Start Your Daily Ritual",
-            "link": "/",
+            "link": "#shopify-section-template--18572863438911__cb_featured_product_edKjxf",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
