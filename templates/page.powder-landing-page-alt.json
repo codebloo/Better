@@ -2029,7 +2029,7 @@
         "desktop_media_position": "left",
         "equal_columns": true,
         "limit_details_width": false,
-        "gap": 16,
+        "gap": 48,
         "color_scheme": "",
         "padding-block-start": 72,
         "padding-block-end": 72
