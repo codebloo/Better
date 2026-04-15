@@ -65,7 +65,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"/products/tropical-citrus-multipack\" title=\"Tropical & Citrus Variety Bundle\">Bundle & Save →</a></p>",
+            "text": "<p><strong>20% Off First Order | Free Shipping Within the USA</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -1367,6 +1367,8 @@
       "settings": {
         "show_arrows": false,
         "show_dots": false,
+        "dot_color": "",
+        "dot_color_active": "",
         "slides_default": 1,
         "space_default": 10,
         "slides_320": 1.2,
@@ -2399,6 +2401,8 @@
       "settings": {
         "show_arrows": false,
         "show_dots": false,
+        "dot_color": "",
+        "dot_color_active": "",
         "slides_default": 5,
         "space_default": 18,
         "slides_320": 1.2,
