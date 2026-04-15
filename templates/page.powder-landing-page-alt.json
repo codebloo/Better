@@ -2027,7 +2027,7 @@
         "product": "electrolyte-vitamin-supplement-powder-variety-pack-2",
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
-        "equal_columns": false,
+        "equal_columns": true,
         "limit_details_width": false,
         "gap": 16,
         "color_scheme": "",
