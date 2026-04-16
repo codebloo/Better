@@ -44,7 +44,7 @@
   endif
 
   capture logo
-    content_for 'block', type: '_header-logo', id: 'header-logo'
+    content_for 'block', type: 'logo', id: 'header-logo'
   endcapture
 
   capture menu
@@ -985,7 +985,7 @@
     {
       "type": "color_scheme",
       "id": "color_scheme_transparent",
-      "label": "t:settings.inverse",
+      "label": "t:settings.logoerse",
       "default": "primary",
       "visible_if": "{{ section.settings.enable_transparent_header_home or section.settings.enable_transparent_header_product or section.settings.enable_transparent_header_collection }}"
     },
