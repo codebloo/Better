@@ -2052,7 +2052,7 @@
             "seal_subscriptions_subscription_widget_UkBnWD": {
               "type": "shopify://apps/seal-subscriptions/blocks/subscription-widget/13b25004-a140-4ab7-b5fe-29918f759699",
               "settings": {
-                "product": "tropical-citrus-variety-bundle"
+                "product": "tropical-citrus-multipack"
               }
             },
             "buy_buttons_QXeXCr": {
@@ -2408,7 +2408,7 @@
       },
       "name": "CB Featured Product",
       "settings": {
-        "product": "tropical-citrus-variety-bundle",
+        "product": "tropical-citrus-multipack",
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
         "equal_columns": true,
