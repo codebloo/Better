@@ -1677,7 +1677,7 @@
               "settings": {
                 "stacking": false,
                 "show_pickup_availability": false,
-                "gift_card_form": true,
+                "gift_card_form": false,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -2024,7 +2024,7 @@
       },
       "name": "CB Featured Product",
       "settings": {
-        "product": "tropical-citrus-variety-bundle",
+        "product": "tropical-citrus-multipack",
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
         "equal_columns": true,
