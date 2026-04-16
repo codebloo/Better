@@ -1919,6 +1919,32 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "text_bYtJjb": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_ADf7dE": {
               "type": "text",
               "name": "t:names.text",
@@ -1945,23 +1971,11 @@
               },
               "blocks": {}
             },
-            "cb_flavour_bars_XP8yiE": {
-              "type": "cb-flavour-bars",
-              "name": "Flavor Indicator",
-              "settings": {
-                "sweetness_empty_color": "#e0e0e0",
-                "sweetness_filled_color": "#dc3545",
-                "tartness_empty_color": "#e0e0e0",
-                "tartness_filled_color": "#dc3545",
-                "label_color": "#333333"
-              },
-              "blocks": {}
-            },
             "product_description_KGbWJJ": {
               "type": "product-description",
               "name": "t:names.product_description",
               "settings": {
-                "text": "{{ closest.product.description }}",
+                "text": "<p>{{ closest.product.description }}</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -2042,8 +2056,8 @@
             }
           },
           "block_order": [
+            "text_bYtJjb",
             "text_ADf7dE",
-            "cb_flavour_bars_XP8yiE",
             "product_description_KGbWJJ",
             "variant_picker_k9qagM",
             "seal_subscriptions_subscription_widget_9B8caq",
