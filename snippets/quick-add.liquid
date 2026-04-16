@@ -67,6 +67,7 @@
     data-section-id="{{ section_id }}"
     data-product-id="{{ product.id }}"
     on:submit="/handleSubmit"
+     data-buy-now="{{ block_settings.buy_now }}"
     class="
       quick-add__product-form-component
       {% if product.options.size == 1 %} quick-add__product-form-component--single-option {% else %} quick-add__product-form-component--multi-option {% endif %}
