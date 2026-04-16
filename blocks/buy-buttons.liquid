@@ -65,6 +65,10 @@
           ref="variantId"
           value="{{ product.selected_or_first_available_variant.id }}"
         >
+   
+{%- if block_settings.buy_now -%}
+  <input type="hidden" name="return_to" value="/checkout">
+{%- endif -%}
         {%- if block_settings.gift_card_form and product.gift_card? -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section, block: block -%}
         {%- endif -%}
