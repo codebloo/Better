@@ -226,7 +226,7 @@
         order: order,
         settings: section.settings,
         first: first,
-        logo:  logo_inverse,
+        logo: logo,
         menu: menu,
         actions: actions,
         localization: localization_markup,
@@ -648,6 +648,13 @@
     {
       "type": "header",
       "content": "t:content.logo"
+    },
+     {
+      "type": "checkbox",
+      "label": "t:settings.use_inverse_logo",
+      "id": "inverse",
+      "default": false,
+      "visible_if": "{{ settings.logo_inverse }}"
     },
     {
       "type": "select",
