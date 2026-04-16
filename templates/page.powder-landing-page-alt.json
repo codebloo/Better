@@ -1565,11 +1565,11 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Citrus Variety Pack</h2>",
+                "text": "<h1>Tropical & Citrus Variety Bundle</h1>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "h2",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -2024,7 +2024,7 @@
       },
       "name": "CB Featured Product",
       "settings": {
-        "product": "electrolyte-vitamin-supplement-powder-variety-pack-2",
+        "product": "tropical-citrus-variety-bundle",
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
         "equal_columns": true,
