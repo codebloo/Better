@@ -2014,7 +2014,7 @@
             "seal_subscriptions_subscription_widget_9B8caq": {
               "type": "shopify://apps/seal-subscriptions/blocks/subscription-widget/13b25004-a140-4ab7-b5fe-29918f759699",
               "settings": {
-                "product": "{{ closest.product }}"
+                "product": "tropical-citrus-variety-bundle"
               }
             },
             "buy_buttons_jFcmxC": {
