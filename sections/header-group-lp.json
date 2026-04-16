@@ -48,6 +48,15 @@
           "type": "logo",
           "static": true,
           "settings": {
+            "inverse": true,
+            "font": "heading",
+            "unit": "percent",
+            "percent_width": 100,
+            "pixel_height": 48,
+            "custom_mobile_size": false,
+            "unit_mobile": "percent",
+            "percent_width_mobile": 100,
+            "pixel_height_mobile": 120,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -83,6 +92,7 @@
         "img {display: block; margin: 0 auto; width: 123px;}"
       ],
       "settings": {
+        "inverse": false,
         "logo_position": "center",
         "menu_position": "left",
         "menu_row": "top",
