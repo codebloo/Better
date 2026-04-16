@@ -1957,6 +1957,32 @@
               },
               "blocks": {}
             },
+            "product_description_KGbWJJ": {
+              "type": "product-description",
+              "name": "t:names.product_description",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "variant_picker_k9qagM": {
               "type": "variant-picker",
               "name": "t:names.product_variant_picker",
@@ -2018,6 +2044,7 @@
           "block_order": [
             "text_ADf7dE",
             "cb_flavour_bars_XP8yiE",
+            "product_description_KGbWJJ",
             "variant_picker_k9qagM",
             "seal_subscriptions_subscription_widget_9B8caq",
             "buy_buttons_jFcmxC"
