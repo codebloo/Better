@@ -1887,6 +1887,7 @@
               "type": "buy-buttons",
               "name": "t:names.product_buy_buttons",
               "settings": {
+                "buy_now": true,
                 "stacking": false,
                 "show_pickup_availability": false,
                 "gift_card_form": true,
