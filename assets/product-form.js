@@ -354,6 +354,12 @@ class ProductFormComponent extends Component {
 
           if (!id) throw new Error('Form ID is required');
 
+          // Buy now: item has been added to cart, redirect directly to checkout
+          if (this.dataset.buyNow === 'true') {
+            window.location.href = '/checkout';
+            return;
+          }
+
           // Add aria-live region to inform screen readers that the item was added
           if (this.refs.addToCartButtonContainer?.refs.addToCartButton) {
             const addToCartButton = this.refs.addToCartButtonContainer.refs.addToCartButton;
