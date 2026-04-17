@@ -499,314 +499,6 @@
                     "cb_group_VDXb9y"
                   ]
                 },
-                "cb_slide_ATNYzb": {
-                  "type": "cb-slide",
-                  "name": "CB Slide",
-                  "settings": {
-                    "content_direction": "column",
-                    "vertical_on_mobile": true,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 0,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "placeholder": "",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {
-                    "cb_group_PBjaLE": {
-                      "type": "cb-group",
-                      "name": "Testimonial",
-                      "settings": {
-                        "custom_class": "",
-                        "content_direction": "column",
-                        "vertical_on_mobile": true,
-                        "horizontal_alignment": "flex-start",
-                        "vertical_alignment": "center",
-                        "align_baseline": false,
-                        "horizontal_alignment_flex_direction_column": "flex-start",
-                        "vertical_alignment_flex_direction_column": "flex-start",
-                        "gap": 12,
-                        "width": "fill",
-                        "custom_width": 100,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
-                        "height": "fill",
-                        "custom_height": 100,
-                        "inherit_color_scheme": false,
-                        "color_scheme": "scheme-5a1ee74f-085b-47a8-88fa-b7aa7162ff10",
-                        "background_media": "none",
-                        "video_position": "cover",
-                        "background_image_position": "cover",
-                        "border": "solid",
-                        "border_width": 1,
-                        "border_opacity": 100,
-                        "border_radius": 18,
-                        "toggle_overlay": false,
-                        "overlay_color": "#00000026",
-                        "overlay_style": "solid",
-                        "gradient_direction": "to top",
-                        "link": "",
-                        "open_in_new_tab": false,
-                        "placeholder": "",
-                        "padding-block-start": 16,
-                        "padding-block-end": 24,
-                        "padding-inline-start": 18,
-                        "padding-inline-end": 30
-                      },
-                      "blocks": {
-                        "cb_group_MGKERQ": {
-                          "type": "cb-group",
-                          "name": "Stars",
-                          "settings": {
-                            "custom_class": "",
-                            "content_direction": "column",
-                            "vertical_on_mobile": true,
-                            "horizontal_alignment": "flex-start",
-                            "vertical_alignment": "center",
-                            "align_baseline": false,
-                            "horizontal_alignment_flex_direction_column": "flex-start",
-                            "vertical_alignment_flex_direction_column": "center",
-                            "gap": 12,
-                            "width": "fill",
-                            "custom_width": 100,
-                            "width_mobile": "fill",
-                            "custom_width_mobile": 100,
-                            "height": "fit",
-                            "custom_height": 100,
-                            "inherit_color_scheme": true,
-                            "color_scheme": "",
-                            "background_media": "none",
-                            "video_position": "cover",
-                            "background_image_position": "cover",
-                            "border": "none",
-                            "border_width": 1,
-                            "border_opacity": 100,
-                            "border_radius": 0,
-                            "toggle_overlay": false,
-                            "overlay_color": "#00000026",
-                            "overlay_style": "solid",
-                            "gradient_direction": "to top",
-                            "link": "",
-                            "open_in_new_tab": false,
-                            "placeholder": "",
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {
-                            "icon_yPWjGX": {
-                              "type": "icon",
-                              "name": "t:names.icon",
-                              "settings": {
-                                "icon": "price_tag",
-                                "image_upload": "shopify://shop_images/pink-stars.svg",
-                                "width": 98,
-                                "link": "",
-                                "open_in_new_tab": false
-                              },
-                              "blocks": {}
-                            }
-                          },
-                          "block_order": [
-                            "icon_yPWjGX"
-                          ]
-                        },
-                        "cb_group_thQDcT": {
-                          "type": "cb-group",
-                          "name": "Content",
-                          "settings": {
-                            "custom_class": "",
-                            "content_direction": "column",
-                            "vertical_on_mobile": true,
-                            "horizontal_alignment": "flex-start",
-                            "vertical_alignment": "center",
-                            "align_baseline": false,
-                            "horizontal_alignment_flex_direction_column": "flex-start",
-                            "vertical_alignment_flex_direction_column": "center",
-                            "gap": 12,
-                            "width": "fill",
-                            "custom_width": 100,
-                            "width_mobile": "fill",
-                            "custom_width_mobile": 100,
-                            "height": "fit",
-                            "custom_height": 100,
-                            "inherit_color_scheme": true,
-                            "color_scheme": "",
-                            "background_media": "none",
-                            "video_position": "cover",
-                            "background_image_position": "cover",
-                            "border": "none",
-                            "border_width": 1,
-                            "border_opacity": 100,
-                            "border_radius": 0,
-                            "toggle_overlay": false,
-                            "overlay_color": "#00000026",
-                            "overlay_style": "solid",
-                            "gradient_direction": "to top",
-                            "link": "",
-                            "open_in_new_tab": false,
-                            "placeholder": "",
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {
-                            "text_Ty64fa": {
-                              "type": "text",
-                              "name": "t:names.text",
-                              "settings": {
-                                "text": "<p><strong>Love the taste!</strong><br/>I love this product!! It tastes clean and refreshing—not overly sweet or artificial. It mixes easily with no chalky texture and is perfect for workouts, travel, or long days when you need extra hydration.</p>",
-                                "width": "fit-content",
-                                "max_width": "normal",
-                                "alignment": "left",
-                                "type_preset": "rte",
-                                "font": "var(--font-body--family)",
-                                "font_size": "1rem",
-                                "line_height": "normal",
-                                "letter_spacing": "normal",
-                                "case": "none",
-                                "wrap": "pretty",
-                                "color": "var(--color-foreground)",
-                                "background": false,
-                                "background_color": "#00000026",
-                                "corner_radius": 0,
-                                "padding-block-start": 0,
-                                "padding-block-end": 0,
-                                "padding-inline-start": 0,
-                                "padding-inline-end": 0
-                              },
-                              "blocks": {}
-                            },
-                            "cb_group_DTJz4M": {
-                              "type": "cb-group",
-                              "name": "Author check",
-                              "settings": {
-                                "custom_class": "",
-                                "content_direction": "row",
-                                "vertical_on_mobile": true,
-                                "horizontal_alignment": "flex-start",
-                                "vertical_alignment": "center",
-                                "align_baseline": false,
-                                "horizontal_alignment_flex_direction_column": "flex-start",
-                                "vertical_alignment_flex_direction_column": "center",
-                                "gap": 12,
-                                "width": "fill",
-                                "custom_width": 100,
-                                "width_mobile": "fill",
-                                "custom_width_mobile": 100,
-                                "height": "fit",
-                                "custom_height": 100,
-                                "inherit_color_scheme": true,
-                                "color_scheme": "",
-                                "background_media": "none",
-                                "video_position": "cover",
-                                "background_image_position": "cover",
-                                "border": "none",
-                                "border_width": 1,
-                                "border_opacity": 100,
-                                "border_radius": 0,
-                                "toggle_overlay": false,
-                                "overlay_color": "#00000026",
-                                "overlay_style": "solid",
-                                "gradient_direction": "to top",
-                                "link": "",
-                                "open_in_new_tab": false,
-                                "placeholder": "",
-                                "padding-block-start": 0,
-                                "padding-block-end": 0,
-                                "padding-inline-start": 0,
-                                "padding-inline-end": 0
-                              },
-                              "blocks": {
-                                "icon_3aXFma": {
-                                  "type": "icon",
-                                  "name": "t:names.icon",
-                                  "settings": {
-                                    "icon": "price_tag",
-                                    "image_upload": "shopify://shop_images/icon-testimonial-check.svg",
-                                    "width": 19,
-                                    "link": "",
-                                    "open_in_new_tab": false
-                                  },
-                                  "blocks": {}
-                                },
-                                "text_jVeD8h": {
-                                  "type": "text",
-                                  "name": "t:names.text",
-                                  "settings": {
-                                    "text": "<p>Verified Buyer</p>",
-                                    "width": "fit-content",
-                                    "max_width": "normal",
-                                    "alignment": "left",
-                                    "type_preset": "custom",
-                                    "font": "var(--font-subheading--family)",
-                                    "font_size": "0.75rem",
-                                    "line_height": "normal",
-                                    "letter_spacing": "normal",
-                                    "case": "none",
-                                    "wrap": "pretty",
-                                    "color": "var(--color-foreground)",
-                                    "background": false,
-                                    "background_color": "#00000026",
-                                    "corner_radius": 0,
-                                    "padding-block-start": 0,
-                                    "padding-block-end": 0,
-                                    "padding-inline-start": 0,
-                                    "padding-inline-end": 0
-                                  },
-                                  "blocks": {}
-                                }
-                              },
-                              "block_order": [
-                                "icon_3aXFma",
-                                "text_jVeD8h"
-                              ]
-                            }
-                          },
-                          "block_order": [
-                            "text_Ty64fa",
-                            "cb_group_DTJz4M"
-                          ]
-                        }
-                      },
-                      "block_order": [
-                        "cb_group_MGKERQ",
-                        "cb_group_thQDcT"
-                      ]
-                    }
-                  },
-                  "block_order": [
-                    "cb_group_PBjaLE"
-                  ]
-                },
                 "cb_slide_XWmfRV": {
                   "type": "cb-slide",
                   "name": "CB Slide",
@@ -1114,12 +806,320 @@
                   "block_order": [
                     "cb_group_YLY6Rj"
                   ]
+                },
+                "cb_slide_7j6db9": {
+                  "type": "cb-slide",
+                  "name": "CB Slide",
+                  "settings": {
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 0,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "cb_group_mdYWNj": {
+                      "type": "cb-group",
+                      "name": "Testimonial",
+                      "settings": {
+                        "custom_class": "",
+                        "content_direction": "column",
+                        "vertical_on_mobile": true,
+                        "horizontal_alignment": "flex-start",
+                        "vertical_alignment": "center",
+                        "align_baseline": false,
+                        "horizontal_alignment_flex_direction_column": "flex-start",
+                        "vertical_alignment_flex_direction_column": "space-between",
+                        "gap": 12,
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fill",
+                        "custom_height": 100,
+                        "inherit_color_scheme": false,
+                        "color_scheme": "scheme-5a1ee74f-085b-47a8-88fa-b7aa7162ff10",
+                        "background_media": "none",
+                        "video_position": "cover",
+                        "background_image_position": "cover",
+                        "border": "solid",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 18,
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
+                        "overlay_style": "solid",
+                        "gradient_direction": "to top",
+                        "link": "",
+                        "open_in_new_tab": false,
+                        "placeholder": "",
+                        "padding-block-start": 16,
+                        "padding-block-end": 24,
+                        "padding-inline-start": 18,
+                        "padding-inline-end": 30
+                      },
+                      "blocks": {
+                        "cb_group_z8BxBR": {
+                          "type": "cb-group",
+                          "name": "Stars",
+                          "settings": {
+                            "custom_class": "",
+                            "content_direction": "column",
+                            "vertical_on_mobile": true,
+                            "horizontal_alignment": "flex-start",
+                            "vertical_alignment": "center",
+                            "align_baseline": false,
+                            "horizontal_alignment_flex_direction_column": "flex-start",
+                            "vertical_alignment_flex_direction_column": "center",
+                            "gap": 12,
+                            "width": "fill",
+                            "custom_width": 100,
+                            "width_mobile": "fill",
+                            "custom_width_mobile": 100,
+                            "height": "fit",
+                            "custom_height": 100,
+                            "inherit_color_scheme": true,
+                            "color_scheme": "",
+                            "background_media": "none",
+                            "video_position": "cover",
+                            "background_image_position": "cover",
+                            "border": "none",
+                            "border_width": 1,
+                            "border_opacity": 100,
+                            "border_radius": 0,
+                            "toggle_overlay": false,
+                            "overlay_color": "#00000026",
+                            "overlay_style": "solid",
+                            "gradient_direction": "to top",
+                            "link": "",
+                            "open_in_new_tab": false,
+                            "placeholder": "",
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {
+                            "icon_RRnWJa": {
+                              "type": "icon",
+                              "name": "t:names.icon",
+                              "settings": {
+                                "icon": "price_tag",
+                                "image_upload": "shopify://shop_images/pink-stars.svg",
+                                "width": 98,
+                                "link": "",
+                                "open_in_new_tab": false
+                              },
+                              "blocks": {}
+                            }
+                          },
+                          "block_order": [
+                            "icon_RRnWJa"
+                          ]
+                        },
+                        "cb_group_8cjFXT": {
+                          "type": "cb-group",
+                          "name": "Content",
+                          "settings": {
+                            "custom_class": "",
+                            "content_direction": "column",
+                            "vertical_on_mobile": true,
+                            "horizontal_alignment": "flex-start",
+                            "vertical_alignment": "center",
+                            "align_baseline": false,
+                            "horizontal_alignment_flex_direction_column": "flex-start",
+                            "vertical_alignment_flex_direction_column": "center",
+                            "gap": 12,
+                            "width": "fill",
+                            "custom_width": 100,
+                            "width_mobile": "fill",
+                            "custom_width_mobile": 100,
+                            "height": "fit",
+                            "custom_height": 100,
+                            "inherit_color_scheme": true,
+                            "color_scheme": "",
+                            "background_media": "none",
+                            "video_position": "cover",
+                            "background_image_position": "cover",
+                            "border": "none",
+                            "border_width": 1,
+                            "border_opacity": 100,
+                            "border_radius": 0,
+                            "toggle_overlay": false,
+                            "overlay_color": "#00000026",
+                            "overlay_style": "solid",
+                            "gradient_direction": "to top",
+                            "link": "",
+                            "open_in_new_tab": false,
+                            "placeholder": "",
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {
+                            "text_AMYgwh": {
+                              "type": "text",
+                              "name": "t:names.text",
+                              "settings": {
+                                "text": "<p><strong>Perfect Hydration on the Go! </strong><br/>I've tried several electrolyte supplements over the years, but these packets are by far my favorite! They are incredibly convenient and perfect for staying hydrated throughout the day.</p>",
+                                "width": "fit-content",
+                                "max_width": "normal",
+                                "alignment": "left",
+                                "type_preset": "rte",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            },
+                            "cb_group_C4QyH7": {
+                              "type": "cb-group",
+                              "name": "Author check",
+                              "settings": {
+                                "custom_class": "",
+                                "content_direction": "row",
+                                "vertical_on_mobile": true,
+                                "horizontal_alignment": "flex-start",
+                                "vertical_alignment": "center",
+                                "align_baseline": false,
+                                "horizontal_alignment_flex_direction_column": "flex-start",
+                                "vertical_alignment_flex_direction_column": "center",
+                                "gap": 12,
+                                "width": "fill",
+                                "custom_width": 100,
+                                "width_mobile": "fill",
+                                "custom_width_mobile": 100,
+                                "height": "fit",
+                                "custom_height": 100,
+                                "inherit_color_scheme": true,
+                                "color_scheme": "",
+                                "background_media": "none",
+                                "video_position": "cover",
+                                "background_image_position": "cover",
+                                "border": "none",
+                                "border_width": 1,
+                                "border_opacity": 100,
+                                "border_radius": 0,
+                                "toggle_overlay": false,
+                                "overlay_color": "#00000026",
+                                "overlay_style": "solid",
+                                "gradient_direction": "to top",
+                                "link": "",
+                                "open_in_new_tab": false,
+                                "placeholder": "",
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {
+                                "icon_LqQnNp": {
+                                  "type": "icon",
+                                  "name": "t:names.icon",
+                                  "settings": {
+                                    "icon": "price_tag",
+                                    "image_upload": "shopify://shop_images/icon-testimonial-check.svg",
+                                    "width": 19,
+                                    "link": "",
+                                    "open_in_new_tab": false
+                                  },
+                                  "blocks": {}
+                                },
+                                "text_NALbYA": {
+                                  "type": "text",
+                                  "name": "t:names.text",
+                                  "settings": {
+                                    "text": "<p>Ryan S. – Verified Buyer</p>",
+                                    "width": "fit-content",
+                                    "max_width": "normal",
+                                    "alignment": "left",
+                                    "type_preset": "custom",
+                                    "font": "var(--font-subheading--family)",
+                                    "font_size": "0.75rem",
+                                    "line_height": "normal",
+                                    "letter_spacing": "normal",
+                                    "case": "none",
+                                    "wrap": "pretty",
+                                    "color": "var(--color-foreground)",
+                                    "background": false,
+                                    "background_color": "#00000026",
+                                    "corner_radius": 0,
+                                    "padding-block-start": 0,
+                                    "padding-block-end": 0,
+                                    "padding-inline-start": 0,
+                                    "padding-inline-end": 0
+                                  },
+                                  "blocks": {}
+                                }
+                              },
+                              "block_order": [
+                                "icon_LqQnNp",
+                                "text_NALbYA"
+                              ]
+                            }
+                          },
+                          "block_order": [
+                            "text_AMYgwh",
+                            "cb_group_C4QyH7"
+                          ]
+                        }
+                      },
+                      "block_order": [
+                        "cb_group_z8BxBR",
+                        "cb_group_8cjFXT"
+                      ]
+                    }
+                  },
+                  "block_order": [
+                    "cb_group_mdYWNj"
+                  ]
                 }
               },
               "block_order": [
                 "cb_slide_kQCyTa",
-                "cb_slide_ATNYzb",
-                "cb_slide_XWmfRV"
+                "cb_slide_XWmfRV",
+                "cb_slide_7j6db9"
               ]
             }
           },
@@ -1503,6 +1503,7 @@
               "type": "buy-buttons",
               "name": "t:names.product_buy_buttons",
               "settings": {
+                "buy_now": true,
                 "stacking": false,
                 "show_pickup_availability": false,
                 "gift_card_form": false,
